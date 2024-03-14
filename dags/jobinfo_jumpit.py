@@ -2,24 +2,20 @@
 =======
 # 최신
 >>>>>>> e85bad369270f57d81da8fe68dc3a4c8bc694d76
-from airflow import DAG
-from airflow.operators.python import PythonOperator
-from airflow.hooks.base import BaseHook
-from airflow.hooks.S3_hook import S3Hook
-from airflow.hooks.mysql_hook import MySqlHook
-
-<<<<<<< HEAD
-
-=======
->>>>>>> e85bad369270f57d81da8fe68dc3a4c8bc694d76
-import boto3
-from datetime import datetime, timedelta
-import requests
-from bs4 import BeautifulSoup
 import csv
-import os
 import logging
+import os
+from datetime import datetime, timedelta
+
+import boto3
 import pandas as pd
+import requests
+from airflow import DAG
+from airflow.hooks.base import BaseHook
+from airflow.hooks.mysql_hook import MySqlHook
+from airflow.hooks.S3_hook import S3Hook
+from airflow.operators.python import PythonOperator
+from bs4 import BeautifulSoup
 
 
 def get_job_details(job_url, user_agent):
