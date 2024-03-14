@@ -144,11 +144,9 @@ def s3_to_rds(s3_bucket, s3_key, **kwargs):
 dag = DAG(
     dag_id = 'jumpit_jobinfo',
     start_date = datetime(2024, 1, 9),
-<<<<<<< HEAD
-    schedule = '56 11 * * *',
-=======
+
     schedule = '0 9 * * *',
->>>>>>> e85bad369270f57d81da8fe68dc3a4c8bc694d76
+
     catchup = False,
     max_active_runs = 1,
     default_args = {
@@ -184,11 +182,9 @@ upload_to_s3 = PythonOperator(
     provide_context = True,
     op_kwargs = {
             'filename' : '/opt/airflow/dags/jumpit.csv',
-<<<<<<< HEAD
-            'key': 'path/in/s3/bucket/jobinfo_jumpit.csv',
-=======
+
             'key': 'path/in/s3/bucket/jobinfo_jumpit_v2.csv',
->>>>>>> e85bad369270f57d81da8fe68dc3a4c8bc694d76
+
             'bucket_name' : 'legoking'
     },
     dag = dag
@@ -201,18 +197,14 @@ s3_to_rds = PythonOperator(
     provide_context = True,
     op_kwargs = {
         's3_bucket': 'legoking',
-<<<<<<< HEAD
-        's3_key': 'path/in/s3/bucket/jobinfo_jumpit.csv'
-=======
+
         's3_key': 'path/in/s3/bucket/jobinfo_jumpit_v2.csv'
->>>>>>> e85bad369270f57d81da8fe68dc3a4c8bc694d76
+
     },
     dag = dag
 )
 
 
-<<<<<<< HEAD
+
 extract >> save_to_csv >> upload_to_s3 >> s3_to_rds
-=======
-extract >> save_to_csv >> upload_to_s3 >> s3_to_rds
->>>>>>> e85bad369270f57d81da8fe68dc3a4c8bc694d76
+
