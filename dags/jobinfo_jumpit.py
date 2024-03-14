@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
-# 최신
->>>>>>> e85bad369270f57d81da8fe68dc3a4c8bc694d76
+
 import csv
 import logging
 import os
