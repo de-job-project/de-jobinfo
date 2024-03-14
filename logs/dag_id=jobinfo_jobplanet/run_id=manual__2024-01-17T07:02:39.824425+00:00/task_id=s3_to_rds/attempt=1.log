@@ -1,0 +1,39 @@
+[2024-01-17T07:10:43.833+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.s3_to_rds manual__2024-01-17T07:02:39.824425+00:00 [queued]>
+[2024-01-17T07:10:43.846+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.s3_to_rds manual__2024-01-17T07:02:39.824425+00:00 [queued]>
+[2024-01-17T07:10:43.846+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-17T07:10:43.846+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-17T07:10:43.846+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-17T07:10:43.865+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): s3_to_rds> on 2024-01-17 07:02:39.824425+00:00
+[2024-01-17T07:10:43.877+0000] {standard_task_runner.py:55} INFO - Started process 31944 to run task
+[2024-01-17T07:10:43.879+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 's3_to_rds', 'manual__2024-01-17T07:02:39.824425+00:00', '--job-id', '4408', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmp99xwekdv']
+[2024-01-17T07:10:43.879+0000] {standard_task_runner.py:83} INFO - Job 4408: Subtask s3_to_rds
+[2024-01-17T07:10:43.961+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.s3_to_rds manual__2024-01-17T07:02:39.824425+00:00 [running]> on host 565f6bcc10b6
+[2024-01-17T07:10:44.048+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=s3_to_rds
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-17T07:02:39.824425+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-17T07:02:39.824425+00:00
+[2024-01-17T07:10:44.232+0000] {base.py:73} INFO - Using connection ID 'rds_conn' for task execution.
+[2024-01-17T07:10:44.337+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 748, in s3_to_rds
+    cur.execute(insert_query, tuple(row))
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6, 7, 0.1, 0.1.1, 0.1.1.1, 0.1.1.1.1, 0.1.1.1.1.1, 0.1.1.1.1.1' at line 1")
+[2024-01-17T07:10:44.345+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=jobinfo_jobplanet, task_id=s3_to_rds, execution_date=20240117T070239, start_date=20240117T071043, end_date=20240117T071044
+[2024-01-17T07:10:44.364+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 4408 for task s3_to_rds ((1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6, 7, 0.1, 0.1.1, 0.1.1.1, 0.1.1.1.1, 0.1.1.1.1.1, 0.1.1.1.1.1' at line 1"); 31944)
+[2024-01-17T07:10:44.399+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-17T07:10:44.416+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

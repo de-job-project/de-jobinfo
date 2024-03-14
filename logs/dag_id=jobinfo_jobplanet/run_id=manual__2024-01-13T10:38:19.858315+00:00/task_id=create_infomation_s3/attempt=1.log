@@ -1,0 +1,49 @@
+[2024-01-13T10:38:28.761+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-13T10:38:19.858315+00:00 [queued]>
+[2024-01-13T10:38:28.769+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-13T10:38:19.858315+00:00 [queued]>
+[2024-01-13T10:38:28.770+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-13T10:38:28.770+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-13T10:38:28.770+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-13T10:38:28.786+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): create_infomation_s3> on 2024-01-13 10:38:19.858315+00:00
+[2024-01-13T10:38:28.792+0000] {standard_task_runner.py:55} INFO - Started process 2065 to run task
+[2024-01-13T10:38:28.794+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'create_infomation_s3', 'manual__2024-01-13T10:38:19.858315+00:00', '--job-id', '333', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmpy3dhrx54']
+[2024-01-13T10:38:28.795+0000] {standard_task_runner.py:83} INFO - Job 333: Subtask create_infomation_s3
+[2024-01-13T10:38:28.994+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-13T10:38:19.858315+00:00 [running]> on host 9d92fdf7265b
+[2024-01-13T10:38:29.065+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=create_infomation_s3
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-13T10:38:19.858315+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-13T10:38:19.858315+00:00
+[2024-01-13T10:38:29.067+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/common/driver_finder.py", line 38, in get_path
+    path = SeleniumManager().driver_location(options) if path is None else path
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/common/selenium_manager.py", line 71, in driver_location
+    browser = options.capabilities["browserName"]
+AttributeError: 'str' object has no attribute 'capabilities'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 81, in create_infomation_s3
+    driver = jobplanet_login()
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 49, in jobplanet_login
+    driver = webdriver.Chrome('/usr/src/chrome')
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 50, in __init__
+    keep_alive,
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chromium/webdriver.py", line 51, in __init__
+    self.service.path = DriverFinder.get_path(self.service, options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/common/driver_finder.py", line 40, in get_path
+    msg = f"Unable to obtain driver for {options.capabilities['browserName']} using Selenium Manager."
+AttributeError: 'str' object has no attribute 'capabilities'
+[2024-01-13T10:38:29.073+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=jobinfo_jobplanet, task_id=create_infomation_s3, execution_date=20240113T103819, start_date=20240113T103828, end_date=20240113T103829
+[2024-01-13T10:38:29.089+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 333 for task create_infomation_s3 ('str' object has no attribute 'capabilities'; 2065)
+[2024-01-13T10:38:29.127+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-13T10:38:29.319+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

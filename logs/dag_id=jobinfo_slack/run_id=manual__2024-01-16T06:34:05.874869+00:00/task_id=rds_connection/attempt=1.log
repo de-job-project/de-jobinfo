@@ -1,0 +1,35 @@
+[2024-01-16T06:34:07.383+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_slack.rds_connection manual__2024-01-16T06:34:05.874869+00:00 [queued]>
+[2024-01-16T06:34:07.393+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_slack.rds_connection manual__2024-01-16T06:34:05.874869+00:00 [queued]>
+[2024-01-16T06:34:07.393+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-16T06:34:07.393+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2024-01-16T06:34:07.393+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-16T06:34:07.409+0000] {taskinstance.py:1300} INFO - Executing <Task(MySqlOperator): rds_connection> on 2024-01-16 06:34:05.874869+00:00
+[2024-01-16T06:34:07.414+0000] {standard_task_runner.py:55} INFO - Started process 64035 to run task
+[2024-01-16T06:34:07.416+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_slack', 'rds_connection', 'manual__2024-01-16T06:34:05.874869+00:00', '--job-id', '737', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_slack.py', '--cfg-path', '/tmp/tmp25dcicv6']
+[2024-01-16T06:34:07.416+0000] {standard_task_runner.py:83} INFO - Job 737: Subtask rds_connection
+[2024-01-16T06:34:07.471+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_slack.rds_connection manual__2024-01-16T06:34:05.874869+00:00 [running]> on host 565f6bcc10b6
+[2024-01-16T06:34:07.542+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_slack
+AIRFLOW_CTX_TASK_ID=rds_connection
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-16T06:34:05.874869+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-16T06:34:05.874869+00:00
+[2024-01-16T06:34:07.543+0000] {sql.py:254} INFO - Executing: 
+    SELECT mydb.jobinfo_jumpit.company, position, skills, location, career, due_date, review_summary, merit_summary, demerit_summary, average_salary
+    FROM mydb.jobinfo_jumpit
+    LEFT JOIN mydb.jobinfo_jobplanet
+    ON mydb.jobinfo_jumpit.company = mydb.jobinfo_jobplanet.company;
+[2024-01-16T06:34:07.552+0000] {base.py:73} INFO - Using connection ID 'rds_conn' for task execution.
+[2024-01-16T06:34:07.788+0000] {base.py:73} INFO - Using connection ID 'rds_conn' for task execution.
+[2024-01-16T06:34:07.911+0000] {sql.py:375} INFO - Running statement: 
+    SELECT mydb.jobinfo_jumpit.company, position, skills, location, career, due_date, review_summary, merit_summary, demerit_summary, average_salary
+    FROM mydb.jobinfo_jumpit
+    LEFT JOIN mydb.jobinfo_jobplanet
+    ON mydb.jobinfo_jumpit.company = mydb.jobinfo_jobplanet.company;, parameters: None
+[2024-01-16T06:34:07.922+0000] {sql.py:384} INFO - Rows affected: 81
+[2024-01-16T06:34:07.952+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_slack, task_id=rds_connection, execution_date=20240116T063405, start_date=20240116T063407, end_date=20240116T063407
+[2024-01-16T06:34:08.003+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-16T06:34:08.040+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,88 @@
+[2024-01-13T13:04:10.989+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-13T13:04:05.351482+00:00 [queued]>
+[2024-01-13T13:04:10.997+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-13T13:04:05.351482+00:00 [queued]>
+[2024-01-13T13:04:10.997+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-13T13:04:10.997+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-13T13:04:10.998+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-13T13:04:11.013+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): create_infomation_s3> on 2024-01-13 13:04:05.351482+00:00
+[2024-01-13T13:04:11.020+0000] {standard_task_runner.py:55} INFO - Started process 738 to run task
+[2024-01-13T13:04:11.023+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'create_infomation_s3', 'manual__2024-01-13T13:04:05.351482+00:00', '--job-id', '371', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmpo3rl8gav']
+[2024-01-13T13:04:11.024+0000] {standard_task_runner.py:83} INFO - Job 371: Subtask create_infomation_s3
+[2024-01-13T13:04:11.263+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-13T13:04:05.351482+00:00 [running]> on host 7b77d04f99d6
+[2024-01-13T13:04:11.337+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=create_infomation_s3
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-13T13:04:05.351482+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-13T13:04:05.351482+00:00
+[2024-01-13T13:04:12.299+0000] {jobinfo_jobplanet.py:57} INFO - 11111111111111111
+[2024-01-13T13:04:12.299+0000] {jobinfo_jobplanet.py:58} INFO - <selenium.webdriver.remote.webdriver.WebDriver (session="1c47cd825967280a163f47804011fc71")>
+[2024-01-13T13:04:12.320+0000] {jobinfo_jobplanet.py:64} INFO - 2222222222222222222222222
+[2024-01-13T13:04:12.321+0000] {jobinfo_jobplanet.py:65} INFO - <selenium.webdriver.remote.webdriver.WebDriver (session="1c47cd825967280a163f47804011fc71")>
+[2024-01-13T13:04:15.449+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 88, in create_infomation_s3
+    driver = jobplanet_login()
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 70, in jobplanet_login
+    id_input = driver.find_element(By.XPATH, "//select/option[@value='11912']")
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 739, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 345, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//select/option[@value='11912']"}
+  (Session info: chrome-headless-shell=120.0.6099.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55c0bc59ff83 <unknown>
+#1 0x55c0bc258cf7 <unknown>
+#2 0x55c0bc2a899e <unknown>
+#3 0x55c0bc2a8aa1 <unknown>
+#4 0x55c0bc2f3d64 <unknown>
+#5 0x55c0bc2d20dd <unknown>
+#6 0x55c0bc2f1006 <unknown>
+#7 0x55c0bc2d1e53 <unknown>
+#8 0x55c0bc299dd4 <unknown>
+#9 0x55c0bc29b1de <unknown>
+#10 0x55c0bc564531 <unknown>
+#11 0x55c0bc568455 <unknown>
+#12 0x55c0bc550f55 <unknown>
+#13 0x55c0bc5690ef <unknown>
+#14 0x55c0bc53499f <unknown>
+#15 0x55c0bc58d008 <unknown>
+#16 0x55c0bc58d1d7 <unknown>
+#17 0x55c0bc59f124 <unknown>
+#18 0x7f644ada6ac3 <unknown>
+
+[2024-01-13T13:04:15.457+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=jobinfo_jobplanet, task_id=create_infomation_s3, execution_date=20240113T130405, start_date=20240113T130410, end_date=20240113T130415
+[2024-01-13T13:04:15.481+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 371 for task create_infomation_s3 (Message: no such element: Unable to locate element: {"method":"xpath","selector":"//select/option[@value='11912']"}
+  (Session info: chrome-headless-shell=120.0.6099.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55c0bc59ff83 <unknown>
+#1 0x55c0bc258cf7 <unknown>
+#2 0x55c0bc2a899e <unknown>
+#3 0x55c0bc2a8aa1 <unknown>
+#4 0x55c0bc2f3d64 <unknown>
+#5 0x55c0bc2d20dd <unknown>
+#6 0x55c0bc2f1006 <unknown>
+#7 0x55c0bc2d1e53 <unknown>
+#8 0x55c0bc299dd4 <unknown>
+#9 0x55c0bc29b1de <unknown>
+#10 0x55c0bc564531 <unknown>
+#11 0x55c0bc568455 <unknown>
+#12 0x55c0bc550f55 <unknown>
+#13 0x55c0bc5690ef <unknown>
+#14 0x55c0bc53499f <unknown>
+#15 0x55c0bc58d008 <unknown>
+#16 0x55c0bc58d1d7 <unknown>
+#17 0x55c0bc59f124 <unknown>
+#18 0x7f644ada6ac3 <unknown>
+; 738)
+[2024-01-13T13:04:15.537+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-13T13:04:15.705+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

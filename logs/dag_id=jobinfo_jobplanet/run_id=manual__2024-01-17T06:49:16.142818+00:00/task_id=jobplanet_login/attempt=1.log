@@ -1,0 +1,896 @@
+[2024-01-17T06:49:21.449+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-17T06:49:16.142818+00:00 [queued]>
+[2024-01-17T06:49:21.462+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-17T06:49:16.142818+00:00 [queued]>
+[2024-01-17T06:49:21.463+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-17T06:49:21.463+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-17T06:49:21.463+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-17T06:49:21.480+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): jobplanet_login> on 2024-01-17 06:49:16.142818+00:00
+[2024-01-17T06:49:21.492+0000] {standard_task_runner.py:55} INFO - Started process 30955 to run task
+[2024-01-17T06:49:21.494+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'jobplanet_login', 'manual__2024-01-17T06:49:16.142818+00:00', '--job-id', '4403', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmpg9ddc1_9']
+[2024-01-17T06:49:21.494+0000] {standard_task_runner.py:83} INFO - Job 4403: Subtask jobplanet_login
+[2024-01-17T06:49:21.576+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-17T06:49:16.142818+00:00 [running]> on host 565f6bcc10b6
+[2024-01-17T06:49:21.691+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=jobplanet_login
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-17T06:49:16.142818+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-17T06:49:16.142818+00:00
+[2024-01-17T06:49:29.095+0000] {jobinfo_jobplanet.py:104} INFO - ['메이븐클라우드서비스', '파킹클라우드', '클라우드호스피탈', '파킹클라우드', '레몬클라우드', '레몬클라우드', '엠투클라우드', '엠투클라우드', '파킹클라우드', '메이븐클라우드서비스', '엠투클라우드', '엠투클라우드', '마크클라우드', '마크클라우드', '클라우드호스피탈', '클라우드호스피탈', '월급쟁이부자들', '월급쟁이부자들', '로민', '블랙탠저린', '파인더스', '론픽', '비포플레이', '롯데헬스케어', '롯데헬스케어', '올라운드닥터스', '다큐브', '크리에이트립', '데브툴즈', '티니어', '키다리스튜디오']
+[2024-01-17T06:49:29.096+0000] {jobinfo_jobplanet.py:105} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_다큐브.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_레몬클라우드.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_엠투클라우드.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_클라우드호스피탈.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv']
+[2024-01-17T06:49:29.096+0000] {jobinfo_jobplanet.py:106} INFO - 시작
+[2024-01-17T06:49:29.096+0000] {jobinfo_jobplanet.py:111} INFO - 메이븐클라우드서비스 있음
+[2024-01-17T06:49:29.097+0000] {jobinfo_jobplanet.py:111} INFO - 파킹클라우드 있음
+[2024-01-17T06:49:29.097+0000] {jobinfo_jobplanet.py:111} INFO - 클라우드호스피탈 있음
+[2024-01-17T06:49:29.097+0000] {jobinfo_jobplanet.py:111} INFO - 파킹클라우드 있음
+[2024-01-17T06:49:29.098+0000] {jobinfo_jobplanet.py:111} INFO - 레몬클라우드 있음
+[2024-01-17T06:49:29.099+0000] {jobinfo_jobplanet.py:111} INFO - 레몬클라우드 있음
+[2024-01-17T06:49:29.099+0000] {jobinfo_jobplanet.py:111} INFO - 엠투클라우드 있음
+[2024-01-17T06:49:29.099+0000] {jobinfo_jobplanet.py:111} INFO - 엠투클라우드 있음
+[2024-01-17T06:49:29.099+0000] {jobinfo_jobplanet.py:111} INFO - 파킹클라우드 있음
+[2024-01-17T06:49:29.100+0000] {jobinfo_jobplanet.py:111} INFO - 메이븐클라우드서비스 있음
+[2024-01-17T06:49:29.100+0000] {jobinfo_jobplanet.py:111} INFO - 엠투클라우드 있음
+[2024-01-17T06:49:29.100+0000] {jobinfo_jobplanet.py:111} INFO - 엠투클라우드 있음
+[2024-01-17T06:49:29.100+0000] {jobinfo_jobplanet.py:111} INFO - 마크클라우드 있음
+[2024-01-17T06:49:29.101+0000] {jobinfo_jobplanet.py:111} INFO - 마크클라우드 있음
+[2024-01-17T06:49:29.101+0000] {jobinfo_jobplanet.py:111} INFO - 클라우드호스피탈 있음
+[2024-01-17T06:49:29.101+0000] {jobinfo_jobplanet.py:111} INFO - 클라우드호스피탈 있음
+[2024-01-17T06:49:29.101+0000] {jobinfo_jobplanet.py:111} INFO - 월급쟁이부자들 있음
+[2024-01-17T06:49:29.102+0000] {jobinfo_jobplanet.py:111} INFO - 월급쟁이부자들 있음
+[2024-01-17T06:49:29.102+0000] {jobinfo_jobplanet.py:111} INFO - 로민 있음
+[2024-01-17T06:49:29.102+0000] {jobinfo_jobplanet.py:111} INFO - 블랙탠저린 있음
+[2024-01-17T06:49:29.102+0000] {jobinfo_jobplanet.py:111} INFO - 파인더스 있음
+[2024-01-17T06:49:29.148+0000] {jobinfo_jobplanet.py:118} INFO - 론픽 파일이 없음
+[2024-01-17T06:49:32.032+0000] {jobinfo_jobplanet.py:139} INFO - 론픽의 정보는 없어서 파일 생성을 못한다.
+[2024-01-17T06:49:32.033+0000] {jobinfo_jobplanet.py:143} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_다큐브.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_레몬클라우드.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_엠투클라우드.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_클라우드호스피탈.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv']
+[2024-01-17T06:49:32.033+0000] {jobinfo_jobplanet.py:111} INFO - 비포플레이 있음
+[2024-01-17T06:49:32.033+0000] {jobinfo_jobplanet.py:111} INFO - 롯데헬스케어 있음
+[2024-01-17T06:49:32.034+0000] {jobinfo_jobplanet.py:111} INFO - 롯데헬스케어 있음
+[2024-01-17T06:49:32.063+0000] {jobinfo_jobplanet.py:118} INFO - 올라운드닥터스 파일이 없음
+[2024-01-17T06:49:32.679+0000] {jobinfo_jobplanet.py:123} INFO - 올라운드닥터스 검색을 위해 검색창에 입력했습니다.
+[2024-01-17T06:49:36.516+0000] {jobinfo_jobplanet.py:126} INFO - 올라운드닥터스 검색하기
+[2024-01-17T06:49:38.579+0000] {jobinfo_jobplanet.py:139} INFO - 올라운드닥터스의 정보는 없어서 파일 생성을 못한다.
+[2024-01-17T06:49:38.579+0000] {jobinfo_jobplanet.py:143} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_다큐브.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_레몬클라우드.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_엠투클라우드.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_클라우드호스피탈.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv']
+[2024-01-17T06:49:38.579+0000] {jobinfo_jobplanet.py:111} INFO - 다큐브 있음
+[2024-01-17T06:49:38.579+0000] {jobinfo_jobplanet.py:111} INFO - 크리에이트립 있음
+[2024-01-17T06:49:38.579+0000] {jobinfo_jobplanet.py:111} INFO - 데브툴즈 있음
+[2024-01-17T06:49:38.579+0000] {jobinfo_jobplanet.py:111} INFO - 티니어 있음
+[2024-01-17T06:49:38.579+0000] {jobinfo_jobplanet.py:111} INFO - 키다리스튜디오 있음
+[2024-01-17T06:49:38.800+0000] {jobinfo_jobplanet.py:539} INFO -                             review_summary  ... result_date
+0           대안이 없으면 다닐 수도 있겠지만 추천하지는 않는 회사  ...     no data
+1       주체적인 개인의 의견과 편의를 최대한 들어주려고 노력하는 회사  ...     no data
+2           SI 기업 그 잡채 10년 운용했으나 회사 체계가 없음  ...     no data
+3                    보통 나름 인지도가 있는 회사지만 쏘쏘  ...     no data
+4  팀별로 매우 분위기가 달랐던 것으로 기억함 팀장에 따라 좌우되는 분위기  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:49:52.441+0000] {jobinfo_jobplanet.py:715} INFO - File path/in/s3/bucket/summary.csv uploaded to S3 successfully.
+[2024-01-17T06:49:52.702+0000] {jobinfo_jobplanet.py:539} INFO -                             review_summary  ... result_date
+0  젊고 자유로운 분위기, 시키지 않아도 척척 해내는 알잘딱깔센 인재 필요  ...       14일 후
+1                       엄청 최악은 아니지만 좋지도 않은  ...     no data
+2                     우당탕탕 성장하는 기업 사람들은 좋다  ...     no data
+3                     그저 일 안해도 월급이 나오는 회사요  ...     no data
+4                사내 복지좀 줄이지 말고 직원들좀 신경써주세요  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:50:07.978+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:50:07.981+0000] {jobinfo_jobplanet.py:199} INFO -       company review_summary  ... answer_summary average_salary
+0  메이븐클라우드서비스     메이븐클라우드서비스  ...             대한       3,789 만원
+
+[1 rows x 8 columns]
+[2024-01-17T06:50:07.999+0000] {jobinfo_jobplanet.py:200} INFO -         0  ...         7
+0  파킹클라우드  ...  3,114 만원
+
+[1 rows x 8 columns]
+[2024-01-17T06:50:08.036+0000] {jobinfo_jobplanet.py:203} INFO -         0  ... review_summary
+0     NaN  ...     메이븐클라우드서비스
+1  파킹클라우드  ...            NaN
+
+[2 rows x 16 columns]
+[2024-01-17T06:50:08.150+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:50:08.374+0000] {jobinfo_jobplanet.py:539} INFO -                         review_summary  ... result_date
+0  근무환경 쾌적하고 공용 냉장고도 깨끗하다 정수기도 자주 관리해준  ...        0일 후
+
+[1 rows x 8 columns]
+[2024-01-17T06:50:22.584+0000] {jobinfo_jobplanet.py:530} INFO - 클라우드호스피탈 salary information not find
+[2024-01-17T06:50:22.584+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:50:22.587+0000] {jobinfo_jobplanet.py:199} INFO -         0  ... review_summary
+0     NaN  ...     메이븐클라우드서비스
+1  파킹클라우드  ...            NaN
+
+[2 rows x 16 columns]
+[2024-01-17T06:50:22.604+0000] {jobinfo_jobplanet.py:200} INFO -           0  ...      7
+0  클라우드호스피탈  ...  정보 없음
+
+[1 rows x 8 columns]
+[2024-01-17T06:50:22.620+0000] {jobinfo_jobplanet.py:203} INFO -         0  ...      7
+0     NaN  ...    NaN
+1  파킹클라우드  ...    NaN
+2     NaN  ...  정보 없음
+
+[3 rows x 24 columns]
+[2024-01-17T06:50:22.741+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:50:22.896+0000] {jobinfo_jobplanet.py:539} INFO -                             review_summary  ... result_date
+0  젊고 자유로운 분위기, 시키지 않아도 척척 해내는 알잘딱깔센 인재 필요  ...       14일 후
+1                       엄청 최악은 아니지만 좋지도 않은  ...     no data
+2                     우당탕탕 성장하는 기업 사람들은 좋다  ...     no data
+3                     그저 일 안해도 월급이 나오는 회사요  ...     no data
+4                사내 복지좀 줄이지 말고 직원들좀 신경써주세요  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:50:37.850+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:50:37.854+0000] {jobinfo_jobplanet.py:199} INFO -         0  ...    7.1
+0     NaN  ...    NaN
+1  파킹클라우드  ...    NaN
+2     NaN  ...  정보 없음
+
+[3 rows x 24 columns]
+[2024-01-17T06:50:37.892+0000] {jobinfo_jobplanet.py:200} INFO -         0  ...         7
+0  파킹클라우드  ...  3,114 만원
+
+[1 rows x 8 columns]
+[2024-01-17T06:50:37.915+0000] {jobinfo_jobplanet.py:203} INFO -         0  ... review_summary
+0     NaN  ...     메이븐클라우드서비스
+1     NaN  ...            NaN
+2     NaN  ...            NaN
+3  파킹클라우드  ...            NaN
+
+[4 rows x 32 columns]
+[2024-01-17T06:50:38.077+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:50:38.257+0000] {jobinfo_jobplanet.py:539} INFO -   review_summary    merit  ... hire_way result_date
+0        no data  no data  ...     개인면접     no data
+
+[1 rows x 8 columns]
+[2024-01-17T06:50:53.157+0000] {jobinfo_jobplanet.py:530} INFO - 레몬클라우드 salary information not find
+[2024-01-17T06:50:53.157+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:50:53.159+0000] {jobinfo_jobplanet.py:199} INFO -         0  ... review_summary
+0     NaN  ...     메이븐클라우드서비스
+1     NaN  ...            NaN
+2     NaN  ...            NaN
+3  파킹클라우드  ...            NaN
+
+[4 rows x 32 columns]
+[2024-01-17T06:50:53.188+0000] {jobinfo_jobplanet.py:200} INFO -         0   1   2  ...                                           5     6      7
+0  레몬클라우드  없음  없음  ...  회사에대해, 궁금한점, 본인의, 경험, 1분자기소개같은것없음, 자유로운분위기  중점으로  정보 없음
+
+[1 rows x 8 columns]
+[2024-01-17T06:50:53.199+0000] {jobinfo_jobplanet.py:203} INFO -         0    1    2  ... merit_summary question_summary review_summary
+0     NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1     NaN  NaN  NaN  ...           NaN              NaN            NaN
+2     NaN  NaN  NaN  ...           NaN              NaN            NaN
+3     NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  레몬클라우드   없음   없음  ...           NaN              NaN            NaN
+
+[5 rows x 40 columns]
+[2024-01-17T06:50:53.335+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:50:53.592+0000] {jobinfo_jobplanet.py:539} INFO -   review_summary    merit  ... hire_way result_date
+0        no data  no data  ...     개인면접     no data
+
+[1 rows x 8 columns]
+[2024-01-17T06:51:10.975+0000] {jobinfo_jobplanet.py:530} INFO - 레몬클라우드 salary information not find
+[2024-01-17T06:51:10.975+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:51:10.978+0000] {jobinfo_jobplanet.py:199} INFO -         0    1    2  ... merit_summary question_summary review_summary
+0     NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1     NaN  NaN  NaN  ...           NaN              NaN            NaN
+2     NaN  NaN  NaN  ...           NaN              NaN            NaN
+3     NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  레몬클라우드   없음   없음  ...           NaN              NaN            NaN
+
+[5 rows x 40 columns]
+[2024-01-17T06:51:11.024+0000] {jobinfo_jobplanet.py:200} INFO -         0   1   2  ...                                           5     6      7
+0  레몬클라우드  없음  없음  ...  회사에대해, 궁금한점, 본인의, 경험, 1분자기소개같은것없음, 자유로운분위기  중점으로  정보 없음
+
+[1 rows x 8 columns]
+[2024-01-17T06:51:11.036+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 48 columns]
+[2024-01-17T06:51:11.180+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:51:11.370+0000] {jobinfo_jobplanet.py:539} INFO -                                       review_summary  ... result_date
+0  부서마다 극한으로 차이가 보이는회사 꼰대회사 믿을인간없는회사 부서별로 갑과 을이 존...  ...       30일 후
+1     능률, 역량에 맞지 않은 업무지시와 잡업무가 많으며 사소한 일 처리까지 모두 보고함  ...        7일 후
+2              수평적인 기업문화를 말하지만 수직적인 기업문화와 조직을 강조하는회사  ...     no data
+3      TMS 서비스를 기반으로 하는 IOT 회사로, 업무나 대인관계에 있어서 좋은 회사  ...     no data
+
+[4 rows x 8 columns]
+[2024-01-17T06:51:30.252+0000] {jobinfo_jobplanet.py:530} INFO - 엠투클라우드 salary information not find
+[2024-01-17T06:51:30.253+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:51:30.255+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 48 columns]
+[2024-01-17T06:51:30.387+0000] {jobinfo_jobplanet.py:200} INFO -         0                                                  1  ...    6      7
+0  엠투클라우드  부서마다, 극한으로, 차이가, 보이는회사, 꼰대회사, 믿을인간없는회사, 부서별로, ...  ...  질문에  정보 없음
+
+[1 rows x 8 columns]
+[2024-01-17T06:51:30.426+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 56 columns]
+[2024-01-17T06:51:30.727+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:51:31.032+0000] {jobinfo_jobplanet.py:539} INFO -                                       review_summary  ... result_date
+0  부서마다 극한으로 차이가 보이는회사 꼰대회사 믿을인간없는회사 부서별로 갑과 을이 존...  ...       30일 후
+1     능률, 역량에 맞지 않은 업무지시와 잡업무가 많으며 사소한 일 처리까지 모두 보고함  ...        7일 후
+2              수평적인 기업문화를 말하지만 수직적인 기업문화와 조직을 강조하는회사  ...     no data
+3      TMS 서비스를 기반으로 하는 IOT 회사로, 업무나 대인관계에 있어서 좋은 회사  ...     no data
+
+[4 rows x 8 columns]
+[2024-01-17T06:51:46.082+0000] {jobinfo_jobplanet.py:530} INFO - 엠투클라우드 salary information not find
+[2024-01-17T06:51:46.083+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:51:46.085+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 56 columns]
+[2024-01-17T06:51:46.131+0000] {jobinfo_jobplanet.py:200} INFO -         0                                                  1  ...    6      7
+0  엠투클라우드  부서마다, 극한으로, 차이가, 보이는회사, 꼰대회사, 믿을인간없는회사, 부서별로, ...  ...  질문에  정보 없음
+
+[1 rows x 8 columns]
+[2024-01-17T06:51:46.143+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 64 columns]
+[2024-01-17T06:51:46.296+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:51:46.481+0000] {jobinfo_jobplanet.py:539} INFO -                             review_summary  ... result_date
+0  젊고 자유로운 분위기, 시키지 않아도 척척 해내는 알잘딱깔센 인재 필요  ...       14일 후
+1                       엄청 최악은 아니지만 좋지도 않은  ...     no data
+2                     우당탕탕 성장하는 기업 사람들은 좋다  ...     no data
+3                     그저 일 안해도 월급이 나오는 회사요  ...     no data
+4                사내 복지좀 줄이지 말고 직원들좀 신경써주세요  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:52:13.313+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:52:13.315+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 64 columns]
+[2024-01-17T06:52:13.446+0000] {jobinfo_jobplanet.py:200} INFO -         0  ...         7
+0  파킹클라우드  ...  3,114 만원
+
+[1 rows x 8 columns]
+[2024-01-17T06:52:13.464+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 72 columns]
+[2024-01-17T06:52:13.674+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:52:14.008+0000] {jobinfo_jobplanet.py:539} INFO -                                       review_summary  ... result_date
+0  부서마다 극한으로 차이가 보이는회사 꼰대회사 믿을인간없는회사 부서별로 갑과 을이 존...  ...       30일 후
+1     능률, 역량에 맞지 않은 업무지시와 잡업무가 많으며 사소한 일 처리까지 모두 보고함  ...        7일 후
+2              수평적인 기업문화를 말하지만 수직적인 기업문화와 조직을 강조하는회사  ...     no data
+3      TMS 서비스를 기반으로 하는 IOT 회사로, 업무나 대인관계에 있어서 좋은 회사  ...     no data
+
+[4 rows x 8 columns]
+[2024-01-17T06:52:30.205+0000] {jobinfo_jobplanet.py:530} INFO - 엠투클라우드 salary information not find
+[2024-01-17T06:52:30.205+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:52:30.208+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 72 columns]
+[2024-01-17T06:52:30.626+0000] {jobinfo_jobplanet.py:200} INFO -         0                                                  1  ...    6      7
+0  엠투클라우드  부서마다, 극한으로, 차이가, 보이는회사, 꼰대회사, 믿을인간없는회사, 부서별로, ...  ...  질문에  정보 없음
+
+[1 rows x 8 columns]
+[2024-01-17T06:52:30.688+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 80 columns]
+[2024-01-17T06:52:31.063+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:52:33.844+0000] {jobinfo_jobplanet.py:539} INFO -                                       review_summary  ... result_date
+0  부서마다 극한으로 차이가 보이는회사 꼰대회사 믿을인간없는회사 부서별로 갑과 을이 존...  ...       30일 후
+1     능률, 역량에 맞지 않은 업무지시와 잡업무가 많으며 사소한 일 처리까지 모두 보고함  ...        7일 후
+2              수평적인 기업문화를 말하지만 수직적인 기업문화와 조직을 강조하는회사  ...     no data
+3      TMS 서비스를 기반으로 하는 IOT 회사로, 업무나 대인관계에 있어서 좋은 회사  ...     no data
+
+[4 rows x 8 columns]
+[2024-01-17T06:52:55.704+0000] {jobinfo_jobplanet.py:530} INFO - 엠투클라우드 salary information not find
+[2024-01-17T06:52:55.704+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:52:55.707+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 80 columns]
+[2024-01-17T06:52:55.971+0000] {jobinfo_jobplanet.py:200} INFO -         0                                                  1  ...    6      7
+0  엠투클라우드  부서마다, 극한으로, 차이가, 보이는회사, 꼰대회사, 믿을인간없는회사, 부서별로, ...  ...  질문에  정보 없음
+
+[1 rows x 8 columns]
+[2024-01-17T06:52:55.993+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 88 columns]
+[2024-01-17T06:52:56.470+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:52:56.803+0000] {jobinfo_jobplanet.py:539} INFO -                                       review_summary  ... result_date
+0                              많은 것을 경험해볼 수 있는 회사입니다  ...     no data
+1                              많은 것을 경험해볼 수 있는 회사입니다  ...     no data
+2  사람과 사람으로 만나면 좋은 사람들 / 직장에서 동료로 만나면 힘든 사람들 / 체계...  ...     no data
+3                신입이 경력을 쌓기에는 좋다 근데 더 좋은 곳으로 갔으면 좋겠다  ...     no data
+4                              체계는 없지만 처음 시작하기 좋은 회사  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:53:19.218+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:53:19.220+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 88 columns]
+[2024-01-17T06:53:19.357+0000] {jobinfo_jobplanet.py:200} INFO -         0                                      1  ...   6         7
+0  마크클라우드  좋은, 많은, 것을, 경험해볼, 있는, 회사입니다, 만나면, 사람들  ...  없음  3,524 만원
+
+[1 rows x 8 columns]
+[2024-01-17T06:53:19.381+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 96 columns]
+[2024-01-17T06:53:19.587+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:53:19.813+0000] {jobinfo_jobplanet.py:539} INFO -                                       review_summary  ... result_date
+0                              많은 것을 경험해볼 수 있는 회사입니다  ...     no data
+1                              많은 것을 경험해볼 수 있는 회사입니다  ...     no data
+2  사람과 사람으로 만나면 좋은 사람들 / 직장에서 동료로 만나면 힘든 사람들 / 체계...  ...     no data
+3                신입이 경력을 쌓기에는 좋다 근데 더 좋은 곳으로 갔으면 좋겠다  ...     no data
+4                              체계는 없지만 처음 시작하기 좋은 회사  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:53:42.977+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:53:42.981+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 96 columns]
+[2024-01-17T06:53:43.162+0000] {jobinfo_jobplanet.py:200} INFO -         0                                      1  ...   6         7
+0  마크클라우드  좋은, 많은, 것을, 경험해볼, 있는, 회사입니다, 만나면, 사람들  ...  없음  3,524 만원
+
+[1 rows x 8 columns]
+[2024-01-17T06:53:43.178+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 104 columns]
+[2024-01-17T06:53:43.411+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:53:43.691+0000] {jobinfo_jobplanet.py:539} INFO -                         review_summary  ... result_date
+0  근무환경 쾌적하고 공용 냉장고도 깨끗하다 정수기도 자주 관리해준  ...        0일 후
+
+[1 rows x 8 columns]
+[2024-01-17T06:54:12.534+0000] {jobinfo_jobplanet.py:530} INFO - 클라우드호스피탈 salary information not find
+[2024-01-17T06:54:12.535+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:54:12.540+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 104 columns]
+[2024-01-17T06:54:12.881+0000] {jobinfo_jobplanet.py:200} INFO -           0  ...      7
+0  클라우드호스피탈  ...  정보 없음
+
+[1 rows x 8 columns]
+[2024-01-17T06:54:12.902+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 112 columns]
+[2024-01-17T06:54:13.180+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:54:13.569+0000] {jobinfo_jobplanet.py:539} INFO -                         review_summary  ... result_date
+0  근무환경 쾌적하고 공용 냉장고도 깨끗하다 정수기도 자주 관리해준  ...        0일 후
+
+[1 rows x 8 columns]
+[2024-01-17T06:54:30.907+0000] {jobinfo_jobplanet.py:530} INFO - 클라우드호스피탈 salary information not find
+[2024-01-17T06:54:30.907+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:54:30.909+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 112 columns]
+[2024-01-17T06:54:30.977+0000] {jobinfo_jobplanet.py:200} INFO -           0  ...      7
+0  클라우드호스피탈  ...  정보 없음
+
+[1 rows x 8 columns]
+[2024-01-17T06:54:30.992+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 120 columns]
+[2024-01-17T06:54:31.158+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:54:31.319+0000] {jobinfo_jobplanet.py:539} INFO -                                       review_summary  ... result_date
+0              상식선 이상으로 일을 많이 할 자세가 되어있다면 너무너무 좋은 회사  ...     no data
+1                      워라밸이 개선되고 있다 월부에서는 부자가 될 수 있다  ...     no data
+2                       성장에 진심, 넘사인 분들이 넘치는 팬덤 강한 회사  ...     no data
+3  성장하는 이유를 입사하자마자 느낄 수 있다 여기 오려고 커리어를 쌓았다고 생각이 들...  ...     no data
+4    내가 원하는 모든 것들을 이룰 수 있는 기업, 내부 직원들의 만족도가 매우 높은 기업  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:54:53.492+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:54:53.496+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 120 columns]
+[2024-01-17T06:54:53.587+0000] {jobinfo_jobplanet.py:200} INFO -          0       1  ...        6         7
+0  월급쟁이부자들  있다, 회사  ...  시간을, 면접  8,030 만원
+
+[1 rows x 8 columns]
+[2024-01-17T06:54:53.598+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 128 columns]
+[2024-01-17T06:54:53.801+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:54:54.024+0000] {jobinfo_jobplanet.py:539} INFO -                                       review_summary  ... result_date
+0              상식선 이상으로 일을 많이 할 자세가 되어있다면 너무너무 좋은 회사  ...     no data
+1                      워라밸이 개선되고 있다 월부에서는 부자가 될 수 있다  ...     no data
+2                       성장에 진심, 넘사인 분들이 넘치는 팬덤 강한 회사  ...     no data
+3  성장하는 이유를 입사하자마자 느낄 수 있다 여기 오려고 커리어를 쌓았다고 생각이 들...  ...     no data
+4    내가 원하는 모든 것들을 이룰 수 있는 기업, 내부 직원들의 만족도가 매우 높은 기업  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:55:08.537+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:55:08.540+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 128 columns]
+[2024-01-17T06:55:08.655+0000] {jobinfo_jobplanet.py:200} INFO -          0       1  ...        6         7
+0  월급쟁이부자들  있다, 회사  ...  시간을, 면접  8,030 만원
+
+[1 rows x 8 columns]
+[2024-01-17T06:55:08.677+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 136 columns]
+[2024-01-17T06:55:08.902+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:55:09.132+0000] {jobinfo_jobplanet.py:539} INFO -                                       review_summary  ... result_date
+0                              자유롭지만 체계적이고 즐거운 회사입니다  ...     no data
+1  직원들을 존중해주려고 노력하시는 회사입니다 22년 초까지의 기준이지만 지금도 비슷하...  ...     no data
+2                업무강도는 강하지만 사람좋고 복지좋은 회사 지하철역에서도 가까움  ...     no data
+3                            야근 많음, 동기부여가 전혀되지 않는 회사  ...     no data
+4                              성장통을 겪고 있는 전형적인 스타트업?  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:55:26.426+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:55:26.429+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 136 columns]
+[2024-01-17T06:55:26.554+0000] {jobinfo_jobplanet.py:200} INFO -     0          1         2  ...    5        6         7
+0  로민  회사입니다, 회사  재택근무, 있음  ...  답변을  합니다, 어떤  4,474 만원
+
+[1 rows x 8 columns]
+[2024-01-17T06:55:26.566+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 144 columns]
+[2024-01-17T06:55:26.745+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:55:26.955+0000] {jobinfo_jobplanet.py:539} INFO -                                   review_summary  ... result_date
+0                    업무 능력을 확장시키기에 성장하기 좋은 환경입니다  ...        3일 후
+1                   스타트업이 뭔지, 빠른 성장이 뭔지 알 수 있는 곳  ...     no data
+2  여러가지 업무를 경험할 수 있습니다 그게 장점일지 단점일지는 본인의 판단에 따라…  ...     no data
+3             빠르게 성장하는 스타트업, 패션 이커머스 앱을 혁신할 수 있음  ...     no data
+
+[4 rows x 8 columns]
+[2024-01-17T06:55:42.628+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:55:42.630+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 144 columns]
+[2024-01-17T06:55:42.883+0000] {jobinfo_jobplanet.py:200} INFO -        0  ...         7
+0  블랙탠저린  ...  3,495 만원
+
+[1 rows x 8 columns]
+[2024-01-17T06:55:42.932+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 152 columns]
+[2024-01-17T06:55:43.285+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:55:43.739+0000] {jobinfo_jobplanet.py:539} INFO -   review_summary    merit  ...      hire_way result_date
+0        no data  no data  ...          개인면접       20일 후
+1        no data  no data  ...    토론면접, 개인면접        5일 후
+2        no data  no data  ...  케이스 면접, 개인면접     no data
+3        no data  no data  ...       no data     no data
+4        no data  no data  ...       no data     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:55:59.913+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:55:59.915+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 152 columns]
+[2024-01-17T06:56:00.062+0000] {jobinfo_jobplanet.py:200} INFO -       0   1  ...                                               6         7
+0  파인더스  없음  ...  대해, 상당히, 어떤, 가지고, 받았습니다, 회사에, 편하게, ->, 내가, 성장할  4,791 만원
+
+[1 rows x 8 columns]
+[2024-01-17T06:56:00.081+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 160 columns]
+[2024-01-17T06:56:00.312+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:56:00.483+0000] {jobinfo_jobplanet.py:666} INFO - 론픽 정보 없ㅇ,ㅡ
+[2024-01-17T06:56:00.484+0000] {jobinfo_jobplanet.py:667} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-17T06:56:17.149+0000] {jobinfo_jobplanet.py:530} INFO - 론픽 salary information not find
+[2024-01-17T06:56:17.150+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:56:17.152+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 160 columns]
+[2024-01-17T06:56:17.282+0000] {jobinfo_jobplanet.py:200} INFO -        0      1      2      3      4      5      6      7
+0  정보 없음  정보 없음  정보 없음  정보 없음  정보 없음  정보 없음  정보 없음  정보 없음
+[2024-01-17T06:56:17.296+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 168 columns]
+[2024-01-17T06:56:17.514+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:56:17.728+0000] {jobinfo_jobplanet.py:539} INFO -                                       review_summary  ... result_date
+0      SI업체에 가깝습니다 의심병 걸려서 마이크로 매니징 대표가 팀원들을 힘들게 합니다  ...     no data
+1                     하루하루 내일이 걱정되는 회사입니다 1점도 아까운 기업  ...     no data
+2                              여러가지 일을 할 수 있는 곳입니다!!  ...     no data
+3               자유로운 환경에서 자기가 원하는 기술 스택으로 개발해 볼 수 있음  ...     no data
+4  직원을 정말 소모품만도 못하게 다루는 기업 정말 갈곳이 없는게 아니라면 다시 생각해...  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:56:34.736+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:56:34.740+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 168 columns]
+[2024-01-17T06:56:34.948+0000] {jobinfo_jobplanet.py:200} INFO -        0       1          2                  3   4    5            6         7
+0  비포플레이  기업, 정말  재택근무, 장점이  너무, 생각함, 기획서, 사람을  없음  게임을  1일, 후, 개인면접  3,847 만원
+[2024-01-17T06:56:35.012+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 176 columns]
+[2024-01-17T06:56:35.247+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:56:35.542+0000] {jobinfo_jobplanet.py:539} INFO -                          review_summary  ... result_date
+0  대기업과 스타트업 장단점이 혼재되어있다 장점도 2배, 단점도 2배  ...        3일 후
+1                               no data  ...     no data
+2                               no data  ...     no data
+3                               no data  ...     no data
+4                               no data  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:56:54.971+0000] {jobinfo_jobplanet.py:530} INFO - 롯데헬스케어 salary information not find
+[2024-01-17T06:56:54.971+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:56:54.974+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 176 columns]
+[2024-01-17T06:56:55.111+0000] {jobinfo_jobplanet.py:200} INFO -         0                                            1  ...             6      7
+0  롯데헬스케어  대기업과, 스타트업, 장단점이, 혼재되어있다, 장점도, 2배,, 단점도, 2배  ...  실무, 많이, 필요없는  정보 없음
+
+[1 rows x 8 columns]
+[2024-01-17T06:56:55.134+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 184 columns]
+[2024-01-17T06:56:55.442+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:56:55.730+0000] {jobinfo_jobplanet.py:539} INFO -                          review_summary  ... result_date
+0  대기업과 스타트업 장단점이 혼재되어있다 장점도 2배, 단점도 2배  ...        3일 후
+1                               no data  ...     no data
+2                               no data  ...     no data
+3                               no data  ...     no data
+4                               no data  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:57:12.281+0000] {jobinfo_jobplanet.py:530} INFO - 롯데헬스케어 salary information not find
+[2024-01-17T06:57:12.282+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:57:12.284+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 184 columns]
+[2024-01-17T06:57:12.350+0000] {jobinfo_jobplanet.py:200} INFO -         0                                            1  ...             6      7
+0  롯데헬스케어  대기업과, 스타트업, 장단점이, 혼재되어있다, 장점도, 2배,, 단점도, 2배  ...  실무, 많이, 필요없는  정보 없음
+
+[1 rows x 8 columns]
+[2024-01-17T06:57:12.362+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 192 columns]
+[2024-01-17T06:57:12.525+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:57:12.679+0000] {jobinfo_jobplanet.py:666} INFO - 올라운드닥터스 정보 없ㅇ,ㅡ
+[2024-01-17T06:57:12.679+0000] {jobinfo_jobplanet.py:667} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-17T06:57:26.195+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:57:26.197+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 192 columns]
+[2024-01-17T06:57:26.333+0000] {jobinfo_jobplanet.py:200} INFO -        0      1      2      3      4      5      6        7
+0  정보 없음  정보 없음  정보 없음  정보 없음  정보 없음  정보 없음  정보 없음  no data
+[2024-01-17T06:57:26.362+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 200 columns]
+[2024-01-17T06:57:26.699+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:57:26.897+0000] {jobinfo_jobplanet.py:539} INFO -                                       review_summary  ... result_date
+0                           워라벨은 좋은회사 그냥저냥 다니기 좋은 회사  ...     no data
+1  새로운 IT 비즈니스에 도전하고 있는데 일단 영업력이 좋아서 대기업, 글로벌기업 등...  ...     no data
+2                   출퇴근시간에 교통 편리하지만 시간이 많이 걸리는 단점있네요  ...       16일 후
+3                   여의도에서 음성인식의 A-Z까지 배우고 싶다면 입사 추천함  ...     no data
+4  개인 워라밸 이만한 곳 없다 본인 포지션의 담당 업무를 개인 역량으로 문제없이 수행...  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:57:41.674+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:57:41.677+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 200 columns]
+[2024-01-17T06:57:41.755+0000] {jobinfo_jobplanet.py:200} INFO -      0   1  ...                                                  6         7
+0  다큐브  개인  ...  이전, 프로젝트, 경험으로, 답변했고, 긍정적인, 답변을, 받음, 좋았음, 무난한,...  6,503 만원
+
+[1 rows x 8 columns]
+[2024-01-17T06:57:41.770+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 208 columns]
+[2024-01-17T06:57:41.968+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:57:42.162+0000] {jobinfo_jobplanet.py:539} INFO -                                       review_summary  ... result_date
+0                            자유롭고 수평적이지만 이상하게 별로인 회사  ...        2일 후
+1  의사결정이 합리적이고 상식적인 회사 답답한 부분이 거의 없다 직원들이 말하는 부분들...  ...     no data
+2          자기 할 일만 제대로 한다면 최상의 자유가 보장되는 곳 성장하기 좋은 회사  ...     no data
+3  경영진의 마이크로매니징이 극악입니니다HR에서도 이미 많이 피드백을 받아서 C레벨들의...  ...     no data
+4                                            no data  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:58:02.649+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:58:02.653+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 208 columns]
+[2024-01-17T06:58:02.734+0000] {jobinfo_jobplanet.py:200} INFO -         0   1  ...                                                  6         7
+0  크리에이트립  회사  ...  것, 전체적으로, 젊은, 나이대, 직원들과, 면접을, 진행해서, 편했다, 경험적, 질문은  4,404 만원
+
+[1 rows x 8 columns]
+[2024-01-17T06:58:02.754+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 216 columns]
+[2024-01-17T06:58:02.948+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:58:03.234+0000] {jobinfo_jobplanet.py:539} INFO -                                       review_summary  ... result_date
+0                     약간 공장같은 분위기에 여길 다녀도 될까 의아한 환경?  ...        2일 후
+1  대표가 직원들을 전혀 존중해 주지 않는 회사, 그것으로 인해 직원들이 못 버티고 계...  ...        0일 후
+2                               다양한 개발환경을 경험할 수 있는 곳  ...     no data
+3                               대우받으며 보람차게 일할 수 있는 곳  ...     no data
+4  개발자 중심의 회사이기에 개인별 업무에 독립성이 강한반면, 모두 관계가 좋고 서로를...  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:58:19.369+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:58:19.372+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 216 columns]
+[2024-01-17T06:58:19.476+0000] {jobinfo_jobplanet.py:200} INFO -       0   1  ...                                  6         7
+0  데브툴즈  있는  ...  면접을, 매우, 싶은, 같다, 대표가, 오히려, 같이, 말을  4,640 만원
+
+[1 rows x 8 columns]
+[2024-01-17T06:58:19.500+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 224 columns]
+[2024-01-17T06:58:19.755+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:58:20.052+0000] {jobinfo_jobplanet.py:539} INFO -                            review_summary  ... result_date
+0  누구에게나 평등하게 발언권이 주어지고, 합리적인 의견을 수용하는 기업  ...        1일 후
+1             워라벨이 좋고 업무 강도가 높지 않고 문화가 좋다  ...        0일 후
+2  인턴으로 있었지만 스타트업의 좋은 점을 깨달을 수 있었던 회사였습니다  ...     no data
+3                    합리적고 긍정적인 사람들이 모인 조직  ...     no data
+4       다양한 경험을 쌓으며 수평적인 문화 속에서 클 수 있는 환경  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:58:38.824+0000] {jobinfo_jobplanet.py:530} INFO - 티니어 salary information not find
+[2024-01-17T06:58:38.825+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:58:38.827+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 224 columns]
+[2024-01-17T06:58:38.892+0000] {jobinfo_jobplanet.py:200} INFO -      0                                                  1  ...        6      7
+0  티니어  수, 누구에게나, 평등하게, 발언권이, 주어지고,, 합리적인, 의견을, 수용하는, ...  ...  면접을, 받을  정보 없음
+
+[1 rows x 8 columns]
+[2024-01-17T06:58:38.908+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 232 columns]
+[2024-01-17T06:58:39.093+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:58:39.288+0000] {jobinfo_jobplanet.py:539} INFO -   review_summary    merit  ...            hire_way result_date
+0        no data  no data  ...  인/적성검사, PT면접, 개인면접       14일 후
+1        no data  no data  ...        인/적성검사, 개인면접       14일 후
+2        no data  no data  ...        인/적성검사, 개인면접       30일 후
+3        no data  no data  ...             no data     no data
+4        no data  no data  ...             no data     no data
+
+[5 rows x 8 columns]
+[2024-01-17T06:58:55.574+0000] {jobinfo_jobplanet.py:195} INFO - summary file upload s3
+[2024-01-17T06:58:55.577+0000] {jobinfo_jobplanet.py:199} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 232 columns]
+[2024-01-17T06:58:55.765+0000] {jobinfo_jobplanet.py:200} INFO -          0   1   2  ...                    5                          6         7
+0  키다리스튜디오  없음  없음  ...  질문, 자기소개, 기반으로, 기억에  많이, 살짝, 많은, 때문에, 어려운, 질문을  3,548 만원
+
+[1 rows x 8 columns]
+[2024-01-17T06:58:55.791+0000] {jobinfo_jobplanet.py:203} INFO -      0    1    2  ... merit_summary question_summary review_summary
+0  NaN  NaN  NaN  ...            회사               없음     메이븐클라우드서비스
+1  NaN  NaN  NaN  ...           NaN              NaN            NaN
+2  NaN  NaN  NaN  ...           NaN              NaN            NaN
+3  NaN  NaN  NaN  ...           NaN              NaN            NaN
+4  NaN  NaN  NaN  ...           NaN              NaN            NaN
+
+[5 rows x 240 columns]
+[2024-01-17T06:58:56.084+0000] {jobinfo_jobplanet.py:207} INFO - Data appended successfully.
+[2024-01-17T06:58:56.594+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-01-17T06:58:56.635+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_jobplanet, task_id=jobplanet_login, execution_date=20240117T064916, start_date=20240117T064921, end_date=20240117T065856
+[2024-01-17T06:58:56.754+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-17T06:58:56.800+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

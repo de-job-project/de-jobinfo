@@ -1,0 +1,47 @@
+[2024-01-15T11:53:36.216+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_slack.send_slack_postAndReview scheduled__2024-01-14T10:00:00+00:00 [queued]>
+[2024-01-15T11:53:36.224+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_slack.send_slack_postAndReview scheduled__2024-01-14T10:00:00+00:00 [queued]>
+[2024-01-15T11:53:36.224+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-15T11:53:36.224+0000] {taskinstance.py:1280} INFO - Starting attempt 2 of 2
+[2024-01-15T11:53:36.224+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-15T11:53:36.240+0000] {taskinstance.py:1300} INFO - Executing <Task(SlackWebhookOperator): send_slack_postAndReview> on 2024-01-14 10:00:00+00:00
+[2024-01-15T11:53:36.245+0000] {standard_task_runner.py:55} INFO - Started process 34888 to run task
+[2024-01-15T11:53:36.247+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_slack', 'send_slack_postAndReview', 'scheduled__2024-01-14T10:00:00+00:00', '--job-id', '607', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_slack.py', '--cfg-path', '/tmp/tmpnit47qto']
+[2024-01-15T11:53:36.248+0000] {standard_task_runner.py:83} INFO - Job 607: Subtask send_slack_postAndReview
+[2024-01-15T11:53:36.299+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_slack.send_slack_postAndReview scheduled__2024-01-14T10:00:00+00:00 [running]> on host 565f6bcc10b6
+[2024-01-15T11:53:36.377+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_slack
+AIRFLOW_CTX_TASK_ID=send_slack_postAndReview
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-14T10:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-01-14T10:00:00+00:00
+[2024-01-15T11:53:36.378+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/slack/operators/slack_webhook.py:173: UserWarning: Found unexpected keyword-argument(s) 'link_names' in `send` method. This argument(s) have no effect.
+  link_names=self.link_names,
+
+[2024-01-15T11:53:36.393+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/slack/operators/slack_webhook.py", line 173, in execute
+    link_names=self.link_names,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/slack/hooks/slack_webhook.py", line 425, in send
+    return self.send_dict(body=body, headers=headers)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/slack/hooks/slack_webhook.py", line 47, in wrapper
+    resp = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/slack/hooks/slack_webhook.py", line 375, in send_dict
+    return self.client.send_dict(body, headers=headers)
+  File "/home/airflow/.local/lib/python3.7/site-packages/cached_property.py", line 36, in __get__
+    value = obj.__dict__[self.func.__name__] = self.func(obj)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/slack/hooks/slack_webhook.py", line 226, in client
+    return WebhookClient(**self._get_conn_params())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/slack/hooks/slack_webhook.py", line 246, in _get_conn_params
+    conn = self.get_connection(self.slack_webhook_conn_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 435, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `slack_conn` isn't defined
+[2024-01-15T11:53:36.396+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=jobinfo_slack, task_id=send_slack_postAndReview, execution_date=20240114T100000, start_date=20240115T115336, end_date=20240115T115336
+[2024-01-15T11:53:36.414+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 607 for task send_slack_postAndReview (The conn_id `slack_conn` isn't defined; 34888)
+[2024-01-15T11:53:36.421+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-15T11:53:36.451+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

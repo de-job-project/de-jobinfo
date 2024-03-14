@@ -1,0 +1,35 @@
+[2024-01-14T08:16:54.550+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-14T08:16:47.586463+00:00 [queued]>
+[2024-01-14T08:16:54.560+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-14T08:16:47.586463+00:00 [queued]>
+[2024-01-14T08:16:54.561+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T08:16:54.561+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-14T08:16:54.561+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T08:16:54.588+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): create_infomation_s3> on 2024-01-14 08:16:47.586463+00:00
+[2024-01-14T08:16:54.595+0000] {standard_task_runner.py:55} INFO - Started process 12063 to run task
+[2024-01-14T08:16:54.598+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'create_infomation_s3', 'manual__2024-01-14T08:16:47.586463+00:00', '--job-id', '416', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmp9l3mj836']
+[2024-01-14T08:16:54.599+0000] {standard_task_runner.py:83} INFO - Job 416: Subtask create_infomation_s3
+[2024-01-14T08:16:54.879+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-14T08:16:47.586463+00:00 [running]> on host 7b77d04f99d6
+[2024-01-14T08:16:55.040+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=create_infomation_s3
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-14T08:16:47.586463+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-14T08:16:47.586463+00:00
+[2024-01-14T08:17:00.845+0000] {jobinfo_jobplanet.py:79} INFO - 11111111111111111
+[2024-01-14T08:17:00.912+0000] {jobinfo_jobplanet.py:87} INFO - 2222222222222222222222222
+[2024-01-14T08:17:01.039+0000] {jobinfo_jobplanet.py:93} INFO - driver.page_source
+[2024-01-14T08:17:01.719+0000] {jobinfo_jobplanet.py:95} INFO - driver.page_source
+[2024-01-14T08:17:01.736+0000] {jobinfo_jobplanet.py:97} INFO - 33333333333333333
+[2024-01-14T08:17:01.773+0000] {jobinfo_jobplanet.py:100} INFO - driver
+[2024-01-14T08:17:02.077+0000] {jobinfo_jobplanet.py:102} INFO - driver
+[2024-01-14T08:17:02.100+0000] {jobinfo_jobplanet.py:107} INFO - driver
+[2024-01-14T08:17:02.484+0000] {jobinfo_jobplanet.py:109} INFO - driver
+[2024-01-14T08:17:02.491+0000] {jobinfo_jobplanet.py:111} INFO - 4444444444444
+[2024-01-14T08:17:02.591+0000] {logging_mixin.py:137} INFO - Companies from XCom: []
+[2024-01-14T08:17:02.592+0000] {logging_mixin.py:137} INFO - Companies list is empty. Exiting the function.
+[2024-01-14T08:17:02.592+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-01-14T08:17:02.604+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_jobplanet, task_id=create_infomation_s3, execution_date=20240114T081647, start_date=20240114T081654, end_date=20240114T081702
+[2024-01-14T08:17:02.674+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-14T08:17:02.971+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

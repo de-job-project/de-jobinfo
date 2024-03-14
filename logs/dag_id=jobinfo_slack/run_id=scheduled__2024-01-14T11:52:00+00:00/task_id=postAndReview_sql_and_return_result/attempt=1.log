@@ -1,0 +1,101 @@
+[2024-01-15T11:53:39.608+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_slack.postAndReview_sql_and_return_result scheduled__2024-01-14T11:52:00+00:00 [queued]>
+[2024-01-15T11:53:39.617+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_slack.postAndReview_sql_and_return_result scheduled__2024-01-14T11:52:00+00:00 [queued]>
+[2024-01-15T11:53:39.618+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-15T11:53:39.618+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2024-01-15T11:53:39.618+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-15T11:53:39.641+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): postAndReview_sql_and_return_result> on 2024-01-14 11:52:00+00:00
+[2024-01-15T11:53:39.652+0000] {standard_task_runner.py:55} INFO - Started process 34892 to run task
+[2024-01-15T11:53:39.656+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_slack', 'postAndReview_sql_and_return_result', 'scheduled__2024-01-14T11:52:00+00:00', '--job-id', '609', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_slack.py', '--cfg-path', '/tmp/tmpt03dc1tm']
+[2024-01-15T11:53:39.656+0000] {standard_task_runner.py:83} INFO - Job 609: Subtask postAndReview_sql_and_return_result
+[2024-01-15T11:53:39.740+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_slack.postAndReview_sql_and_return_result scheduled__2024-01-14T11:52:00+00:00 [running]> on host 565f6bcc10b6
+[2024-01-15T11:53:39.842+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_slack
+AIRFLOW_CTX_TASK_ID=postAndReview_sql_and_return_result
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-14T11:52:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-01-14T11:52:00+00:00
+[2024-01-15T11:53:39.853+0000] {base.py:73} INFO - Using connection ID 'rds_conn' for task execution.
+[2024-01-15T11:53:39.906+0000] {logging_mixin.py:137} INFO - +----------------------+-------------------------------------------+----------------------------------------------------------------------------------------------+----------------+------------+-----------------------------------------+
+|       company        |                  position                 |                                            skills                                            | average_salary |  due_date  |                   link                  |
++----------------------+-------------------------------------------+----------------------------------------------------------------------------------------------+----------------+------------+-----------------------------------------+
+|      오케스트로      |          지능형클라우드R&D 연구원         |                            Python· Jira· R· SQL· AI/인공지능· Git                            |   3,014 만원   |    상시    | https://www.jumpit.co.kr/position/12803 |
+|      오케스트로      |          지능형클라우드R&D 연구원         |                            Python· Jira· R· SQL· AI/인공지능· Git                            |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/12803 |
+|    제니스앤컴퍼니    |  Azure기반의클라우드솔루션 Presales 채용  |                                            AZURE                                             |   3,307 만원   |    상시    | https://www.jumpit.co.kr/position/13741 |
+|    제니스앤컴퍼니    |         클라우드보안 엔지니어 채용        |                                         AZURE· CISSP                                         |   3,307 만원   |    상시    | https://www.jumpit.co.kr/position/13742 |
+|    제니스앤컴퍼니    |         클라우드보안 컨설턴트 채용        |                                         AZURE· CISSP                                         |   3,307 만원   |    상시    | https://www.jumpit.co.kr/position/13744 |
+|     롯데헬스케어     |      커머스백엔드엔지니어 (개발 리더)     |                                   MySQL· Python· AWS· GCP                                    |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/14572 |
+|     롯데헬스케어     |      서비스백엔드엔지니어 (개발 리더)     |                                    AWS· GCP· Java· Python                                    |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/14576 |
+|      스윗코리아      |         클라우드엔지니어 (팀리더)         |                        ips· aws waf· l2· l3· l4· l7· linux· git· gcp                         |   5,270 만원   |    상시    | https://www.jumpit.co.kr/position/15114 |
+|      스윗코리아      | 클라우드엔지니어 Cloud Engineer (3년이상) |         ips· aws waf· linux· git· terraform· kubernetes· gcp· google cloud platform          |   5,270 만원   |    상시    | https://www.jumpit.co.kr/position/15115 |
+|     크리에이트립     |              백엔드파트 리더              | Node.js· NestJS· AWS· TypeORM· TypeScript· gRPC· GraphQL· Mongoose· Terraform· Redis· Sentry |   4,431 만원   |    상시    | https://www.jumpit.co.kr/position/16032 |
+|       파인더스       |             백엔드개발자 채용             |         Java· Spring Boot· Spring Data JPA· MariaDB· NestJS· MongoDB· AWS· REST API          |   4,781 만원   |    상시    | https://www.jumpit.co.kr/position/16929 |
+|      오케스트로      |        Cloud Infra Engineer (대전)        |            Java· Spring· Vue.js· OpenStack· Kubernetes· vmware· Confluence· Jira             |   3,014 만원   |    상시    | https://www.jumpit.co.kr/position/17844 |
+|      오케스트로      |        Cloud Infra Engineer (대전)        |            Java· Spring· Vue.js· OpenStack· Kubernetes· vmware· Confluence· Jira             |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/17844 |
+|      오케스트로      |   지능형클라우드R&D 연구원(전문연구요원)  |                                Python· Linux· AWS· GCP· AZURE                                |   3,014 만원   |    상시    | https://www.jumpit.co.kr/position/17894 |
+|      오케스트로      |   지능형클라우드R&D 연구원(전문연구요원)  |                                Python· Linux· AWS· GCP· AZURE                                |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/17894 |
+|    키다리스튜디오    |                백엔드개발자               |                          Java· Kotlin· Spring· MySQL· AWS· Git Flow                          |   3,513 만원   |    상시    | https://www.jumpit.co.kr/position/18846 |
+|     파킹클라우드     | [SK계열사] 자바 백엔드 개발자(클라우드팀) |                                Java· Spring Boot· NoSql· RDB                                 |   3,082 만원   |    상시    | https://www.jumpit.co.kr/position/19409 |
+|      오케스트로      |            Cloud Architect (TA)           |                                       HW· SW· Network                                        |   3,014 만원   |    상시    | https://www.jumpit.co.kr/position/19865 |
+|      오케스트로      |            Cloud Architect (TA)           |                                       HW· SW· Network                                        |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/19865 |
+|      오케스트로      |        Cloud Infra Operation (광주)       |                            HW· SW· OpenStack· Kubernetes· Network                            |   3,014 만원   |    상시    | https://www.jumpit.co.kr/position/19871 |
+|      오케스트로      |        Cloud Infra Operation (광주)       |                            HW· SW· OpenStack· Kubernetes· Network                            |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/19871 |
+|      오케스트로      |        Cloud Infra Operation (대구)       |                                HW· SW· OpenStack· Kubernetes                                 |   3,014 만원   |    상시    | https://www.jumpit.co.kr/position/19880 |
+|      오케스트로      |        Cloud Infra Operation (대구)       |                                HW· SW· OpenStack· Kubernetes                                 |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/19880 |
+|    월급쟁이부자들    |     [월급쟁이부자들]백엔드엔지니어(BE)    |                 Java· Spring· Spring Boot· AWS· GCP· Jira· notion.so· Kotlin                 |   7,982 만원   |    상시    | https://www.jumpit.co.kr/position/20198 |
+|    월급쟁이부자들    |      [월급쟁이부자들]백엔드개발 리드      |                    Java· AWS· Spring· GCP· notion.so· Spring Boot· Kotlin                    |   7,982 만원   |    상시    | https://www.jumpit.co.kr/position/20199 |
+|      비포플레이      |                백엔드개발자               |                                         Node.js· AWS                                         |   3,831 만원   |    상시    | https://www.jumpit.co.kr/position/20941 |
+|       엠아이티       |       클라우드인프라 운영 (울산센터)      |                          MSA· Azure DevOps· AWS· AZURE· Kubernetes                           |   3,073 만원   |    상시    | https://www.jumpit.co.kr/position/21047 |
+|       엠아이티       |       클라우드인프라 운영 (서울센터)      |                          MSA· Azure DevOps· AWS· AZURE· Kubernetes                           |   3,073 만원   |    상시    | https://www.jumpit.co.kr/position/21070 |
+| 메이븐클라우드서비스 |          클라우드인프라 엔지니어          |                               Network· IBM Containers· Node.js                               |   3,675 만원   |    상시    | https://www.jumpit.co.kr/position/21531 |
+|      오케스트로      |      Opensource / Middleware Engineer     |                          Terraform· Ansible· Linux· Windows· Python                          |   3,014 만원   |    상시    | https://www.jumpit.co.kr/position/21701 |
+|      오케스트로      |      Opensource / Middleware Engineer     |                          Terraform· Ansible· Linux· Windows· Python                          |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/21701 |
+|         로민         |               백엔드엔지니어              |                Python· PostgreSQL· FastAPI· Docker· CircleCI· AWS· GCP· Linux                |   4,482 만원   | 2024-01-31 | https://www.jumpit.co.kr/position/21982 |
+|     마크클라우드     |                백엔드개발자               |         Python· MongoDB· Elasticsearch· Docker· NGINX· MariaDB· AWS· Linux· FastAPI          |   3,523 만원   | 2024-01-31 | https://www.jumpit.co.kr/position/22130 |
+|        티니어        |           백엔드서버 개발자 채용          |                     AWS· Java· Spring Boot· RDB· Spring Data JPA· MySQL                      |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/22225 |
+|       데브툴즈       |                백엔드개발자               |                                 Go· Node.js· NoSql· REST API                                 |   4,648 만원   | 2024-02-08 | https://www.jumpit.co.kr/position/22253 |
++----------------------+-------------------------------------------+----------------------------------------------------------------------------------------------+----------------+------------+-----------------------------------------+
+[2024-01-15T11:53:39.907+0000] {python.py:177} INFO - Done. Returned value was: +----------------------+-------------------------------------------+----------------------------------------------------------------------------------------------+----------------+------------+-----------------------------------------+
+|       company        |                  position                 |                                            skills                                            | average_salary |  due_date  |                   link                  |
++----------------------+-------------------------------------------+----------------------------------------------------------------------------------------------+----------------+------------+-----------------------------------------+
+|      오케스트로      |          지능형클라우드R&D 연구원         |                            Python· Jira· R· SQL· AI/인공지능· Git                            |   3,014 만원   |    상시    | https://www.jumpit.co.kr/position/12803 |
+|      오케스트로      |          지능형클라우드R&D 연구원         |                            Python· Jira· R· SQL· AI/인공지능· Git                            |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/12803 |
+|    제니스앤컴퍼니    |  Azure기반의클라우드솔루션 Presales 채용  |                                            AZURE                                             |   3,307 만원   |    상시    | https://www.jumpit.co.kr/position/13741 |
+|    제니스앤컴퍼니    |         클라우드보안 엔지니어 채용        |                                         AZURE· CISSP                                         |   3,307 만원   |    상시    | https://www.jumpit.co.kr/position/13742 |
+|    제니스앤컴퍼니    |         클라우드보안 컨설턴트 채용        |                                         AZURE· CISSP                                         |   3,307 만원   |    상시    | https://www.jumpit.co.kr/position/13744 |
+|     롯데헬스케어     |      커머스백엔드엔지니어 (개발 리더)     |                                   MySQL· Python· AWS· GCP                                    |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/14572 |
+|     롯데헬스케어     |      서비스백엔드엔지니어 (개발 리더)     |                                    AWS· GCP· Java· Python                                    |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/14576 |
+|      스윗코리아      |         클라우드엔지니어 (팀리더)         |                        ips· aws waf· l2· l3· l4· l7· linux· git· gcp                         |   5,270 만원   |    상시    | https://www.jumpit.co.kr/position/15114 |
+|      스윗코리아      | 클라우드엔지니어 Cloud Engineer (3년이상) |         ips· aws waf· linux· git· terraform· kubernetes· gcp· google cloud platform          |   5,270 만원   |    상시    | https://www.jumpit.co.kr/position/15115 |
+|     크리에이트립     |              백엔드파트 리더              | Node.js· NestJS· AWS· TypeORM· TypeScript· gRPC· GraphQL· Mongoose· Terraform· Redis· Sentry |   4,431 만원   |    상시    | https://www.jumpit.co.kr/position/16032 |
+|       파인더스       |             백엔드개발자 채용             |         Java· Spring Boot· Spring Data JPA· MariaDB· NestJS· MongoDB· AWS· REST API          |   4,781 만원   |    상시    | https://www.jumpit.co.kr/position/16929 |
+|      오케스트로      |        Cloud Infra Engineer (대전)        |            Java· Spring· Vue.js· OpenStack· Kubernetes· vmware· Confluence· Jira             |   3,014 만원   |    상시    | https://www.jumpit.co.kr/position/17844 |
+|      오케스트로      |        Cloud Infra Engineer (대전)        |            Java· Spring· Vue.js· OpenStack· Kubernetes· vmware· Confluence· Jira             |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/17844 |
+|      오케스트로      |   지능형클라우드R&D 연구원(전문연구요원)  |                                Python· Linux· AWS· GCP· AZURE                                |   3,014 만원   |    상시    | https://www.jumpit.co.kr/position/17894 |
+|      오케스트로      |   지능형클라우드R&D 연구원(전문연구요원)  |                                Python· Linux· AWS· GCP· AZURE                                |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/17894 |
+|    키다리스튜디오    |                백엔드개발자               |                          Java· Kotlin· Spring· MySQL· AWS· Git Flow                          |   3,513 만원   |    상시    | https://www.jumpit.co.kr/position/18846 |
+|     파킹클라우드     | [SK계열사] 자바 백엔드 개발자(클라우드팀) |                                Java· Spring Boot· NoSql· RDB                                 |   3,082 만원   |    상시    | https://www.jumpit.co.kr/position/19409 |
+|      오케스트로      |            Cloud Architect (TA)           |                                       HW· SW· Network                                        |   3,014 만원   |    상시    | https://www.jumpit.co.kr/position/19865 |
+|      오케스트로      |            Cloud Architect (TA)           |                                       HW· SW· Network                                        |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/19865 |
+|      오케스트로      |        Cloud Infra Operation (광주)       |                            HW· SW· OpenStack· Kubernetes· Network                            |   3,014 만원   |    상시    | https://www.jumpit.co.kr/position/19871 |
+|      오케스트로      |        Cloud Infra Operation (광주)       |                            HW· SW· OpenStack· Kubernetes· Network                            |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/19871 |
+|      오케스트로      |        Cloud Infra Operation (대구)       |                                HW· SW· OpenStack· Kubernetes                                 |   3,014 만원   |    상시    | https://www.jumpit.co.kr/position/19880 |
+|      오케스트로      |        Cloud Infra Operation (대구)       |                                HW· SW· OpenStack· Kubernetes                                 |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/19880 |
+|    월급쟁이부자들    |     [월급쟁이부자들]백엔드엔지니어(BE)    |                 Java· Spring· Spring Boot· AWS· GCP· Jira· notion.so· Kotlin                 |   7,982 만원   |    상시    | https://www.jumpit.co.kr/position/20198 |
+|    월급쟁이부자들    |      [월급쟁이부자들]백엔드개발 리드      |                    Java· AWS· Spring· GCP· notion.so· Spring Boot· Kotlin                    |   7,982 만원   |    상시    | https://www.jumpit.co.kr/position/20199 |
+|      비포플레이      |                백엔드개발자               |                                         Node.js· AWS                                         |   3,831 만원   |    상시    | https://www.jumpit.co.kr/position/20941 |
+|       엠아이티       |       클라우드인프라 운영 (울산센터)      |                          MSA· Azure DevOps· AWS· AZURE· Kubernetes                           |   3,073 만원   |    상시    | https://www.jumpit.co.kr/position/21047 |
+|       엠아이티       |       클라우드인프라 운영 (서울센터)      |                          MSA· Azure DevOps· AWS· AZURE· Kubernetes                           |   3,073 만원   |    상시    | https://www.jumpit.co.kr/position/21070 |
+| 메이븐클라우드서비스 |          클라우드인프라 엔지니어          |                               Network· IBM Containers· Node.js                               |   3,675 만원   |    상시    | https://www.jumpit.co.kr/position/21531 |
+|      오케스트로      |      Opensource / Middleware Engineer     |                          Terraform· Ansible· Linux· Windows· Python                          |   3,014 만원   |    상시    | https://www.jumpit.co.kr/position/21701 |
+|      오케스트로      |      Opensource / Middleware Engineer     |                          Terraform· Ansible· Linux· Windows· Python                          |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/21701 |
+|         로민         |               백엔드엔지니어              |                Python· PostgreSQL· FastAPI· Docker· CircleCI· AWS· GCP· Linux                |   4,482 만원   | 2024-01-31 | https://www.jumpit.co.kr/position/21982 |
+|     마크클라우드     |                백엔드개발자               |         Python· MongoDB· Elasticsearch· Docker· NGINX· MariaDB· AWS· Linux· FastAPI          |   3,523 만원   | 2024-01-31 | https://www.jumpit.co.kr/position/22130 |
+|        티니어        |           백엔드서버 개발자 채용          |                     AWS· Java· Spring Boot· RDB· Spring Data JPA· MySQL                      |   정보 없음    |    상시    | https://www.jumpit.co.kr/position/22225 |
+|       데브툴즈       |                백엔드개발자               |                                 Go· Node.js· NoSql· REST API                                 |   4,648 만원   | 2024-02-08 | https://www.jumpit.co.kr/position/22253 |
++----------------------+-------------------------------------------+----------------------------------------------------------------------------------------------+----------------+------------+-----------------------------------------+
+[2024-01-15T11:53:39.941+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_slack, task_id=postAndReview_sql_and_return_result, execution_date=20240114T115200, start_date=20240115T115339, end_date=20240115T115339
+[2024-01-15T11:53:39.991+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-15T11:53:40.065+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

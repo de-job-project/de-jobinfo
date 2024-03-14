@@ -1,0 +1,46 @@
+[2024-01-10T19:07:32.271+0000] {processor.py:153} INFO - Started process (PID=53) to work on /opt/airflow/dags/mysql_test_3.py
+[2024-01-10T19:07:32.273+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mysql_test_3.py for tasks to queue
+[2024-01-10T19:07:32.276+0000] {logging_mixin.py:137} INFO - [2024-01-10T19:07:32.276+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mysql_test_3.py
+[2024-01-10T19:07:32.546+0000] {logging_mixin.py:137} INFO - [2024-01-10T19:07:32.537+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/mysql_test_3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/mysql_test_3.py", line 63, in <module>
+    dag=dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/slack/operators/slack_webhook.py", line 137, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to SlackWebhookOperator (task_id: send_slack). Invalid arguments were:
+**kwargs: {'sql': '\n    SELECT jobinfo_test.table_1.company, position, location, review\n    FROM jobinfo_test.table_1\n    JOIN jobinfo_test.table_2\n    ON jobinfo_test.table_1.company = jobinfo_test.table_2.company;\n'}
+[2024-01-10T19:07:32.549+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/mysql_test_3.py
+[2024-01-10T19:07:32.589+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mysql_test_3.py took 0.329 seconds
+[2024-01-10T19:08:02.627+0000] {processor.py:153} INFO - Started process (PID=129) to work on /opt/airflow/dags/mysql_test_3.py
+[2024-01-10T19:08:02.628+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mysql_test_3.py for tasks to queue
+[2024-01-10T19:08:02.629+0000] {logging_mixin.py:137} INFO - [2024-01-10T19:08:02.629+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mysql_test_3.py
+[2024-01-10T19:08:02.694+0000] {logging_mixin.py:137} INFO - [2024-01-10T19:08:02.689+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/mysql_test_3.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/mysql_test_3.py", line 63, in <module>
+    dag=dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/slack/operators/slack_webhook.py", line 137, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to SlackWebhookOperator (task_id: send_slack). Invalid arguments were:
+**kwargs: {'sql': '\n    SELECT jobinfo_test.table_1.company, position, location, review\n    FROM jobinfo_test.table_1\n    JOIN jobinfo_test.table_2\n    ON jobinfo_test.table_1.company = jobinfo_test.table_2.company;\n'}
+[2024-01-10T19:08:02.695+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/mysql_test_3.py
+[2024-01-10T19:08:02.719+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mysql_test_3.py took 0.095 seconds

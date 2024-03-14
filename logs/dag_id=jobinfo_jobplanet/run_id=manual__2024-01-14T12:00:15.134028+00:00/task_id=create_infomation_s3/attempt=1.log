@@ -1,0 +1,40 @@
+[2024-01-14T12:00:24.682+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-14T12:00:15.134028+00:00 [queued]>
+[2024-01-14T12:00:24.695+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-14T12:00:15.134028+00:00 [queued]>
+[2024-01-14T12:00:24.696+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T12:00:24.696+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-14T12:00:24.696+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T12:00:24.742+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): create_infomation_s3> on 2024-01-14 12:00:15.134028+00:00
+[2024-01-14T12:00:24.752+0000] {standard_task_runner.py:55} INFO - Started process 23216 to run task
+[2024-01-14T12:00:24.759+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'create_infomation_s3', 'manual__2024-01-14T12:00:15.134028+00:00', '--job-id', '479', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmpgu6bruqr']
+[2024-01-14T12:00:24.760+0000] {standard_task_runner.py:83} INFO - Job 479: Subtask create_infomation_s3
+[2024-01-14T12:00:24.882+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-14T12:00:15.134028+00:00 [running]> on host 7b77d04f99d6
+[2024-01-14T12:00:25.014+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=create_infomation_s3
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-14T12:00:15.134028+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-14T12:00:15.134028+00:00
+[2024-01-14T12:00:29.877+0000] {jobinfo_jobplanet.py:76} INFO - *********************************
+[2024-01-14T12:00:29.897+0000] {jobinfo_jobplanet.py:82} INFO - 12212121313442342354534634534534534534523423443423
+[2024-01-14T12:00:29.897+0000] {jobinfo_jobplanet.py:83} INFO - <selenium.webdriver.remote.webdriver.WebDriver (session="bad2043204c75ff74d930dc52c32bb7b")>
+[2024-01-14T12:00:30.060+0000] {jobinfo_jobplanet.py:86} INFO - 890u8987978078978978079078097807897809789789789789789797
+[2024-01-14T12:00:30.868+0000] {jobinfo_jobplanet.py:89} INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-01-14T12:00:31.646+0000] {jobinfo_jobplanet.py:100} INFO - 3333333333333333333333333
+[2024-01-14T12:00:31.726+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 142, in create_infomation_s3
+    driver = jobplanet_login()
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 102, in jobplanet_login
+    companies = kwargs['ti'].xcom_pull(task_ids='load_jumpit_file')
+KeyError: 'ti'
+[2024-01-14T12:00:31.734+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=jobinfo_jobplanet, task_id=create_infomation_s3, execution_date=20240114T120015, start_date=20240114T120024, end_date=20240114T120031
+[2024-01-14T12:00:31.751+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 479 for task create_infomation_s3 ('ti'; 23216)
+[2024-01-14T12:00:31.775+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-14T12:00:31.822+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

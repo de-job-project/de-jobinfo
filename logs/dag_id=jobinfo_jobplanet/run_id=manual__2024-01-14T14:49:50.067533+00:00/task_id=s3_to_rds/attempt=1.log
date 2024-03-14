@@ -1,0 +1,40 @@
+[2024-01-14T14:56:30.721+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.s3_to_rds manual__2024-01-14T14:49:50.067533+00:00 [queued]>
+[2024-01-14T14:56:30.730+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.s3_to_rds manual__2024-01-14T14:49:50.067533+00:00 [queued]>
+[2024-01-14T14:56:30.730+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T14:56:30.731+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-14T14:56:30.731+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T14:56:30.753+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): s3_to_rds> on 2024-01-14 14:49:50.067533+00:00
+[2024-01-14T14:56:30.764+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 's3_to_rds', 'manual__2024-01-14T14:49:50.067533+00:00', '--job-id', '520', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmpqi41f3k8']
+[2024-01-14T14:56:30.765+0000] {standard_task_runner.py:83} INFO - Job 520: Subtask s3_to_rds
+[2024-01-14T14:56:30.764+0000] {standard_task_runner.py:55} INFO - Started process 4555 to run task
+[2024-01-14T14:56:30.855+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.s3_to_rds manual__2024-01-14T14:49:50.067533+00:00 [running]> on host 565f6bcc10b6
+[2024-01-14T14:56:30.951+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=s3_to_rds
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-14T14:49:50.067533+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-14T14:49:50.067533+00:00
+[2024-01-14T14:56:30.968+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:56:31.189+0000] {base.py:73} INFO - Using connection ID 'rds_conn' for task execution.
+[2024-01-14T14:56:31.390+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 696, in s3_to_rds
+    cur.execute(delete_query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1046, 'No database selected')
+[2024-01-14T14:56:31.400+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=jobinfo_jobplanet, task_id=s3_to_rds, execution_date=20240114T144950, start_date=20240114T145630, end_date=20240114T145631
+[2024-01-14T14:56:31.421+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 520 for task s3_to_rds ((1046, 'No database selected'); 4555)
+[2024-01-14T14:56:31.465+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-14T14:56:31.481+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

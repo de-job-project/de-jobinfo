@@ -1,0 +1,27 @@
+[2024-01-10T18:51:43.979+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: mysql_test_2.execute_sql_and_return_result manual__2024-01-10T18:51:38.587070+00:00 [queued]>
+[2024-01-10T18:51:44.000+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: mysql_test_2.execute_sql_and_return_result manual__2024-01-10T18:51:38.587070+00:00 [queued]>
+[2024-01-10T18:51:44.001+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-10T18:51:44.002+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2024-01-10T18:51:44.002+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-10T18:51:44.039+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): execute_sql_and_return_result> on 2024-01-10 18:51:38.587070+00:00
+[2024-01-10T18:51:44.045+0000] {standard_task_runner.py:55} INFO - Started process 750 to run task
+[2024-01-10T18:51:44.051+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'mysql_test_2', 'execute_sql_and_return_result', 'manual__2024-01-10T18:51:38.587070+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/mysql_test_2.py', '--cfg-path', '/tmp/tmp5s1i1j35']
+[2024-01-10T18:51:44.052+0000] {standard_task_runner.py:83} INFO - Job 30: Subtask execute_sql_and_return_result
+[2024-01-10T18:51:44.184+0000] {task_command.py:388} INFO - Running <TaskInstance: mysql_test_2.execute_sql_and_return_result manual__2024-01-10T18:51:38.587070+00:00 [running]> on host 1064147bcaa7
+[2024-01-10T18:51:44.357+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=mysql_test_2
+AIRFLOW_CTX_TASK_ID=execute_sql_and_return_result
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-10T18:51:38.587070+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-10T18:51:38.587070+00:00
+[2024-01-10T18:51:44.360+0000] {python.py:177} INFO - Done. Returned value was: SELECT jobinfo_test.table_1.company, position, location, review
+                FROM jobinfo_test.table_1
+                JOIN jobinfo_test.table_2
+                ON jobinfo_test.table_1.company = jobinfo_test.table_2.company;
+    
+[2024-01-10T18:51:44.414+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=mysql_test_2, task_id=execute_sql_and_return_result, execution_date=20240110T185138, start_date=20240110T185143, end_date=20240110T185144
+[2024-01-10T18:51:44.464+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-10T18:51:44.517+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

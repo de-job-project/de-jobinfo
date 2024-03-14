@@ -1,0 +1,33 @@
+[2024-01-17T00:40:57.633+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_slack.postAndReview_sql_and_return_result manual__2024-01-16T10:03:15.155899+00:00 [queued]>
+[2024-01-17T00:40:57.642+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_slack.postAndReview_sql_and_return_result manual__2024-01-16T10:03:15.155899+00:00 [queued]>
+[2024-01-17T00:40:57.643+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-17T00:40:57.643+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2024-01-17T00:40:57.643+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-17T00:40:57.665+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): postAndReview_sql_and_return_result> on 2024-01-16 10:03:15.155899+00:00
+[2024-01-17T00:40:57.670+0000] {standard_task_runner.py:55} INFO - Started process 13036 to run task
+[2024-01-17T00:40:57.674+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_slack', 'postAndReview_sql_and_return_result', 'manual__2024-01-16T10:03:15.155899+00:00', '--job-id', '4308', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_slack.py', '--cfg-path', '/tmp/tmpatnbwoqf']
+[2024-01-17T00:40:57.675+0000] {standard_task_runner.py:83} INFO - Job 4308: Subtask postAndReview_sql_and_return_result
+[2024-01-17T00:40:57.736+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_slack.postAndReview_sql_and_return_result manual__2024-01-16T10:03:15.155899+00:00 [running]> on host 565f6bcc10b6
+[2024-01-17T00:40:57.849+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_slack
+AIRFLOW_CTX_TASK_ID=postAndReview_sql_and_return_result
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-16T10:03:15.155899+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-16T10:03:15.155899+00:00
+[2024-01-17T00:40:57.864+0000] {base.py:73} INFO - Using connection ID 'rds_conn' for task execution.
+[2024-01-17T00:40:57.988+0000] {logging_mixin.py:137} INFO - +--------+-----------+-----------+---------------------+
+| 회사명 |    장점   |    단점   | 면접 분위기 및 답변 |
++--------+-----------+-----------+---------------------+
+| 다큐브 | 정보 없음 | 정보 없음 |      정보 없음      |
++--------+-----------+-----------+---------------------+
+[2024-01-17T00:40:57.989+0000] {python.py:177} INFO - Done. Returned value was: +--------+-----------+-----------+---------------------+
+| 회사명 |    장점   |    단점   | 면접 분위기 및 답변 |
++--------+-----------+-----------+---------------------+
+| 다큐브 | 정보 없음 | 정보 없음 |      정보 없음      |
++--------+-----------+-----------+---------------------+
+[2024-01-17T00:40:58.017+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_slack, task_id=postAndReview_sql_and_return_result, execution_date=20240116T100315, start_date=20240117T004057, end_date=20240117T004058
+[2024-01-17T00:40:58.089+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-17T00:40:58.191+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

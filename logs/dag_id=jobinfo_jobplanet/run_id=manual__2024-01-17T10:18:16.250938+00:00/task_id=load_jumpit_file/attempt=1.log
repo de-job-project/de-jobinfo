@@ -1,0 +1,24 @@
+[2024-01-17T10:18:18.442+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.load_jumpit_file manual__2024-01-17T10:18:16.250938+00:00 [queued]>
+[2024-01-17T10:18:18.450+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.load_jumpit_file manual__2024-01-17T10:18:16.250938+00:00 [queued]>
+[2024-01-17T10:18:18.450+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-17T10:18:18.451+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-17T10:18:18.451+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-17T10:18:18.466+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): load_jumpit_file> on 2024-01-17 10:18:16.250938+00:00
+[2024-01-17T10:18:18.473+0000] {standard_task_runner.py:55} INFO - Started process 8410 to run task
+[2024-01-17T10:18:18.475+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'load_jumpit_file', 'manual__2024-01-17T10:18:16.250938+00:00', '--job-id', '4740', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmpexw_g_qj']
+[2024-01-17T10:18:18.476+0000] {standard_task_runner.py:83} INFO - Job 4740: Subtask load_jumpit_file
+[2024-01-17T10:18:18.530+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.load_jumpit_file manual__2024-01-17T10:18:16.250938+00:00 [running]> on host 565f6bcc10b6
+[2024-01-17T10:18:18.605+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=load_jumpit_file
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-17T10:18:16.250938+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-17T10:18:16.250938+00:00
+[2024-01-17T10:18:18.758+0000] {jobinfo_jobplanet.py:699} INFO - ['메이븐클라우드서비스', '파킹클라우드', '클라우드호스피탈', '파킹클라우드', '레몬클라우드', '레몬클라우드', '엠투클라우드', '엠투클라우드', '파킹클라우드', '메이븐클라우드서비스', '엠투클라우드', '엠투클라우드', '마크클라우드', '마크클라우드', '클라우드호스피탈', '클라우드호스피탈', '월급쟁이부자들', '월급쟁이부자들', '로민', '블랙탠저린', '파인더스', '론픽', '비포플레이', '롯데헬스케어', '롯데헬스케어', '올라운드닥터스', '다큐브', '크리에이트립', '데브툴즈', '티니어', '키다리스튜디오']
+[2024-01-17T10:18:18.760+0000] {python.py:177} INFO - Done. Returned value was: ['메이븐클라우드서비스', '파킹클라우드', '클라우드호스피탈', '파킹클라우드', '레몬클라우드', '레몬클라우드', '엠투클라우드', '엠투클라우드', '파킹클라우드', '메이븐클라우드서비스', '엠투클라우드', '엠투클라우드', '마크클라우드', '마크클라우드', '클라우드호스피탈', '클라우드호스피탈', '월급쟁이부자들', '월급쟁이부자들', '로민', '블랙탠저린', '파인더스', '론픽', '비포플레이', '롯데헬스케어', '롯데헬스케어', '올라운드닥터스', '다큐브', '크리에이트립', '데브툴즈', '티니어', '키다리스튜디오']
+[2024-01-17T10:18:18.794+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_jobplanet, task_id=load_jumpit_file, execution_date=20240117T101816, start_date=20240117T101818, end_date=20240117T101818
+[2024-01-17T10:18:18.854+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-17T10:18:18.884+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

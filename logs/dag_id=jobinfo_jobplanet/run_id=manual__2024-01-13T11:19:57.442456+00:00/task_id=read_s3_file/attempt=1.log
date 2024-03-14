@@ -1,0 +1,23 @@
+[2024-01-13T11:20:02.598+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.read_s3_file manual__2024-01-13T11:19:57.442456+00:00 [queued]>
+[2024-01-13T11:20:02.636+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.read_s3_file manual__2024-01-13T11:19:57.442456+00:00 [queued]>
+[2024-01-13T11:20:02.637+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-13T11:20:02.637+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-13T11:20:02.637+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-13T11:20:02.683+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): read_s3_file> on 2024-01-13 11:19:57.442456+00:00
+[2024-01-13T11:20:02.701+0000] {standard_task_runner.py:55} INFO - Started process 4143 to run task
+[2024-01-13T11:20:02.707+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'read_s3_file', 'manual__2024-01-13T11:19:57.442456+00:00', '--job-id', '344', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmp9qdxxqgt']
+[2024-01-13T11:20:02.708+0000] {standard_task_runner.py:83} INFO - Job 344: Subtask read_s3_file
+[2024-01-13T11:20:03.124+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.read_s3_file manual__2024-01-13T11:19:57.442456+00:00 [running]> on host 9d92fdf7265b
+[2024-01-13T11:20:03.221+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=read_s3_file
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-13T11:19:57.442456+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-13T11:19:57.442456+00:00
+[2024-01-13T11:20:03.484+0000] {python.py:177} INFO - Done. Returned value was: ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv']
+[2024-01-13T11:20:03.537+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_jobplanet, task_id=read_s3_file, execution_date=20240113T111957, start_date=20240113T112002, end_date=20240113T112003
+[2024-01-13T11:20:03.585+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-13T11:20:03.946+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

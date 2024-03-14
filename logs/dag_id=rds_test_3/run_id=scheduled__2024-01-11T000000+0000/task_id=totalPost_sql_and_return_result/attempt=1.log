@@ -1,0 +1,48 @@
+[2024-01-12T02:45:45.667+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: rds_test_3.totalPost_sql_and_return_result scheduled__2024-01-11T00:00:00+00:00 [queued]>
+[2024-01-12T02:45:45.712+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: rds_test_3.totalPost_sql_and_return_result scheduled__2024-01-11T00:00:00+00:00 [queued]>
+[2024-01-12T02:45:45.716+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-12T02:45:45.726+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2024-01-12T02:45:45.728+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-12T02:45:45.819+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): totalPost_sql_and_return_result> on 2024-01-11 00:00:00+00:00
+[2024-01-12T02:45:45.845+0000] {standard_task_runner.py:55} INFO - Started process 163 to run task
+[2024-01-12T02:45:45.859+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'rds_test_3', 'totalPost_sql_and_return_result', 'scheduled__2024-01-11T00:00:00+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/rds_test_3.py', '--cfg-path', '/tmp/tmpluun2_52']
+[2024-01-12T02:45:45.862+0000] {standard_task_runner.py:83} INFO - Job 163: Subtask totalPost_sql_and_return_result
+[2024-01-12T02:45:46.243+0000] {task_command.py:388} INFO - Running <TaskInstance: rds_test_3.totalPost_sql_and_return_result scheduled__2024-01-11T00:00:00+00:00 [running]> on host 3d6f932ce29c
+[2024-01-12T02:45:46.835+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=rds_test_3
+AIRFLOW_CTX_TASK_ID=totalPost_sql_and_return_result
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-11T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-01-11T00:00:00+00:00
+[2024-01-12T02:45:46.968+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/rds_test_3.py", line 82, in totalPost_sql_and_return_result
+    cursor.execute(sql_query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'average_salary' in 'field list'")
+[2024-01-12T02:45:47.027+0000] {taskinstance.py:1323} INFO - Marking task as UP_FOR_RETRY. dag_id=rds_test_3, task_id=totalPost_sql_and_return_result, execution_date=20240111T000000, start_date=20240112T024545, end_date=20240112T024547
+[2024-01-12T02:45:47.068+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 163 for task totalPost_sql_and_return_result ((1054, "Unknown column 'average_salary' in 'field list'"); 163)
+[2024-01-12T02:45:47.102+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-12T02:45:47.214+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

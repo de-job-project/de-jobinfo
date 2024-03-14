@@ -1,0 +1,31 @@
+[2024-01-17T10:26:19.232+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_slack.closeDeadline_sql_and_return_result scheduled__2024-01-16T10:00:00+00:00 [queued]>
+[2024-01-17T10:26:19.240+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_slack.closeDeadline_sql_and_return_result scheduled__2024-01-16T10:00:00+00:00 [queued]>
+[2024-01-17T10:26:19.240+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-17T10:26:19.240+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2024-01-17T10:26:19.240+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-17T10:26:19.253+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): closeDeadline_sql_and_return_result> on 2024-01-16 10:00:00+00:00
+[2024-01-17T10:26:19.258+0000] {standard_task_runner.py:55} INFO - Started process 8823 to run task
+[2024-01-17T10:26:19.260+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_slack', 'closeDeadline_sql_and_return_result', 'scheduled__2024-01-16T10:00:00+00:00', '--job-id', '4747', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_slack.py', '--cfg-path', '/tmp/tmppx_bt0zq']
+[2024-01-17T10:26:19.260+0000] {standard_task_runner.py:83} INFO - Job 4747: Subtask closeDeadline_sql_and_return_result
+[2024-01-17T10:26:19.313+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_slack.closeDeadline_sql_and_return_result scheduled__2024-01-16T10:00:00+00:00 [running]> on host 565f6bcc10b6
+[2024-01-17T10:26:19.379+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_slack
+AIRFLOW_CTX_TASK_ID=closeDeadline_sql_and_return_result
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-16T10:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-01-16T10:00:00+00:00
+[2024-01-17T10:26:19.393+0000] {base.py:73} INFO - Using connection ID 'rds_conn' for task execution.
+[2024-01-17T10:26:19.436+0000] {logging_mixin.py:137} INFO - +--------+------+----------+----------+------------+
+| 회사명 | 직급 | 필요역량 | 마감기한 | 채용페이지 |
++--------+------+----------+----------+------------+
++--------+------+----------+----------+------------+
+[2024-01-17T10:26:19.436+0000] {python.py:177} INFO - Done. Returned value was: +--------+------+----------+----------+------------+
+| 회사명 | 직급 | 필요역량 | 마감기한 | 채용페이지 |
++--------+------+----------+----------+------------+
++--------+------+----------+----------+------------+
+[2024-01-17T10:26:19.460+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_slack, task_id=closeDeadline_sql_and_return_result, execution_date=20240116T100000, start_date=20240117T102619, end_date=20240117T102619
+[2024-01-17T10:26:19.513+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-17T10:26:19.539+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

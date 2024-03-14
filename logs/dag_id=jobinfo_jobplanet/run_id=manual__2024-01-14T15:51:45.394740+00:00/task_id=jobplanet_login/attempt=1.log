@@ -1,0 +1,174 @@
+[2024-01-14T15:51:52.863+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-14T15:51:45.394740+00:00 [queued]>
+[2024-01-14T15:51:52.870+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-14T15:51:45.394740+00:00 [queued]>
+[2024-01-14T15:51:52.870+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T15:51:52.870+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-14T15:51:52.870+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T15:51:52.885+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): jobplanet_login> on 2024-01-14 15:51:45.394740+00:00
+[2024-01-14T15:51:52.894+0000] {standard_task_runner.py:55} INFO - Started process 7255 to run task
+[2024-01-14T15:51:52.896+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'jobplanet_login', 'manual__2024-01-14T15:51:45.394740+00:00', '--job-id', '539', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmpewr8z51w']
+[2024-01-14T15:51:52.897+0000] {standard_task_runner.py:83} INFO - Job 539: Subtask jobplanet_login
+[2024-01-14T15:51:52.952+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-14T15:51:45.394740+00:00 [running]> on host 565f6bcc10b6
+[2024-01-14T15:51:53.040+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=jobplanet_login
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-14T15:51:45.394740+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-14T15:51:45.394740+00:00
+[2024-01-14T15:51:58.015+0000] {jobinfo_jobplanet.py:76} INFO - *********************************
+[2024-01-14T15:51:58.054+0000] {jobinfo_jobplanet.py:82} INFO - 12212121313442342354534634534534534534523423443423
+[2024-01-14T15:51:58.054+0000] {jobinfo_jobplanet.py:83} INFO - <selenium.webdriver.remote.webdriver.WebDriver (session="3a38f6d48c7789703d423fe03119387c")>
+[2024-01-14T15:51:58.197+0000] {jobinfo_jobplanet.py:86} INFO - 890u8987978078978978079078097807897809789789789789789797
+[2024-01-14T15:51:58.620+0000] {jobinfo_jobplanet.py:89} INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-01-14T15:51:59.495+0000] {jobinfo_jobplanet.py:100} INFO - 3333333333333333333333333
+[2024-01-14T15:51:59.596+0000] {jobinfo_jobplanet.py:106} INFO - 4444444444444444444444444444
+[2024-01-14T15:51:59.616+0000] {jobinfo_jobplanet.py:108} INFO - ['오케스트로', '오케스트로', '제니스앤컴퍼니', '제니스앤컴퍼니', '제니스앤컴퍼니', '메이븐클라우드서비스', '엠아이티', '엠아이티', '스윗코리아', '스윗코리아', '파킹클라우드', '오케스트로', '오케스트로', '오케스트로', '오케스트로', '오케스트로', '월급쟁이부자들', '월급쟁이부자들', '로민', '블랙탠저린', '파인더스', '론픽', '비포플레이', '롯데헬스케어', '롯데헬스케어', '올라운드닥터스', '와디즈', '크리에이트립', '데브툴즈', '티니어', '키다리스튜디오', '마크클라우드']
+[2024-01-14T15:51:59.616+0000] {jobinfo_jobplanet.py:109} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_와디즈.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-14T15:51:59.617+0000] {jobinfo_jobplanet.py:110} INFO - 시작
+[2024-01-14T15:51:59.617+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T15:51:59.617+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T15:51:59.617+0000] {jobinfo_jobplanet.py:114} INFO - 제니스앤컴퍼니 있음
+[2024-01-14T15:51:59.618+0000] {jobinfo_jobplanet.py:114} INFO - 제니스앤컴퍼니 있음
+[2024-01-14T15:51:59.618+0000] {jobinfo_jobplanet.py:114} INFO - 제니스앤컴퍼니 있음
+[2024-01-14T15:51:59.618+0000] {jobinfo_jobplanet.py:114} INFO - 메이븐클라우드서비스 있음
+[2024-01-14T15:51:59.618+0000] {jobinfo_jobplanet.py:114} INFO - 엠아이티 있음
+[2024-01-14T15:51:59.619+0000] {jobinfo_jobplanet.py:114} INFO - 엠아이티 있음
+[2024-01-14T15:51:59.621+0000] {jobinfo_jobplanet.py:114} INFO - 스윗코리아 있음
+[2024-01-14T15:51:59.622+0000] {jobinfo_jobplanet.py:114} INFO - 스윗코리아 있음
+[2024-01-14T15:51:59.622+0000] {jobinfo_jobplanet.py:114} INFO - 파킹클라우드 있음
+[2024-01-14T15:51:59.623+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T15:51:59.623+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T15:51:59.623+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T15:51:59.624+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T15:51:59.624+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T15:51:59.625+0000] {jobinfo_jobplanet.py:114} INFO - 월급쟁이부자들 있음
+[2024-01-14T15:51:59.625+0000] {jobinfo_jobplanet.py:114} INFO - 월급쟁이부자들 있음
+[2024-01-14T15:51:59.629+0000] {jobinfo_jobplanet.py:114} INFO - 로민 있음
+[2024-01-14T15:51:59.630+0000] {jobinfo_jobplanet.py:114} INFO - 블랙탠저린 있음
+[2024-01-14T15:51:59.630+0000] {jobinfo_jobplanet.py:114} INFO - 파인더스 있음
+[2024-01-14T15:52:03.074+0000] {jobinfo_jobplanet.py:121} INFO - 론픽 파일이 없음
+[2024-01-14T15:52:03.845+0000] {jobinfo_jobplanet.py:125} INFO - 론픽 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T15:52:07.436+0000] {jobinfo_jobplanet.py:128} INFO - 론픽 검색하기
+[2024-01-14T15:52:07.594+0000] {jobinfo_jobplanet.py:133} INFO - 론픽 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-14T15:52:26.712+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:52:26.781+0000] {jobinfo_jobplanet.py:681} INFO - Error uploading file to S3: 'int' object has no attribute 'to_csv'
+[2024-01-14T15:52:26.782+0000] {jobinfo_jobplanet.py:140} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_와디즈.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv', 'path/in/s3/bucket/review_information_론픽.csv']
+[2024-01-14T15:52:26.782+0000] {jobinfo_jobplanet.py:114} INFO - 비포플레이 있음
+[2024-01-14T15:52:26.782+0000] {jobinfo_jobplanet.py:114} INFO - 롯데헬스케어 있음
+[2024-01-14T15:52:26.782+0000] {jobinfo_jobplanet.py:114} INFO - 롯데헬스케어 있음
+[2024-01-14T15:52:26.787+0000] {jobinfo_jobplanet.py:121} INFO - 올라운드닥터스 파일이 없음
+[2024-01-14T15:52:27.158+0000] {jobinfo_jobplanet.py:125} INFO - 올라운드닥터스 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T15:52:28.634+0000] {jobinfo_jobplanet.py:128} INFO - 올라운드닥터스 검색하기
+[2024-01-14T15:52:30.652+0000] {jobinfo_jobplanet.py:139} INFO - 올라운드닥터스의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T15:52:30.652+0000] {jobinfo_jobplanet.py:140} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_와디즈.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv', 'path/in/s3/bucket/review_information_론픽.csv']
+[2024-01-14T15:52:30.652+0000] {jobinfo_jobplanet.py:114} INFO - 와디즈 있음
+[2024-01-14T15:52:30.652+0000] {jobinfo_jobplanet.py:114} INFO - 크리에이트립 있음
+[2024-01-14T15:52:30.652+0000] {jobinfo_jobplanet.py:114} INFO - 데브툴즈 있음
+[2024-01-14T15:52:30.653+0000] {jobinfo_jobplanet.py:114} INFO - 티니어 있음
+[2024-01-14T15:52:30.653+0000] {jobinfo_jobplanet.py:114} INFO - 키다리스튜디오 있음
+[2024-01-14T15:52:30.653+0000] {jobinfo_jobplanet.py:114} INFO - 마크클라우드 있음
+[2024-01-14T15:52:30.669+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:52:30.781+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:52:30.878+0000] {jobinfo_jobplanet.py:518} INFO - 제니스앤컴퍼니dml wordcloud start
+[2024-01-14T15:52:30.879+0000] {jobinfo_jobplanet.py:630} INFO - 제니스앤컴퍼니 정보 없ㅇ,ㅡ
+[2024-01-14T15:52:30.879+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:52:46.834+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:52:46.938+0000] {jobinfo_jobplanet.py:518} INFO - 제니스앤컴퍼니dml wordcloud start
+[2024-01-14T15:52:46.938+0000] {jobinfo_jobplanet.py:630} INFO - 제니스앤컴퍼니 정보 없ㅇ,ㅡ
+[2024-01-14T15:52:46.938+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:53:04.119+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:53:04.225+0000] {jobinfo_jobplanet.py:518} INFO - 제니스앤컴퍼니dml wordcloud start
+[2024-01-14T15:53:04.226+0000] {jobinfo_jobplanet.py:630} INFO - 제니스앤컴퍼니 정보 없ㅇ,ㅡ
+[2024-01-14T15:53:04.227+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:53:20.430+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:53:20.552+0000] {jobinfo_jobplanet.py:518} INFO - 메이븐클라우드서비스dml wordcloud start
+[2024-01-14T15:53:20.552+0000] {jobinfo_jobplanet.py:630} INFO - 메이븐클라우드서비스 정보 없ㅇ,ㅡ
+[2024-01-14T15:53:20.552+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:53:35.824+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:53:35.944+0000] {jobinfo_jobplanet.py:518} INFO - 엠아이티dml wordcloud start
+[2024-01-14T15:53:35.945+0000] {jobinfo_jobplanet.py:630} INFO - 엠아이티 정보 없ㅇ,ㅡ
+[2024-01-14T15:53:35.945+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:53:50.362+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:53:50.442+0000] {jobinfo_jobplanet.py:518} INFO - 엠아이티dml wordcloud start
+[2024-01-14T15:53:50.443+0000] {jobinfo_jobplanet.py:630} INFO - 엠아이티 정보 없ㅇ,ㅡ
+[2024-01-14T15:53:50.443+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:54:06.592+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:54:06.718+0000] {jobinfo_jobplanet.py:518} INFO - 스윗코리아dml wordcloud start
+[2024-01-14T15:54:06.718+0000] {jobinfo_jobplanet.py:630} INFO - 스윗코리아 정보 없ㅇ,ㅡ
+[2024-01-14T15:54:06.718+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:54:25.006+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:54:25.088+0000] {jobinfo_jobplanet.py:518} INFO - 스윗코리아dml wordcloud start
+[2024-01-14T15:54:25.088+0000] {jobinfo_jobplanet.py:630} INFO - 스윗코리아 정보 없ㅇ,ㅡ
+[2024-01-14T15:54:25.089+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:54:41.104+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:54:41.222+0000] {jobinfo_jobplanet.py:518} INFO - 파킹클라우드dml wordcloud start
+[2024-01-14T15:54:41.223+0000] {jobinfo_jobplanet.py:630} INFO - 파킹클라우드 정보 없ㅇ,ㅡ
+[2024-01-14T15:54:41.223+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:54:56.061+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:54:56.172+0000] {jobinfo_jobplanet.py:518} INFO - 월급쟁이부자들dml wordcloud start
+[2024-01-14T15:54:56.172+0000] {jobinfo_jobplanet.py:630} INFO - 월급쟁이부자들 정보 없ㅇ,ㅡ
+[2024-01-14T15:54:56.172+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:55:14.150+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:55:14.266+0000] {jobinfo_jobplanet.py:518} INFO - 월급쟁이부자들dml wordcloud start
+[2024-01-14T15:55:14.266+0000] {jobinfo_jobplanet.py:630} INFO - 월급쟁이부자들 정보 없ㅇ,ㅡ
+[2024-01-14T15:55:14.267+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:55:31.262+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:55:31.419+0000] {jobinfo_jobplanet.py:518} INFO - 로민dml wordcloud start
+[2024-01-14T15:55:31.419+0000] {jobinfo_jobplanet.py:630} INFO - 로민 정보 없ㅇ,ㅡ
+[2024-01-14T15:55:31.419+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:55:47.326+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:55:47.416+0000] {jobinfo_jobplanet.py:518} INFO - 블랙탠저린dml wordcloud start
+[2024-01-14T15:55:47.416+0000] {jobinfo_jobplanet.py:630} INFO - 블랙탠저린 정보 없ㅇ,ㅡ
+[2024-01-14T15:55:47.416+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:56:03.730+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:56:03.821+0000] {jobinfo_jobplanet.py:518} INFO - 파인더스dml wordcloud start
+[2024-01-14T15:56:03.821+0000] {jobinfo_jobplanet.py:630} INFO - 파인더스 정보 없ㅇ,ㅡ
+[2024-01-14T15:56:03.822+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:56:19.777+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:56:19.859+0000] {jobinfo_jobplanet.py:630} INFO - 론픽 정보 없ㅇ,ㅡ
+[2024-01-14T15:56:19.859+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T15:56:35.820+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:56:35.929+0000] {jobinfo_jobplanet.py:518} INFO - 비포플레이dml wordcloud start
+[2024-01-14T15:56:35.930+0000] {jobinfo_jobplanet.py:630} INFO - 비포플레이 정보 없ㅇ,ㅡ
+[2024-01-14T15:56:35.930+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:56:53.328+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:56:53.413+0000] {jobinfo_jobplanet.py:518} INFO - 롯데헬스케어dml wordcloud start
+[2024-01-14T15:56:53.413+0000] {jobinfo_jobplanet.py:630} INFO - 롯데헬스케어 정보 없ㅇ,ㅡ
+[2024-01-14T15:56:53.413+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:57:08.877+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:57:08.961+0000] {jobinfo_jobplanet.py:518} INFO - 롯데헬스케어dml wordcloud start
+[2024-01-14T15:57:08.962+0000] {jobinfo_jobplanet.py:630} INFO - 롯데헬스케어 정보 없ㅇ,ㅡ
+[2024-01-14T15:57:08.962+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:57:25.652+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:57:25.725+0000] {jobinfo_jobplanet.py:630} INFO - 올라운드닥터스 정보 없ㅇ,ㅡ
+[2024-01-14T15:57:25.726+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T15:57:41.734+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:57:41.827+0000] {jobinfo_jobplanet.py:518} INFO - 와디즈dml wordcloud start
+[2024-01-14T15:57:41.827+0000] {jobinfo_jobplanet.py:630} INFO - 와디즈 정보 없ㅇ,ㅡ
+[2024-01-14T15:57:41.828+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:57:58.080+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:57:58.187+0000] {jobinfo_jobplanet.py:518} INFO - 크리에이트립dml wordcloud start
+[2024-01-14T15:57:58.188+0000] {jobinfo_jobplanet.py:630} INFO - 크리에이트립 정보 없ㅇ,ㅡ
+[2024-01-14T15:57:58.188+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:58:13.704+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:58:13.862+0000] {jobinfo_jobplanet.py:518} INFO - 데브툴즈dml wordcloud start
+[2024-01-14T15:58:13.863+0000] {jobinfo_jobplanet.py:630} INFO - 데브툴즈 정보 없ㅇ,ㅡ
+[2024-01-14T15:58:13.863+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:58:29.548+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:58:29.702+0000] {jobinfo_jobplanet.py:518} INFO - 티니어dml wordcloud start
+[2024-01-14T15:58:29.702+0000] {jobinfo_jobplanet.py:630} INFO - 티니어 정보 없ㅇ,ㅡ
+[2024-01-14T15:58:29.703+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:58:47.125+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:58:47.237+0000] {jobinfo_jobplanet.py:518} INFO - 키다리스튜디오dml wordcloud start
+[2024-01-14T15:58:47.238+0000] {jobinfo_jobplanet.py:630} INFO - 키다리스튜디오 정보 없ㅇ,ㅡ
+[2024-01-14T15:58:47.238+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:59:03.773+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T15:59:03.869+0000] {jobinfo_jobplanet.py:518} INFO - 마크클라우드dml wordcloud start
+[2024-01-14T15:59:03.869+0000] {jobinfo_jobplanet.py:630} INFO - 마크클라우드 정보 없ㅇ,ㅡ
+[2024-01-14T15:59:03.870+0000] {jobinfo_jobplanet.py:631} INFO - Failed to read CSV file from S3: No JVM shared library file (libjvm.so) found. Try setting up the JAVA_HOME environment variable properly.
+[2024-01-14T15:59:19.031+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-01-14T15:59:19.041+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_jobplanet, task_id=jobplanet_login, execution_date=20240114T155145, start_date=20240114T155152, end_date=20240114T155919
+[2024-01-14T15:59:19.106+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-14T15:59:19.129+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

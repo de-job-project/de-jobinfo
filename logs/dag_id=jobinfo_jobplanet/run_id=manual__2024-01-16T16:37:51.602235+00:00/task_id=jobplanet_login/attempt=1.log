@@ -1,0 +1,200 @@
+[2024-01-16T16:37:58.960+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-16T16:37:51.602235+00:00 [queued]>
+[2024-01-16T16:37:58.970+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-16T16:37:51.602235+00:00 [queued]>
+[2024-01-16T16:37:58.970+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-16T16:37:58.971+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-16T16:37:58.971+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-16T16:37:59.130+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): jobplanet_login> on 2024-01-16 16:37:51.602235+00:00
+[2024-01-16T16:37:59.137+0000] {standard_task_runner.py:55} INFO - Started process 9307 to run task
+[2024-01-16T16:37:59.140+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'jobplanet_login', 'manual__2024-01-16T16:37:51.602235+00:00', '--job-id', '4294', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmpkiswt88v']
+[2024-01-16T16:37:59.140+0000] {standard_task_runner.py:83} INFO - Job 4294: Subtask jobplanet_login
+[2024-01-16T16:37:59.199+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-16T16:37:51.602235+00:00 [running]> on host 565f6bcc10b6
+[2024-01-16T16:37:59.286+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=jobplanet_login
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-16T16:37:51.602235+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-16T16:37:51.602235+00:00
+[2024-01-16T16:38:04.469+0000] {jobinfo_jobplanet.py:102} INFO - ['다큐브', '월급쟁이부자들', '파킹클라우드', '크리에이트립', '제니스앤컴퍼니', '파인더스', '올라운드닥터스', '데브툴즈', '마크클라우드', '스윗코리아', '론픽', '로민', '비포플레이', '오케스트로', '메이븐클라우드서비스', '키다리스튜디오', '블랙탠저린', '티니어', '엠아이티', '롯데헬스케어']
+[2024-01-16T16:38:04.470+0000] {jobinfo_jobplanet.py:103} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-16T16:38:04.470+0000] {jobinfo_jobplanet.py:104} INFO - 시작
+[2024-01-16T16:38:04.504+0000] {jobinfo_jobplanet.py:116} INFO - 다큐브 파일이 없음
+[2024-01-16T16:38:08.306+0000] {jobinfo_jobplanet.py:137} INFO - 다큐브의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T16:38:08.306+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-16T16:38:08.379+0000] {jobinfo_jobplanet.py:116} INFO - 월급쟁이부자들 파일이 없음
+[2024-01-16T16:38:09.485+0000] {jobinfo_jobplanet.py:121} INFO - 월급쟁이부자들 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:38:12.765+0000] {jobinfo_jobplanet.py:124} INFO - 월급쟁이부자들 검색하기
+[2024-01-16T16:38:14.796+0000] {jobinfo_jobplanet.py:137} INFO - 월급쟁이부자들의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T16:38:14.797+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-16T16:38:14.797+0000] {jobinfo_jobplanet.py:109} INFO - 파킹클라우드 있음
+[2024-01-16T16:38:14.797+0000] {jobinfo_jobplanet.py:109} INFO - 크리에이트립 있음
+[2024-01-16T16:38:14.797+0000] {jobinfo_jobplanet.py:109} INFO - 제니스앤컴퍼니 있음
+[2024-01-16T16:38:14.798+0000] {jobinfo_jobplanet.py:109} INFO - 파인더스 있음
+[2024-01-16T16:38:14.803+0000] {jobinfo_jobplanet.py:116} INFO - 올라운드닥터스 파일이 없음
+[2024-01-16T16:38:15.262+0000] {jobinfo_jobplanet.py:121} INFO - 올라운드닥터스 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:38:16.944+0000] {jobinfo_jobplanet.py:124} INFO - 올라운드닥터스 검색하기
+[2024-01-16T16:38:19.022+0000] {jobinfo_jobplanet.py:137} INFO - 올라운드닥터스의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T16:38:19.023+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-16T16:38:19.023+0000] {jobinfo_jobplanet.py:109} INFO - 데브툴즈 있음
+[2024-01-16T16:38:19.024+0000] {jobinfo_jobplanet.py:109} INFO - 마크클라우드 있음
+[2024-01-16T16:38:19.024+0000] {jobinfo_jobplanet.py:109} INFO - 스윗코리아 있음
+[2024-01-16T16:38:19.030+0000] {jobinfo_jobplanet.py:116} INFO - 론픽 파일이 없음
+[2024-01-16T16:38:19.572+0000] {jobinfo_jobplanet.py:121} INFO - 론픽 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:38:24.861+0000] {jobinfo_jobplanet.py:124} INFO - 론픽 검색하기
+[2024-01-16T16:38:25.626+0000] {jobinfo_jobplanet.py:129} INFO - 론픽 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-16T16:38:47.036+0000] {jobinfo_jobplanet.py:742} INFO - Error uploading file to S3: 'int' object has no attribute 'to_csv'
+[2024-01-16T16:38:47.122+0000] {jobinfo_jobplanet.py:691} INFO - 다큐브 정보 없ㅇ,ㅡ
+[2024-01-16T16:38:47.122+0000] {jobinfo_jobplanet.py:692} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:38:47.123+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv', 'path/in/s3/bucket/review_information_론픽.csv']
+[2024-01-16T16:38:47.124+0000] {jobinfo_jobplanet.py:109} INFO - 로민 있음
+[2024-01-16T16:38:47.124+0000] {jobinfo_jobplanet.py:109} INFO - 비포플레이 있음
+[2024-01-16T16:38:47.124+0000] {jobinfo_jobplanet.py:109} INFO - 오케스트로 있음
+[2024-01-16T16:38:47.124+0000] {jobinfo_jobplanet.py:109} INFO - 메이븐클라우드서비스 있음
+[2024-01-16T16:38:47.124+0000] {jobinfo_jobplanet.py:109} INFO - 키다리스튜디오 있음
+[2024-01-16T16:38:47.124+0000] {jobinfo_jobplanet.py:109} INFO - 블랙탠저린 있음
+[2024-01-16T16:38:47.124+0000] {jobinfo_jobplanet.py:109} INFO - 티니어 있음
+[2024-01-16T16:38:47.124+0000] {jobinfo_jobplanet.py:109} INFO - 엠아이티 있음
+[2024-01-16T16:38:47.124+0000] {jobinfo_jobplanet.py:109} INFO - 롯데헬스케어 있음
+[2024-01-16T16:38:47.280+0000] {jobinfo_jobplanet.py:691} INFO - 월급쟁이부자들 정보 없ㅇ,ㅡ
+[2024-01-16T16:38:47.281+0000] {jobinfo_jobplanet.py:692} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:39:02.327+0000] {jobinfo_jobplanet.py:525} INFO -                             review_summary  ... result_date
+0  젊고 자유로운 분위기, 시키지 않아도 척척 해내는 알잘딱깔센 인재 필요  ...       14일 후
+1                       엄청 최악은 아니지만 좋지도 않은  ...     no data
+2                     우당탕탕 성장하는 기업 사람들은 좋다  ...     no data
+3                     그저 일 안해도 월급이 나오는 회사요  ...     no data
+4                사내 복지좀 줄이지 말고 직원들좀 신경써주세요  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:39:18.256+0000] {jobinfo_jobplanet.py:525} INFO -                                       review_summary  ... result_date
+0                            자유롭고 수평적이지만 이상하게 별로인 회사  ...        2일 후
+1  의사결정이 합리적이고 상식적인 회사 답답한 부분이 거의 없다 직원들이 말하는 부분들...  ...     no data
+2          자기 할 일만 제대로 한다면 최상의 자유가 보장되는 곳 성장하기 좋은 회사  ...     no data
+3  경영진의 마이크로매니징이 극악입니니다HR에서도 이미 많이 피드백을 받아서 C레벨들의...  ...     no data
+4                                            no data  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:39:34.358+0000] {jobinfo_jobplanet.py:525} INFO -   review_summary    merit  ...    hire_way result_date
+0        no data  no data  ...  그룹면접, 개인면접     no data
+1        no data  no data  ...        개인면접     no data
+2        no data  no data  ...     no data     no data
+3        no data  no data  ...     no data     no data
+4        no data  no data  ...     no data     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:39:49.801+0000] {jobinfo_jobplanet.py:525} INFO -   review_summary    merit  ...      hire_way result_date
+0        no data  no data  ...          개인면접       20일 후
+1        no data  no data  ...    토론면접, 개인면접        5일 후
+2        no data  no data  ...  케이스 면접, 개인면접     no data
+3        no data  no data  ...       no data     no data
+4        no data  no data  ...       no data     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:40:05.478+0000] {jobinfo_jobplanet.py:691} INFO - 올라운드닥터스 정보 없ㅇ,ㅡ
+[2024-01-16T16:40:05.481+0000] {jobinfo_jobplanet.py:692} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:40:21.367+0000] {jobinfo_jobplanet.py:513} INFO - 올라운드닥터스 salary information not find
+[2024-01-16T16:40:21.472+0000] {jobinfo_jobplanet.py:525} INFO -                                       review_summary  ... result_date
+0                     약간 공장같은 분위기에 여길 다녀도 될까 의아한 환경?  ...        2일 후
+1  대표가 직원들을 전혀 존중해 주지 않는 회사, 그것으로 인해 직원들이 못 버티고 계...  ...        0일 후
+2                               다양한 개발환경을 경험할 수 있는 곳  ...     no data
+3                               대우받으며 보람차게 일할 수 있는 곳  ...     no data
+4  개발자 중심의 회사이기에 개인별 업무에 독립성이 강한반면, 모두 관계가 좋고 서로를...  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:40:40.831+0000] {jobinfo_jobplanet.py:525} INFO -                                       review_summary  ... result_date
+0                              많은 것을 경험해볼 수 있는 회사입니다  ...     no data
+1                              많은 것을 경험해볼 수 있는 회사입니다  ...     no data
+2  사람과 사람으로 만나면 좋은 사람들 / 직장에서 동료로 만나면 힘든 사람들 / 체계...  ...     no data
+3                신입이 경력을 쌓기에는 좋다 근데 더 좋은 곳으로 갔으면 좋겠다  ...     no data
+4                              체계는 없지만 처음 시작하기 좋은 회사  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:40:59.811+0000] {jobinfo_jobplanet.py:525} INFO -                                     review_summary  ... result_date
+0                       스타트업의강점은점점사라지고 임원진의 입김만 남아  ...        7일 후
+1        다양한 기술스택을 접할 수 있고 새로운 프로젝트가 많이 생겨 경험쌓기 좋다  ...     no data
+2               정치판에 업무 프로세스도 엉망 팀바팀 심함 몰상식한 동료 많음  ...     no data
+3                  함께 일하는 사람들이 상식적이며, 분위기가 밝고 좋습니다  ...     no data
+4  무난무난한 회사입니다 크게 모나지 않게 다닐 수 있습니다 너무 많이 바라지 않으면 됨  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:41:17.075+0000] {jobinfo_jobplanet.py:691} INFO - 론픽 정보 없ㅇ,ㅡ
+[2024-01-16T16:41:17.075+0000] {jobinfo_jobplanet.py:692} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:41:33.023+0000] {jobinfo_jobplanet.py:513} INFO - 론픽 salary information not find
+[2024-01-16T16:41:33.135+0000] {jobinfo_jobplanet.py:525} INFO -                                       review_summary  ... result_date
+0                              자유롭지만 체계적이고 즐거운 회사입니다  ...     no data
+1  직원들을 존중해주려고 노력하시는 회사입니다 22년 초까지의 기준이지만 지금도 비슷하...  ...     no data
+2                업무강도는 강하지만 사람좋고 복지좋은 회사 지하철역에서도 가까움  ...     no data
+3                            야근 많음, 동기부여가 전혀되지 않는 회사  ...     no data
+4                              성장통을 겪고 있는 전형적인 스타트업?  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:41:50.239+0000] {jobinfo_jobplanet.py:525} INFO -                                       review_summary  ... result_date
+0      SI업체에 가깝습니다 의심병 걸려서 마이크로 매니징 대표가 팀원들을 힘들게 합니다  ...     no data
+1                     하루하루 내일이 걱정되는 회사입니다 1점도 아까운 기업  ...     no data
+2                              여러가지 일을 할 수 있는 곳입니다!!  ...     no data
+3               자유로운 환경에서 자기가 원하는 기술 스택으로 개발해 볼 수 있음  ...     no data
+4  직원을 정말 소모품만도 못하게 다루는 기업 정말 갈곳이 없는게 아니라면 다시 생각해...  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:42:07.674+0000] {jobinfo_jobplanet.py:525} INFO -                                       review_summary  ... result_date
+0                           시설이랑 식대는 좋지만 업무처리는 꽝인 회사  ...     no data
+1                       허위광고, 과대포장으로 투자 땡기니까 달달하신가요?  ...     no data
+2  일단 업무도 모르는 것들이 팀장을 하고 있음 피드백 느림, 권위주의적, 사람 조지기...  ...     no data
+3                          더이상 소프트웨어 기업이 아닌 서버와 사람장사  ...     no data
+4                                 적당히 다닐만한 회사라고 생각한다  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:42:26.346+0000] {jobinfo_jobplanet.py:525} INFO -                             review_summary  ... result_date
+0           대안이 없으면 다닐 수도 있겠지만 추천하지는 않는 회사  ...     no data
+1       주체적인 개인의 의견과 편의를 최대한 들어주려고 노력하는 회사  ...     no data
+2           SI 기업 그 잡채 10년 운용했으나 회사 체계가 없음  ...     no data
+3                    보통 나름 인지도가 있는 회사지만 쏘쏘  ...     no data
+4  팀별로 매우 분위기가 달랐던 것으로 기억함 팀장에 따라 좌우되는 분위기  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:42:42.636+0000] {jobinfo_jobplanet.py:525} INFO -   review_summary    merit  ...            hire_way result_date
+0        no data  no data  ...  인/적성검사, PT면접, 개인면접       14일 후
+1        no data  no data  ...        인/적성검사, 개인면접       14일 후
+2        no data  no data  ...        인/적성검사, 개인면접       30일 후
+3        no data  no data  ...             no data     no data
+4        no data  no data  ...             no data     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:42:55.641+0000] {jobinfo_jobplanet.py:525} INFO -                                   review_summary  ... result_date
+0                    업무 능력을 확장시키기에 성장하기 좋은 환경입니다  ...        3일 후
+1                   스타트업이 뭔지, 빠른 성장이 뭔지 알 수 있는 곳  ...     no data
+2  여러가지 업무를 경험할 수 있습니다 그게 장점일지 단점일지는 본인의 판단에 따라…  ...     no data
+3             빠르게 성장하는 스타트업, 패션 이커머스 앱을 혁신할 수 있음  ...     no data
+
+[4 rows x 8 columns]
+[2024-01-16T16:43:11.673+0000] {jobinfo_jobplanet.py:525} INFO -                            review_summary  ... result_date
+0  누구에게나 평등하게 발언권이 주어지고, 합리적인 의견을 수용하는 기업  ...        1일 후
+1             워라벨이 좋고 업무 강도가 높지 않고 문화가 좋다  ...        0일 후
+2  인턴으로 있었지만 스타트업의 좋은 점을 깨달을 수 있었던 회사였습니다  ...     no data
+3                    합리적고 긍정적인 사람들이 모인 조직  ...     no data
+4       다양한 경험을 쌓으며 수평적인 문화 속에서 클 수 있는 환경  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:43:32.637+0000] {jobinfo_jobplanet.py:513} INFO - 티니어 salary information not find
+[2024-01-16T16:43:32.757+0000] {jobinfo_jobplanet.py:525} INFO -                          review_summary  ... result_date
+0  직원에 대한 복지가 하나도 없다 그리고 각자 알아서 생활하면 된다  ...        3일 후
+1              쿠팡 사이트는 절대로 가지 마십시오 헬입니다  ...     no data
+2                  상당히 자유로운분위기이며 워라벨 좋음  ...        2일 후
+3                  파견직 대우의 한계는 못벗어나는 기업  ...     no data
+4  급여가 적으나 워라벨은 좋음(파견 나가는 회사마다 다를 수 있음)  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:43:58.210+0000] {jobinfo_jobplanet.py:525} INFO -                          review_summary  ... result_date
+0  대기업과 스타트업 장단점이 혼재되어있다 장점도 2배, 단점도 2배  ...        3일 후
+1                               no data  ...     no data
+2                               no data  ...     no data
+3                               no data  ...     no data
+4                               no data  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:44:21.276+0000] {jobinfo_jobplanet.py:513} INFO - 롯데헬스케어 salary information not find
+[2024-01-16T16:44:21.441+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-01-16T16:44:21.452+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_jobplanet, task_id=jobplanet_login, execution_date=20240116T163751, start_date=20240116T163758, end_date=20240116T164421
+[2024-01-16T16:44:21.498+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-16T16:44:21.517+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

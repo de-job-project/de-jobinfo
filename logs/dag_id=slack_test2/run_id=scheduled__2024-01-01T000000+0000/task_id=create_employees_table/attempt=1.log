@@ -1,0 +1,35 @@
+[2024-01-10T19:27:58.469+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: slack_test2.create_employees_table scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-01-10T19:27:58.498+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: slack_test2.create_employees_table scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2024-01-10T19:27:58.500+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-10T19:27:58.501+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2024-01-10T19:27:58.502+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-10T19:27:58.553+0000] {taskinstance.py:1300} INFO - Executing <Task(MySqlOperator): create_employees_table> on 2024-01-01 00:00:00+00:00
+[2024-01-10T19:27:58.564+0000] {standard_task_runner.py:55} INFO - Started process 148 to run task
+[2024-01-10T19:27:58.575+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'slack_test2', 'create_employees_table', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/slack_test2.py', '--cfg-path', '/tmp/tmpkcc3lq2f']
+[2024-01-10T19:27:58.578+0000] {standard_task_runner.py:83} INFO - Job 43: Subtask create_employees_table
+[2024-01-10T19:27:58.745+0000] {task_command.py:388} INFO - Running <TaskInstance: slack_test2.create_employees_table scheduled__2024-01-01T00:00:00+00:00 [running]> on host 1064147bcaa7
+[2024-01-10T19:27:58.970+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=slack_test2
+AIRFLOW_CTX_TASK_ID=create_employees_table
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-01-01T00:00:00+00:00
+[2024-01-10T19:27:58.974+0000] {sql.py:254} INFO - Executing: 
+    SELECT jobinfo_test.table_1.company, position, location, review
+    FROM jobinfo_test.table_1
+    JOIN jobinfo_test.table_2
+    ON jobinfo_test.table_1.company = jobinfo_test.table_2.company;
+[2024-01-10T19:27:58.999+0000] {base.py:73} INFO - Using connection ID 'mysql_local_test' for task execution.
+[2024-01-10T19:28:00.179+0000] {base.py:73} INFO - Using connection ID 'mysql_local_test' for task execution.
+[2024-01-10T19:28:00.228+0000] {sql.py:375} INFO - Running statement: 
+    SELECT jobinfo_test.table_1.company, position, location, review
+    FROM jobinfo_test.table_1
+    JOIN jobinfo_test.table_2
+    ON jobinfo_test.table_1.company = jobinfo_test.table_2.company;, parameters: None
+[2024-01-10T19:28:00.233+0000] {sql.py:384} INFO - Rows affected: 1
+[2024-01-10T19:28:00.298+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=slack_test2, task_id=create_employees_table, execution_date=20240101T000000, start_date=20240110T192758, end_date=20240110T192800
+[2024-01-10T19:28:00.345+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-10T19:28:00.428+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

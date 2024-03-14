@@ -1,0 +1,70 @@
+[2024-01-15T00:37:08.430+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login scheduled__2024-01-12T00:00:00+00:00 [queued]>
+[2024-01-15T00:37:08.533+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login scheduled__2024-01-12T00:00:00+00:00 [queued]>
+[2024-01-15T00:37:08.534+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-15T00:37:08.534+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-15T00:37:08.534+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-15T00:37:09.610+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): jobplanet_login> on 2024-01-12 00:00:00+00:00
+[2024-01-15T00:37:09.658+0000] {standard_task_runner.py:55} INFO - Started process 15360 to run task
+[2024-01-15T00:37:09.682+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'jobplanet_login', 'scheduled__2024-01-12T00:00:00+00:00', '--job-id', '584', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmp6c8_6xo1']
+[2024-01-15T00:37:09.684+0000] {standard_task_runner.py:83} INFO - Job 584: Subtask jobplanet_login
+[2024-01-15T00:37:10.028+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.jobplanet_login scheduled__2024-01-12T00:00:00+00:00 [running]> on host 565f6bcc10b6
+[2024-01-15T00:37:10.370+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=jobplanet_login
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-12T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-01-12T00:00:00+00:00
+[2024-01-15T03:11:17.870+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 73, in jobplanet_login
+    with webdriver.Remote(f'{remote_webdriver}:4444/wd/hub', options=options) as driver:
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 206, in __init__
+    self.start_session(capabilities)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 290, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 345, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: Could not start a new session. Timed out creating session 
+Host info: host: '8f75bdcd2576', ip: '172.20.0.2'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '11.0.21'
+Driver info: driver.version: unknown
+Stacktrace:
+    at org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue.failDueToTimeout (LocalNewSessionQueue.java:461)
+    at java.lang.Iterable.forEach (Iterable.java:75)
+    at org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue.timeoutSessions (LocalNewSessionQueue.java:181)
+    at org.openqa.selenium.concurrent.GuardedRunnable.lambda$guard$0 (GuardedRunnable.java:35)
+    at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+    at java.util.concurrent.FutureTask.runAndReset (FutureTask.java:305)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run (ScheduledThreadPoolExecutor.java:305)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1128)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:628)
+    at java.lang.Thread.run (Thread.java:829)
+[2024-01-15T03:11:18.010+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=jobinfo_jobplanet, task_id=jobplanet_login, execution_date=20240112T000000, start_date=20240115T003708, end_date=20240115T031118
+[2024-01-15T03:11:18.209+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 584 for task jobplanet_login (Message: Could not start a new session. Timed out creating session 
+Host info: host: '8f75bdcd2576', ip: '172.20.0.2'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '11.0.21'
+Driver info: driver.version: unknown
+Stacktrace:
+    at org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue.failDueToTimeout (LocalNewSessionQueue.java:461)
+    at java.lang.Iterable.forEach (Iterable.java:75)
+    at org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue.timeoutSessions (LocalNewSessionQueue.java:181)
+    at org.openqa.selenium.concurrent.GuardedRunnable.lambda$guard$0 (GuardedRunnable.java:35)
+    at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+    at java.util.concurrent.FutureTask.runAndReset (FutureTask.java:305)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run (ScheduledThreadPoolExecutor.java:305)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1128)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:628)
+    at java.lang.Thread.run (Thread.java:829); 15360)
+[2024-01-15T03:11:18.298+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-15T03:11:18.559+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

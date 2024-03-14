@@ -1,0 +1,147 @@
+[2024-01-14T14:49:57.088+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-14T14:49:50.067533+00:00 [queued]>
+[2024-01-14T14:49:57.099+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-14T14:49:50.067533+00:00 [queued]>
+[2024-01-14T14:49:57.099+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T14:49:57.099+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-14T14:49:57.099+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T14:49:57.114+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): jobplanet_login> on 2024-01-14 14:49:50.067533+00:00
+[2024-01-14T14:49:57.121+0000] {standard_task_runner.py:55} INFO - Started process 4243 to run task
+[2024-01-14T14:49:57.123+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'jobplanet_login', 'manual__2024-01-14T14:49:50.067533+00:00', '--job-id', '519', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmp6i55nkr1']
+[2024-01-14T14:49:57.123+0000] {standard_task_runner.py:83} INFO - Job 519: Subtask jobplanet_login
+[2024-01-14T14:49:57.184+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-14T14:49:50.067533+00:00 [running]> on host 565f6bcc10b6
+[2024-01-14T14:49:57.258+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=jobplanet_login
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-14T14:49:50.067533+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-14T14:49:50.067533+00:00
+[2024-01-14T14:50:02.185+0000] {jobinfo_jobplanet.py:76} INFO - *********************************
+[2024-01-14T14:50:02.317+0000] {jobinfo_jobplanet.py:82} INFO - 12212121313442342354534634534534534534523423443423
+[2024-01-14T14:50:02.317+0000] {jobinfo_jobplanet.py:83} INFO - <selenium.webdriver.remote.webdriver.WebDriver (session="7da7e9e819275b22506754ec825805a3")>
+[2024-01-14T14:50:02.785+0000] {jobinfo_jobplanet.py:86} INFO - 890u8987978078978978079078097807897809789789789789789797
+[2024-01-14T14:50:03.350+0000] {jobinfo_jobplanet.py:89} INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-01-14T14:50:04.128+0000] {jobinfo_jobplanet.py:100} INFO - 3333333333333333333333333
+[2024-01-14T14:50:04.159+0000] {jobinfo_jobplanet.py:106} INFO - 4444444444444444444444444444
+[2024-01-14T14:50:04.167+0000] {jobinfo_jobplanet.py:108} INFO - ['오케스트로', '오케스트로', '제니스앤컴퍼니', '제니스앤컴퍼니', '제니스앤컴퍼니', '메이븐클라우드서비스', '엠아이티', '엠아이티', '스윗코리아', '스윗코리아', '파킹클라우드', '오케스트로', '오케스트로', '오케스트로', '오케스트로', '오케스트로', '월급쟁이부자들', '월급쟁이부자들', '로민', '블랙탠저린', '파인더스', '론픽', '비포플레이', '롯데헬스케어', '롯데헬스케어', '올라운드닥터스', '와디즈', '크리에이트립', '데브툴즈', '티니어', '키다리스튜디오', '마크클라우드']
+[2024-01-14T14:50:04.167+0000] {jobinfo_jobplanet.py:109} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-14T14:50:04.167+0000] {jobinfo_jobplanet.py:110} INFO - 시작
+[2024-01-14T14:50:04.168+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T14:50:04.168+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T14:50:04.168+0000] {jobinfo_jobplanet.py:114} INFO - 제니스앤컴퍼니 있음
+[2024-01-14T14:50:04.168+0000] {jobinfo_jobplanet.py:114} INFO - 제니스앤컴퍼니 있음
+[2024-01-14T14:50:04.168+0000] {jobinfo_jobplanet.py:114} INFO - 제니스앤컴퍼니 있음
+[2024-01-14T14:50:04.168+0000] {jobinfo_jobplanet.py:114} INFO - 메이븐클라우드서비스 있음
+[2024-01-14T14:50:04.168+0000] {jobinfo_jobplanet.py:114} INFO - 엠아이티 있음
+[2024-01-14T14:50:04.168+0000] {jobinfo_jobplanet.py:114} INFO - 엠아이티 있음
+[2024-01-14T14:50:04.168+0000] {jobinfo_jobplanet.py:114} INFO - 스윗코리아 있음
+[2024-01-14T14:50:04.169+0000] {jobinfo_jobplanet.py:114} INFO - 스윗코리아 있음
+[2024-01-14T14:50:04.169+0000] {jobinfo_jobplanet.py:114} INFO - 파킹클라우드 있음
+[2024-01-14T14:50:04.169+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T14:50:04.169+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T14:50:04.169+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T14:50:04.169+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T14:50:04.169+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T14:50:04.169+0000] {jobinfo_jobplanet.py:114} INFO - 월급쟁이부자들 있음
+[2024-01-14T14:50:04.169+0000] {jobinfo_jobplanet.py:114} INFO - 월급쟁이부자들 있음
+[2024-01-14T14:50:04.169+0000] {jobinfo_jobplanet.py:114} INFO - 로민 있음
+[2024-01-14T14:50:04.169+0000] {jobinfo_jobplanet.py:114} INFO - 블랙탠저린 있음
+[2024-01-14T14:50:04.169+0000] {jobinfo_jobplanet.py:114} INFO - 파인더스 있음
+[2024-01-14T14:50:04.178+0000] {jobinfo_jobplanet.py:121} INFO - 론픽 파일이 없음
+[2024-01-14T14:50:04.212+0000] {jobinfo_jobplanet.py:139} INFO - 론픽의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T14:50:04.212+0000] {jobinfo_jobplanet.py:140} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-14T14:50:04.212+0000] {jobinfo_jobplanet.py:114} INFO - 비포플레이 있음
+[2024-01-14T14:50:04.212+0000] {jobinfo_jobplanet.py:114} INFO - 롯데헬스케어 있음
+[2024-01-14T14:50:04.212+0000] {jobinfo_jobplanet.py:114} INFO - 롯데헬스케어 있음
+[2024-01-14T14:50:04.220+0000] {jobinfo_jobplanet.py:121} INFO - 올라운드닥터스 파일이 없음
+[2024-01-14T14:50:04.242+0000] {jobinfo_jobplanet.py:139} INFO - 올라운드닥터스의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T14:50:04.243+0000] {jobinfo_jobplanet.py:140} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-14T14:50:04.250+0000] {jobinfo_jobplanet.py:121} INFO - 와디즈 파일이 없음
+[2024-01-14T14:50:06.923+0000] {jobinfo_jobplanet.py:139} INFO - 와디즈의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T14:50:06.924+0000] {jobinfo_jobplanet.py:140} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-14T14:50:06.924+0000] {jobinfo_jobplanet.py:114} INFO - 크리에이트립 있음
+[2024-01-14T14:50:06.924+0000] {jobinfo_jobplanet.py:114} INFO - 데브툴즈 있음
+[2024-01-14T14:50:06.925+0000] {jobinfo_jobplanet.py:114} INFO - 티니어 있음
+[2024-01-14T14:50:06.925+0000] {jobinfo_jobplanet.py:114} INFO - 키다리스튜디오 있음
+[2024-01-14T14:50:06.926+0000] {jobinfo_jobplanet.py:114} INFO - 마크클라우드 있음
+[2024-01-14T14:50:06.941+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:50:07.230+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:50:07.333+0000] {jobinfo_jobplanet.py:629} INFO - 제니스앤컴퍼니 정보 없ㅇ,ㅡ
+[2024-01-14T14:50:07.333+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:50:18.218+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:50:18.295+0000] {jobinfo_jobplanet.py:629} INFO - 제니스앤컴퍼니 정보 없ㅇ,ㅡ
+[2024-01-14T14:50:18.295+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:50:31.988+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:50:32.094+0000] {jobinfo_jobplanet.py:629} INFO - 제니스앤컴퍼니 정보 없ㅇ,ㅡ
+[2024-01-14T14:50:32.095+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:50:45.177+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:50:45.271+0000] {jobinfo_jobplanet.py:629} INFO - 메이븐클라우드서비스 정보 없ㅇ,ㅡ
+[2024-01-14T14:50:45.273+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:50:58.492+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:50:58.588+0000] {jobinfo_jobplanet.py:629} INFO - 엠아이티 정보 없ㅇ,ㅡ
+[2024-01-14T14:50:58.588+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:51:15.609+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:51:15.703+0000] {jobinfo_jobplanet.py:629} INFO - 엠아이티 정보 없ㅇ,ㅡ
+[2024-01-14T14:51:15.704+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:51:30.718+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:51:30.882+0000] {jobinfo_jobplanet.py:629} INFO - 스윗코리아 정보 없ㅇ,ㅡ
+[2024-01-14T14:51:30.883+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:51:46.801+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:51:46.904+0000] {jobinfo_jobplanet.py:629} INFO - 스윗코리아 정보 없ㅇ,ㅡ
+[2024-01-14T14:51:46.904+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:52:00.497+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:52:00.595+0000] {jobinfo_jobplanet.py:629} INFO - 파킹클라우드 정보 없ㅇ,ㅡ
+[2024-01-14T14:52:00.595+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:52:17.118+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:52:17.211+0000] {jobinfo_jobplanet.py:629} INFO - 월급쟁이부자들 정보 없ㅇ,ㅡ
+[2024-01-14T14:52:17.211+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:52:30.888+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:52:30.975+0000] {jobinfo_jobplanet.py:629} INFO - 월급쟁이부자들 정보 없ㅇ,ㅡ
+[2024-01-14T14:52:30.976+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:52:46.148+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:52:46.243+0000] {jobinfo_jobplanet.py:629} INFO - 로민 정보 없ㅇ,ㅡ
+[2024-01-14T14:52:46.243+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:53:01.209+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:53:01.303+0000] {jobinfo_jobplanet.py:629} INFO - 블랙탠저린 정보 없ㅇ,ㅡ
+[2024-01-14T14:53:01.303+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:53:17.558+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:53:17.644+0000] {jobinfo_jobplanet.py:629} INFO - 파인더스 정보 없ㅇ,ㅡ
+[2024-01-14T14:53:17.645+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:53:32.356+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:53:32.438+0000] {jobinfo_jobplanet.py:629} INFO - 론픽 정보 없ㅇ,ㅡ
+[2024-01-14T14:53:32.438+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:53:48.495+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:53:48.574+0000] {jobinfo_jobplanet.py:629} INFO - 비포플레이 정보 없ㅇ,ㅡ
+[2024-01-14T14:53:48.574+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:54:05.122+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:54:05.266+0000] {jobinfo_jobplanet.py:629} INFO - 롯데헬스케어 정보 없ㅇ,ㅡ
+[2024-01-14T14:54:05.266+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:54:22.626+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:54:22.694+0000] {jobinfo_jobplanet.py:629} INFO - 롯데헬스케어 정보 없ㅇ,ㅡ
+[2024-01-14T14:54:22.694+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:54:41.004+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:54:41.111+0000] {jobinfo_jobplanet.py:629} INFO - 올라운드닥터스 정보 없ㅇ,ㅡ
+[2024-01-14T14:54:41.111+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:54:56.413+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:54:56.550+0000] {jobinfo_jobplanet.py:629} INFO - 와디즈 정보 없ㅇ,ㅡ
+[2024-01-14T14:54:56.553+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:55:11.390+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:55:11.501+0000] {jobinfo_jobplanet.py:629} INFO - 크리에이트립 정보 없ㅇ,ㅡ
+[2024-01-14T14:55:11.501+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:55:26.003+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:55:26.075+0000] {jobinfo_jobplanet.py:629} INFO - 데브툴즈 정보 없ㅇ,ㅡ
+[2024-01-14T14:55:26.075+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:55:40.593+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:55:40.694+0000] {jobinfo_jobplanet.py:629} INFO - 티니어 정보 없ㅇ,ㅡ
+[2024-01-14T14:55:40.695+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:55:56.440+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:55:56.523+0000] {jobinfo_jobplanet.py:629} INFO - 키다리스튜디오 정보 없ㅇ,ㅡ
+[2024-01-14T14:55:56.523+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:56:13.772+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:56:14.030+0000] {jobinfo_jobplanet.py:629} INFO - 마크클라우드 정보 없ㅇ,ㅡ
+[2024-01-14T14:56:14.030+0000] {jobinfo_jobplanet.py:630} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T14:56:29.196+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-01-14T14:56:29.209+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_jobplanet, task_id=jobplanet_login, execution_date=20240114T144950, start_date=20240114T144957, end_date=20240114T145629
+[2024-01-14T14:56:29.274+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-14T14:56:29.326+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

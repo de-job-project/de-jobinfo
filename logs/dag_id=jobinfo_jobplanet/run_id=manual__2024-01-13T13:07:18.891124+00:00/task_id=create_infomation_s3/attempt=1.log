@@ -1,0 +1,177 @@
+[2024-01-13T13:07:26.554+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-13T13:07:18.891124+00:00 [queued]>
+[2024-01-13T13:07:26.565+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-13T13:07:18.891124+00:00 [queued]>
+[2024-01-13T13:07:26.565+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-13T13:07:26.565+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-13T13:07:26.565+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-13T13:07:26.587+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): create_infomation_s3> on 2024-01-13 13:07:18.891124+00:00
+[2024-01-13T13:07:26.598+0000] {standard_task_runner.py:55} INFO - Started process 909 to run task
+[2024-01-13T13:07:26.600+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'create_infomation_s3', 'manual__2024-01-13T13:07:18.891124+00:00', '--job-id', '374', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmpws7llp21']
+[2024-01-13T13:07:26.601+0000] {standard_task_runner.py:83} INFO - Job 374: Subtask create_infomation_s3
+[2024-01-13T13:07:26.883+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-13T13:07:18.891124+00:00 [running]> on host 7b77d04f99d6
+[2024-01-13T13:07:26.956+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=create_infomation_s3
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-13T13:07:18.891124+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-13T13:07:18.891124+00:00
+[2024-01-13T13:07:27.673+0000] {jobinfo_jobplanet.py:57} INFO - 11111111111111111
+[2024-01-13T13:07:27.704+0000] {jobinfo_jobplanet.py:58} INFO - <html class="no-js" lang="en-US"><!--<![endif]--><head>
+<title>Attention Required! | Cloudflare</title>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async="" src="//www.google-analytics.com/analytics.js"></script><script src="/cdn-cgi/apps/head/Pkvo1XfvcUSTQ4tNhbP9Iaf5hmo.js"></script><link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/cf.errors.css">
+<!--[if lt IE 9]><link rel="stylesheet" id='cf_styles-ie-css' href="/cdn-cgi/styles/cf.errors.ie.css" /><![endif]-->
+<style>body{margin:0;padding:0}</style>
+
+
+<!--[if gte IE 10]><!-->
+<script>
+  if (!navigator.cookieEnabled) {
+    window.addEventListener('DOMContentLoaded', function () {
+      var cookieEl = document.getElementById('cookie-alert');
+      cookieEl.style.display = 'block';
+    })
+  }
+</script>
+<!--<![endif]-->
+
+
+</head>
+<body>
+  <div id="cf-wrapper">
+    <div class="cf-alert cf-alert-error cf-cookie-error" id="cookie-alert" data-translate="enable_cookies">Please enable cookies.</div>
+    <div id="cf-error-details" class="cf-error-details-wrapper">
+      <div class="cf-wrapper cf-header cf-error-overview">
+        <h1 data-translate="block_headline">Sorry, you have been blocked</h1>
+        <h2 class="cf-subheadline"><span data-translate="unable_to_access">You are unable to access</span> jobplanet.co.kr</h2>
+      </div><!-- /.header -->
+
+      <div class="cf-section cf-highlight">
+        <div class="cf-wrapper">
+          <div class="cf-screenshot-container cf-screenshot-full">
+            
+              <span class="cf-no-screenshot error"></span>
+            
+          </div>
+        </div>
+      </div><!-- /.captcha-container -->
+
+      <div class="cf-section cf-wrapper">
+        <div class="cf-columns two">
+          <div class="cf-column">
+            <h2 data-translate="blocked_why_headline">Why have I been blocked?</h2>
+
+            <p data-translate="blocked_why_detail">This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.</p>
+          </div>
+
+          <div class="cf-column">
+            <h2 data-translate="blocked_resolve_headline">What can I do to resolve this?</h2>
+
+            <p data-translate="blocked_resolve_detail">You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.</p>
+          </div>
+        </div>
+      </div><!-- /.section -->
+
+      <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">844ddcc54f3230f7</strong></span>
+    <span class="cf-footer-separator sm:hidden">•</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">114.202.201.75</span>
+      <span class="cf-footer-separator sm:hidden">•</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div><!-- /#cf-error-details -->
+  </div><!-- /#cf-wrapper -->
+
+  <script>
+  window._cf_translation = {};
+  
+  
+</script>
+
+
+
+</body></html>
+[2024-01-13T13:07:27.705+0000] {jobinfo_jobplanet.py:59} INFO - <selenium.webdriver.remote.webdriver.WebDriver (session="5faa714773a13b890305c5890c95c314")>
+[2024-01-13T13:07:27.732+0000] {jobinfo_jobplanet.py:65} INFO - 2222222222222222222222222
+[2024-01-13T13:07:27.732+0000] {jobinfo_jobplanet.py:66} INFO - <selenium.webdriver.remote.webdriver.WebDriver (session="5faa714773a13b890305c5890c95c314")>
+[2024-01-13T13:07:30.970+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 89, in create_infomation_s3
+    driver = jobplanet_login()
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 71, in jobplanet_login
+    id_input = driver.find_element(By.XPATH, "//select/option[@value='11912']")
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 739, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 345, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//select/option[@value='11912']"}
+  (Session info: chrome-headless-shell=120.0.6099.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55e179d89f83 <unknown>
+#1 0x55e179a42cf7 <unknown>
+#2 0x55e179a9299e <unknown>
+#3 0x55e179a92aa1 <unknown>
+#4 0x55e179addd64 <unknown>
+#5 0x55e179abc0dd <unknown>
+#6 0x55e179adb006 <unknown>
+#7 0x55e179abbe53 <unknown>
+#8 0x55e179a83dd4 <unknown>
+#9 0x55e179a851de <unknown>
+#10 0x55e179d4e531 <unknown>
+#11 0x55e179d52455 <unknown>
+#12 0x55e179d3af55 <unknown>
+#13 0x55e179d530ef <unknown>
+#14 0x55e179d1e99f <unknown>
+#15 0x55e179d77008 <unknown>
+#16 0x55e179d771d7 <unknown>
+#17 0x55e179d89124 <unknown>
+#18 0x7f8529ee3ac3 <unknown>
+
+[2024-01-13T13:07:30.978+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=jobinfo_jobplanet, task_id=create_infomation_s3, execution_date=20240113T130718, start_date=20240113T130726, end_date=20240113T130730
+[2024-01-13T13:07:31.002+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 374 for task create_infomation_s3 (Message: no such element: Unable to locate element: {"method":"xpath","selector":"//select/option[@value='11912']"}
+  (Session info: chrome-headless-shell=120.0.6099.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55e179d89f83 <unknown>
+#1 0x55e179a42cf7 <unknown>
+#2 0x55e179a9299e <unknown>
+#3 0x55e179a92aa1 <unknown>
+#4 0x55e179addd64 <unknown>
+#5 0x55e179abc0dd <unknown>
+#6 0x55e179adb006 <unknown>
+#7 0x55e179abbe53 <unknown>
+#8 0x55e179a83dd4 <unknown>
+#9 0x55e179a851de <unknown>
+#10 0x55e179d4e531 <unknown>
+#11 0x55e179d52455 <unknown>
+#12 0x55e179d3af55 <unknown>
+#13 0x55e179d530ef <unknown>
+#14 0x55e179d1e99f <unknown>
+#15 0x55e179d77008 <unknown>
+#16 0x55e179d771d7 <unknown>
+#17 0x55e179d89124 <unknown>
+#18 0x7f8529ee3ac3 <unknown>
+; 909)
+[2024-01-13T13:07:31.089+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-13T13:07:31.406+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

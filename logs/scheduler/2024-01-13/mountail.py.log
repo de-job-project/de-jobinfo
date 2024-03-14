@@ -1,0 +1,17 @@
+[2024-01-13T08:01:17.997+0000] {processor.py:153} INFO - Started process (PID=7481) to work on /opt/airflow/dags/mountail.py
+[2024-01-13T08:01:17.998+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/mountail.py for tasks to queue
+[2024-01-13T08:01:17.998+0000] {logging_mixin.py:137} INFO - [2024-01-13T08:01:17.998+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/mountail.py
+[2024-01-13T08:01:17.999+0000] {logging_mixin.py:137} INFO - [2024-01-13T08:01:17.999+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/mountail.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/mountail.py", line 27
+    driver.get("https://jobplanet.co.kr/users/sign_in?_nav=gb")
+    ^
+IndentationError: unexpected indent
+[2024-01-13T08:01:17.999+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/mountail.py
+[2024-01-13T08:01:18.014+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/mountail.py took 0.019 seconds

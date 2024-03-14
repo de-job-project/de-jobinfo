@@ -1,0 +1,25 @@
+[2024-01-17T05:32:49.210+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jumpit_jobinfo.save_to_csv manual__2024-01-17T05:32:38.908351+00:00 [queued]>
+[2024-01-17T05:32:49.222+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jumpit_jobinfo.save_to_csv manual__2024-01-17T05:32:38.908351+00:00 [queued]>
+[2024-01-17T05:32:49.223+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-17T05:32:49.223+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2024-01-17T05:32:49.226+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-17T05:32:49.258+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): save_to_csv> on 2024-01-17 05:32:38.908351+00:00
+[2024-01-17T05:32:49.275+0000] {standard_task_runner.py:55} INFO - Started process 27356 to run task
+[2024-01-17T05:32:49.277+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jumpit_jobinfo', 'save_to_csv', 'manual__2024-01-17T05:32:38.908351+00:00', '--job-id', '4367', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jumpit.py', '--cfg-path', '/tmp/tmpcq5p0gum']
+[2024-01-17T05:32:49.278+0000] {standard_task_runner.py:83} INFO - Job 4367: Subtask save_to_csv
+[2024-01-17T05:32:49.414+0000] {task_command.py:388} INFO - Running <TaskInstance: jumpit_jobinfo.save_to_csv manual__2024-01-17T05:32:38.908351+00:00 [running]> on host 565f6bcc10b6
+[2024-01-17T05:32:49.538+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jumpit_jobinfo
+AIRFLOW_CTX_TASK_ID=save_to_csv
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-17T05:32:38.908351+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-17T05:32:38.908351+00:00
+[2024-01-17T05:32:49.553+0000] {jobinfo_jumpit.py:87} INFO - Attempting to write to: /opt/***/dags/jumpit.csv
+[2024-01-17T05:32:49.555+0000] {jobinfo_jumpit.py:97} INFO - File successfully written to: /opt/***/dags/jumpit.csv
+[2024-01-17T05:32:49.576+0000] {python.py:177} INFO - Done. Returned value was: /opt/***/dags/jumpit.csv
+[2024-01-17T05:32:49.598+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jumpit_jobinfo, task_id=save_to_csv, execution_date=20240117T053238, start_date=20240117T053249, end_date=20240117T053249
+[2024-01-17T05:32:49.654+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-17T05:32:49.682+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,24 @@
+[2024-01-14T02:00:01.091+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: HelloWorld.print_hello scheduled__2024-01-13T02:00:00+00:00 [queued]>
+[2024-01-14T02:00:01.099+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: HelloWorld.print_hello scheduled__2024-01-13T02:00:00+00:00 [queued]>
+[2024-01-14T02:00:01.099+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T02:00:01.099+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-14T02:00:01.099+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T02:00:01.115+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): print_hello> on 2024-01-13 02:00:00+00:00
+[2024-01-14T02:00:01.119+0000] {standard_task_runner.py:55} INFO - Started process 6821 to run task
+[2024-01-14T02:00:01.122+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'HelloWorld', 'print_hello', 'scheduled__2024-01-13T02:00:00+00:00', '--job-id', '396', '--raw', '--subdir', 'DAGS_FOLDER/HelloWorld.py', '--cfg-path', '/tmp/tmpz82d7m87']
+[2024-01-14T02:00:01.122+0000] {standard_task_runner.py:83} INFO - Job 396: Subtask print_hello
+[2024-01-14T02:00:01.172+0000] {task_command.py:388} INFO - Running <TaskInstance: HelloWorld.print_hello scheduled__2024-01-13T02:00:00+00:00 [running]> on host 7b77d04f99d6
+[2024-01-14T02:00:01.233+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=HelloWorld
+AIRFLOW_CTX_TASK_ID=print_hello
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-13T02:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-01-13T02:00:00+00:00
+[2024-01-14T02:00:01.234+0000] {logging_mixin.py:137} INFO - hello!
+[2024-01-14T02:00:01.234+0000] {python.py:177} INFO - Done. Returned value was: hello!
+[2024-01-14T02:00:01.255+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=HelloWorld, task_id=print_hello, execution_date=20240113T020000, start_date=20240114T020001, end_date=20240114T020001
+[2024-01-14T02:00:01.293+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-14T02:00:01.311+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

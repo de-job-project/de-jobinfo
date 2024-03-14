@@ -1,0 +1,30 @@
+[2024-01-14T11:53:00.086+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.read_s3_file manual__2024-01-14T11:52:55.069068+00:00 [queued]>
+[2024-01-14T11:53:00.105+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.read_s3_file manual__2024-01-14T11:52:55.069068+00:00 [queued]>
+[2024-01-14T11:53:00.105+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T11:53:00.105+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-14T11:53:00.105+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T11:53:00.121+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): read_s3_file> on 2024-01-14 11:52:55.069068+00:00
+[2024-01-14T11:53:00.127+0000] {standard_task_runner.py:55} INFO - Started process 22846 to run task
+[2024-01-14T11:53:00.129+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'read_s3_file', 'manual__2024-01-14T11:52:55.069068+00:00', '--job-id', '473', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmpjyfie0av']
+[2024-01-14T11:53:00.130+0000] {standard_task_runner.py:83} INFO - Job 473: Subtask read_s3_file
+[2024-01-14T11:53:00.370+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.read_s3_file manual__2024-01-14T11:52:55.069068+00:00 [running]> on host 7b77d04f99d6
+[2024-01-14T11:53:00.442+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=read_s3_file
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-14T11:52:55.069068+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-14T11:52:55.069068+00:00
+[2024-01-14T11:53:00.443+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+TypeError: read_s3_file() missing 1 required positional argument: 'bucket_name'
+[2024-01-14T11:53:00.449+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=jobinfo_jobplanet, task_id=read_s3_file, execution_date=20240114T115255, start_date=20240114T115300, end_date=20240114T115300
+[2024-01-14T11:53:00.462+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 473 for task read_s3_file (read_s3_file() missing 1 required positional argument: 'bucket_name'; 22846)
+[2024-01-14T11:53:00.503+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-14T11:53:00.677+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

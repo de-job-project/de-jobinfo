@@ -1,0 +1,29 @@
+[2024-01-16T06:45:43.989+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_slack.send_slack_closeDeadline manual__2024-01-16T06:42:30.653220+00:00 [queued]>
+[2024-01-16T06:45:43.999+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_slack.send_slack_closeDeadline manual__2024-01-16T06:42:30.653220+00:00 [queued]>
+[2024-01-16T06:45:43.999+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-16T06:45:43.999+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2024-01-16T06:45:44.000+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-16T06:45:44.025+0000] {taskinstance.py:1300} INFO - Executing <Task(SlackWebhookOperator): send_slack_closeDeadline> on 2024-01-16 06:42:30.653220+00:00
+[2024-01-16T06:45:44.030+0000] {standard_task_runner.py:55} INFO - Started process 64645 to run task
+[2024-01-16T06:45:44.033+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_slack', 'send_slack_closeDeadline', 'manual__2024-01-16T06:42:30.653220+00:00', '--job-id', '752', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_slack.py', '--cfg-path', '/tmp/tmpi27h2s3z']
+[2024-01-16T06:45:44.040+0000] {standard_task_runner.py:83} INFO - Job 752: Subtask send_slack_closeDeadline
+[2024-01-16T06:45:44.213+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_slack.send_slack_closeDeadline manual__2024-01-16T06:42:30.653220+00:00 [running]> on host 565f6bcc10b6
+[2024-01-16T06:45:44.398+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_slack
+AIRFLOW_CTX_TASK_ID=send_slack_closeDeadline
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-16T06:42:30.653220+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-16T06:42:30.653220+00:00
+[2024-01-16T06:45:44.399+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/slack/operators/slack_webhook.py:173: UserWarning: Found unexpected keyword-argument(s) 'link_names' in `send` method. This argument(s) have no effect.
+  link_names=self.link_names,
+
+[2024-01-16T06:45:44.421+0000] {base.py:73} INFO - Using connection ID 'slack_conn' for task execution.
+[2024-01-16T06:45:44.422+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/slack/hooks/slack_webhook.py:226: DeprecationWarning: Found Slack Webhook Token URL in Connection 'slack_conn' `host` and `password` field is empty. This behaviour deprecated and could expose you token in the UI and will be removed in a future releases.
+  return WebhookClient(**self._get_conn_params())
+
+[2024-01-16T06:45:44.750+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_slack, task_id=send_slack_closeDeadline, execution_date=20240116T064230, start_date=20240116T064543, end_date=20240116T064544
+[2024-01-16T06:45:44.781+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-16T06:45:44.808+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

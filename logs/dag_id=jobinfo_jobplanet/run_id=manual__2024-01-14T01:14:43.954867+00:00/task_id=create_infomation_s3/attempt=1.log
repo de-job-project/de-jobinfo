@@ -1,0 +1,97 @@
+[2024-01-14T01:14:52.501+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-14T01:14:43.954867+00:00 [queued]>
+[2024-01-14T01:14:52.534+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-14T01:14:43.954867+00:00 [queued]>
+[2024-01-14T01:14:52.534+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T01:14:52.534+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-14T01:14:52.534+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T01:14:52.579+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): create_infomation_s3> on 2024-01-14 01:14:43.954867+00:00
+[2024-01-14T01:14:52.588+0000] {standard_task_runner.py:55} INFO - Started process 4546 to run task
+[2024-01-14T01:14:52.595+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'create_infomation_s3', 'manual__2024-01-14T01:14:43.954867+00:00', '--job-id', '382', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmpzrlt12n6']
+[2024-01-14T01:14:52.596+0000] {standard_task_runner.py:83} INFO - Job 382: Subtask create_infomation_s3
+[2024-01-14T01:14:52.993+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-14T01:14:43.954867+00:00 [running]> on host 7b77d04f99d6
+[2024-01-14T01:14:53.115+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=create_infomation_s3
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-14T01:14:43.954867+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-14T01:14:43.954867+00:00
+[2024-01-14T01:14:58.590+0000] {jobinfo_jobplanet.py:69} INFO - 11111111111111111
+[2024-01-14T01:14:58.715+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 101, in create_infomation_s3
+    driver = jobplanet_login()
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 70, in jobplanet_login
+    logging.info(driver.page_source)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 345, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=120.0.6099.109)
+Stacktrace:
+#0 0x55ee18b14f83 <unknown>
+#1 0x55ee187cdb2b <unknown>
+#2 0x55ee187b33a3 <unknown>
+#3 0x55ee187b17e1 <unknown>
+#4 0x55ee187b218a <unknown>
+#5 0x55ee187c307c <unknown>
+#6 0x55ee187db7c1 <unknown>
+#7 0x55ee187e16bb <unknown>
+#8 0x55ee187b292d <unknown>
+#9 0x55ee187db459 <unknown>
+#10 0x55ee18865f1a <unknown>
+#11 0x55ee18846e53 <unknown>
+#12 0x55ee1880edd4 <unknown>
+#13 0x55ee188101de <unknown>
+#14 0x55ee18ad9531 <unknown>
+#15 0x55ee18add455 <unknown>
+#16 0x55ee18ac5f55 <unknown>
+#17 0x55ee18ade0ef <unknown>
+#18 0x55ee18aa999f <unknown>
+#19 0x55ee18b02008 <unknown>
+#20 0x55ee18b021d7 <unknown>
+#21 0x55ee18b14124 <unknown>
+#22 0x7f6379c8cac3 <unknown>
+
+[2024-01-14T01:14:58.745+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=jobinfo_jobplanet, task_id=create_infomation_s3, execution_date=20240114T011443, start_date=20240114T011452, end_date=20240114T011458
+[2024-01-14T01:14:58.769+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 382 for task create_infomation_s3 (Message: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=120.0.6099.109)
+Stacktrace:
+#0 0x55ee18b14f83 <unknown>
+#1 0x55ee187cdb2b <unknown>
+#2 0x55ee187b33a3 <unknown>
+#3 0x55ee187b17e1 <unknown>
+#4 0x55ee187b218a <unknown>
+#5 0x55ee187c307c <unknown>
+#6 0x55ee187db7c1 <unknown>
+#7 0x55ee187e16bb <unknown>
+#8 0x55ee187b292d <unknown>
+#9 0x55ee187db459 <unknown>
+#10 0x55ee18865f1a <unknown>
+#11 0x55ee18846e53 <unknown>
+#12 0x55ee1880edd4 <unknown>
+#13 0x55ee188101de <unknown>
+#14 0x55ee18ad9531 <unknown>
+#15 0x55ee18add455 <unknown>
+#16 0x55ee18ac5f55 <unknown>
+#17 0x55ee18ade0ef <unknown>
+#18 0x55ee18aa999f <unknown>
+#19 0x55ee18b02008 <unknown>
+#20 0x55ee18b021d7 <unknown>
+#21 0x55ee18b14124 <unknown>
+#22 0x7f6379c8cac3 <unknown>
+; 4546)
+[2024-01-14T01:14:58.806+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-14T01:14:59.000+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

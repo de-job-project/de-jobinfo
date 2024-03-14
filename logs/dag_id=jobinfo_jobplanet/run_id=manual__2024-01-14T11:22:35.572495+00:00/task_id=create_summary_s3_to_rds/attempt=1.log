@@ -1,0 +1,29 @@
+[2024-01-14T11:22:53.290+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_summary_s3_to_rds manual__2024-01-14T11:22:35.572495+00:00 [queued]>
+[2024-01-14T11:22:53.299+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_summary_s3_to_rds manual__2024-01-14T11:22:35.572495+00:00 [queued]>
+[2024-01-14T11:22:53.300+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T11:22:53.300+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-14T11:22:53.301+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T11:22:53.322+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): create_summary_s3_to_rds> on 2024-01-14 11:22:35.572495+00:00
+[2024-01-14T11:22:53.345+0000] {standard_task_runner.py:55} INFO - Started process 21363 to run task
+[2024-01-14T11:22:53.347+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'create_summary_s3_to_rds', 'manual__2024-01-14T11:22:35.572495+00:00', '--job-id', '456', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmp8xfxfq4a']
+[2024-01-14T11:22:53.347+0000] {standard_task_runner.py:83} INFO - Job 456: Subtask create_summary_s3_to_rds
+[2024-01-14T11:22:53.871+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.create_summary_s3_to_rds manual__2024-01-14T11:22:35.572495+00:00 [running]> on host 7b77d04f99d6
+[2024-01-14T11:22:54.002+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=create_summary_s3_to_rds
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-14T11:22:35.572495+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-14T11:22:35.572495+00:00
+[2024-01-14T11:23:00.827+0000] {jobinfo_jobplanet.py:91} INFO - 11111111111111111
+[2024-01-14T11:23:00.854+0000] {jobinfo_jobplanet.py:99} INFO - 2222222222222222222222222
+[2024-01-14T11:23:00.950+0000] {jobinfo_jobplanet.py:106} INFO - 20180961@dongduk.ac.kr
+[2024-01-14T11:23:01.950+0000] {jobinfo_jobplanet.py:110} INFO - 33333333333333333
+[2024-01-14T11:23:02.034+0000] {jobinfo_jobplanet.py:114} INFO - user_password
+[2024-01-14T11:23:03.125+0000] {jobinfo_jobplanet.py:122} INFO - 4444444444444
+[2024-01-14T11:23:03.454+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-01-14T11:23:03.466+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_jobplanet, task_id=create_summary_s3_to_rds, execution_date=20240114T112235, start_date=20240114T112253, end_date=20240114T112303
+[2024-01-14T11:23:03.529+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-14T11:23:03.783+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

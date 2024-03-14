@@ -1,0 +1,272 @@
+[2024-01-14T12:50:41.403+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-14T12:50:26.230962+00:00 [queued]>
+[2024-01-14T12:50:41.463+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-14T12:50:26.230962+00:00 [queued]>
+[2024-01-14T12:50:41.464+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T12:50:41.464+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-14T12:50:41.465+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T12:50:41.535+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): jobplanet_login> on 2024-01-14 12:50:26.230962+00:00
+[2024-01-14T12:50:41.554+0000] {standard_task_runner.py:55} INFO - Started process 25451 to run task
+[2024-01-14T12:50:41.587+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'jobplanet_login', 'manual__2024-01-14T12:50:26.230962+00:00', '--job-id', '488', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmp7kkrjxrh']
+[2024-01-14T12:50:41.605+0000] {standard_task_runner.py:83} INFO - Job 488: Subtask jobplanet_login
+[2024-01-14T12:50:41.848+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-14T12:50:26.230962+00:00 [running]> on host 7b77d04f99d6
+[2024-01-14T12:50:42.268+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=jobplanet_login
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-14T12:50:26.230962+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-14T12:50:26.230962+00:00
+[2024-01-14T12:50:54.479+0000] {jobinfo_jobplanet.py:76} INFO - *********************************
+[2024-01-14T12:50:54.515+0000] {jobinfo_jobplanet.py:82} INFO - 12212121313442342354534634534534534534523423443423
+[2024-01-14T12:50:54.515+0000] {jobinfo_jobplanet.py:83} INFO - <selenium.webdriver.remote.webdriver.WebDriver (session="e1ade1deeb00c1c65da6ef8324f2adbf")>
+[2024-01-14T12:50:55.706+0000] {jobinfo_jobplanet.py:86} INFO - 890u8987978078978978079078097807897809789789789789789797
+[2024-01-14T12:50:57.014+0000] {jobinfo_jobplanet.py:89} INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-01-14T12:50:59.022+0000] {jobinfo_jobplanet.py:100} INFO - 3333333333333333333333333
+[2024-01-14T12:50:59.171+0000] {jobinfo_jobplanet.py:106} INFO - 4444444444444444444444444444
+[2024-01-14T12:51:07.084+0000] {jobinfo_jobplanet.py:118} INFO - 오케스트로 파일이 없음
+[2024-01-14T12:51:08.728+0000] {jobinfo_jobplanet.py:122} INFO - 오케스트로 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T12:51:18.743+0000] {jobinfo_jobplanet.py:125} INFO - 오케스트로 검색하기
+[2024-01-14T12:51:20.810+0000] {jobinfo_jobplanet.py:130} INFO - 오케스트로 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-14T12:53:30.431+0000] {jobinfo_jobplanet.py:136} INFO - 오케스트로의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T12:53:30.438+0000] {jobinfo_jobplanet.py:118} INFO - 오케스트로 파일이 없음
+[2024-01-14T12:53:31.045+0000] {jobinfo_jobplanet.py:122} INFO - 오케스트로 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T12:53:35.601+0000] {jobinfo_jobplanet.py:136} INFO - 오케스트로의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T12:53:36.813+0000] {jobinfo_jobplanet.py:118} INFO - 제니스앤컴퍼니 파일이 없음
+[2024-01-14T12:53:41.105+0000] {jobinfo_jobplanet.py:122} INFO - 제니스앤컴퍼니 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T12:53:53.121+0000] {jobinfo_jobplanet.py:125} INFO - 제니스앤컴퍼니 검색하기
+[2024-01-14T12:53:55.204+0000] {jobinfo_jobplanet.py:130} INFO - 제니스앤컴퍼니 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-14T12:54:51.266+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T12:54:51.948+0000] {jobinfo_jobplanet.py:621} INFO - File path/in/s3/bucket/review_information_제니스앤컴퍼니.csv uploaded to S3 successfully.
+[2024-01-14T12:54:51.994+0000] {jobinfo_jobplanet.py:118} INFO - 제니스앤컴퍼니 파일이 없음
+[2024-01-14T12:54:52.651+0000] {jobinfo_jobplanet.py:122} INFO - 제니스앤컴퍼니 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T12:55:06.280+0000] {jobinfo_jobplanet.py:125} INFO - 제니스앤컴퍼니 검색하기
+[2024-01-14T12:55:12.137+0000] {jobinfo_jobplanet.py:130} INFO - 제니스앤컴퍼니 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-14T12:56:30.246+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T12:56:30.587+0000] {jobinfo_jobplanet.py:621} INFO - File path/in/s3/bucket/review_information_제니스앤컴퍼니.csv uploaded to S3 successfully.
+[2024-01-14T12:56:30.749+0000] {jobinfo_jobplanet.py:118} INFO - 제니스앤컴퍼니 파일이 없음
+[2024-01-14T12:56:31.706+0000] {jobinfo_jobplanet.py:122} INFO - 제니스앤컴퍼니 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T12:56:47.353+0000] {jobinfo_jobplanet.py:125} INFO - 제니스앤컴퍼니 검색하기
+[2024-01-14T12:56:51.419+0000] {jobinfo_jobplanet.py:130} INFO - 제니스앤컴퍼니 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-14T12:57:34.269+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T12:57:34.454+0000] {jobinfo_jobplanet.py:621} INFO - File path/in/s3/bucket/review_information_제니스앤컴퍼니.csv uploaded to S3 successfully.
+[2024-01-14T12:57:34.486+0000] {jobinfo_jobplanet.py:118} INFO - 메이븐클라우드서비스 파일이 없음
+[2024-01-14T12:57:35.382+0000] {jobinfo_jobplanet.py:122} INFO - 메이븐클라우드서비스 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T12:57:46.942+0000] {jobinfo_jobplanet.py:125} INFO - 메이븐클라우드서비스 검색하기
+[2024-01-14T12:57:49.862+0000] {jobinfo_jobplanet.py:130} INFO - 메이븐클라우드서비스 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-14T13:00:10.754+0000] {jobinfo_jobplanet.py:136} INFO - 메이븐클라우드서비스의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:00:10.813+0000] {jobinfo_jobplanet.py:118} INFO - 엠아이티 파일이 없음
+[2024-01-14T13:00:11.929+0000] {jobinfo_jobplanet.py:122} INFO - 엠아이티 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:00:26.109+0000] {jobinfo_jobplanet.py:125} INFO - 엠아이티 검색하기
+[2024-01-14T13:00:29.088+0000] {jobinfo_jobplanet.py:130} INFO - 엠아이티 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-14T13:02:33.867+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T13:02:34.223+0000] {jobinfo_jobplanet.py:621} INFO - File path/in/s3/bucket/review_information_엠아이티.csv uploaded to S3 successfully.
+[2024-01-14T13:02:34.271+0000] {jobinfo_jobplanet.py:118} INFO - 엠아이티 파일이 없음
+[2024-01-14T13:02:40.611+0000] {jobinfo_jobplanet.py:122} INFO - 엠아이티 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:02:56.953+0000] {jobinfo_jobplanet.py:125} INFO - 엠아이티 검색하기
+[2024-01-14T13:02:59.845+0000] {jobinfo_jobplanet.py:136} INFO - 엠아이티의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:03:00.159+0000] {jobinfo_jobplanet.py:118} INFO - 스윗코리아 파일이 없음
+[2024-01-14T13:03:01.777+0000] {jobinfo_jobplanet.py:122} INFO - 스윗코리아 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:03:12.891+0000] {jobinfo_jobplanet.py:125} INFO - 스윗코리아 검색하기
+[2024-01-14T13:03:15.057+0000] {jobinfo_jobplanet.py:136} INFO - 스윗코리아의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:03:15.097+0000] {jobinfo_jobplanet.py:118} INFO - 스윗코리아 파일이 없음
+[2024-01-14T13:03:16.061+0000] {jobinfo_jobplanet.py:122} INFO - 스윗코리아 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:03:28.042+0000] {jobinfo_jobplanet.py:125} INFO - 스윗코리아 검색하기
+[2024-01-14T13:03:30.306+0000] {jobinfo_jobplanet.py:136} INFO - 스윗코리아의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:03:30.378+0000] {jobinfo_jobplanet.py:118} INFO - 파킹클라우드 파일이 없음
+[2024-01-14T13:03:31.255+0000] {jobinfo_jobplanet.py:122} INFO - 파킹클라우드 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:03:41.986+0000] {jobinfo_jobplanet.py:125} INFO - 파킹클라우드 검색하기
+[2024-01-14T13:03:44.254+0000] {jobinfo_jobplanet.py:136} INFO - 파킹클라우드의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:03:44.402+0000] {jobinfo_jobplanet.py:118} INFO - 오케스트로 파일이 없음
+[2024-01-14T13:03:45.211+0000] {jobinfo_jobplanet.py:122} INFO - 오케스트로 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:03:55.254+0000] {jobinfo_jobplanet.py:125} INFO - 오케스트로 검색하기
+[2024-01-14T13:03:57.537+0000] {jobinfo_jobplanet.py:136} INFO - 오케스트로의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:03:57.605+0000] {jobinfo_jobplanet.py:118} INFO - 오케스트로 파일이 없음
+[2024-01-14T13:03:58.693+0000] {jobinfo_jobplanet.py:122} INFO - 오케스트로 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:04:09.346+0000] {jobinfo_jobplanet.py:125} INFO - 오케스트로 검색하기
+[2024-01-14T13:04:11.548+0000] {jobinfo_jobplanet.py:136} INFO - 오케스트로의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:04:11.639+0000] {jobinfo_jobplanet.py:118} INFO - 오케스트로 파일이 없음
+[2024-01-14T13:04:12.708+0000] {jobinfo_jobplanet.py:122} INFO - 오케스트로 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:04:22.409+0000] {jobinfo_jobplanet.py:125} INFO - 오케스트로 검색하기
+[2024-01-14T13:04:24.530+0000] {jobinfo_jobplanet.py:136} INFO - 오케스트로의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:04:24.560+0000] {jobinfo_jobplanet.py:118} INFO - 오케스트로 파일이 없음
+[2024-01-14T13:04:25.603+0000] {jobinfo_jobplanet.py:122} INFO - 오케스트로 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:04:35.202+0000] {jobinfo_jobplanet.py:125} INFO - 오케스트로 검색하기
+[2024-01-14T13:04:37.362+0000] {jobinfo_jobplanet.py:136} INFO - 오케스트로의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:04:37.432+0000] {jobinfo_jobplanet.py:118} INFO - 오케스트로 파일이 없음
+[2024-01-14T13:04:38.339+0000] {jobinfo_jobplanet.py:122} INFO - 오케스트로 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:04:46.731+0000] {jobinfo_jobplanet.py:125} INFO - 오케스트로 검색하기
+[2024-01-14T13:04:49.230+0000] {jobinfo_jobplanet.py:136} INFO - 오케스트로의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:04:49.414+0000] {jobinfo_jobplanet.py:118} INFO - 월급쟁이부자들 파일이 없음
+[2024-01-14T13:04:51.025+0000] {jobinfo_jobplanet.py:122} INFO - 월급쟁이부자들 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:05:01.599+0000] {jobinfo_jobplanet.py:125} INFO - 월급쟁이부자들 검색하기
+[2024-01-14T13:05:03.730+0000] {jobinfo_jobplanet.py:136} INFO - 월급쟁이부자들의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:05:03.764+0000] {jobinfo_jobplanet.py:118} INFO - 월급쟁이부자들 파일이 없음
+[2024-01-14T13:05:04.616+0000] {jobinfo_jobplanet.py:122} INFO - 월급쟁이부자들 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:05:13.413+0000] {jobinfo_jobplanet.py:125} INFO - 월급쟁이부자들 검색하기
+[2024-01-14T13:05:15.644+0000] {jobinfo_jobplanet.py:136} INFO - 월급쟁이부자들의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:05:15.845+0000] {jobinfo_jobplanet.py:118} INFO - 로민 파일이 없음
+[2024-01-14T13:05:16.684+0000] {jobinfo_jobplanet.py:122} INFO - 로민 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:05:25.689+0000] {jobinfo_jobplanet.py:125} INFO - 로민 검색하기
+[2024-01-14T13:05:27.872+0000] {jobinfo_jobplanet.py:136} INFO - 로민의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:05:27.942+0000] {jobinfo_jobplanet.py:118} INFO - 블랙탠저린 파일이 없음
+[2024-01-14T13:05:28.824+0000] {jobinfo_jobplanet.py:122} INFO - 블랙탠저린 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:05:37.392+0000] {jobinfo_jobplanet.py:125} INFO - 블랙탠저린 검색하기
+[2024-01-14T13:05:39.553+0000] {jobinfo_jobplanet.py:136} INFO - 블랙탠저린의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:05:39.593+0000] {jobinfo_jobplanet.py:118} INFO - 파인더스 파일이 없음
+[2024-01-14T13:05:40.395+0000] {jobinfo_jobplanet.py:122} INFO - 파인더스 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:05:49.328+0000] {jobinfo_jobplanet.py:125} INFO - 파인더스 검색하기
+[2024-01-14T13:05:51.525+0000] {jobinfo_jobplanet.py:136} INFO - 파인더스의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:05:51.631+0000] {jobinfo_jobplanet.py:118} INFO - 론픽 파일이 없음
+[2024-01-14T13:05:52.290+0000] {jobinfo_jobplanet.py:122} INFO - 론픽 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:06:03.100+0000] {jobinfo_jobplanet.py:125} INFO - 론픽 검색하기
+[2024-01-14T13:06:05.273+0000] {jobinfo_jobplanet.py:136} INFO - 론픽의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:06:05.428+0000] {jobinfo_jobplanet.py:118} INFO - 비포플레이 파일이 없음
+[2024-01-14T13:06:06.800+0000] {jobinfo_jobplanet.py:122} INFO - 비포플레이 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:06:14.062+0000] {jobinfo_jobplanet.py:125} INFO - 비포플레이 검색하기
+[2024-01-14T13:06:16.145+0000] {jobinfo_jobplanet.py:136} INFO - 비포플레이의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:06:16.149+0000] {jobinfo_jobplanet.py:118} INFO - 롯데헬스케어 파일이 없음
+[2024-01-14T13:06:16.640+0000] {jobinfo_jobplanet.py:122} INFO - 롯데헬스케어 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:06:24.116+0000] {jobinfo_jobplanet.py:125} INFO - 롯데헬스케어 검색하기
+[2024-01-14T13:06:26.369+0000] {jobinfo_jobplanet.py:136} INFO - 롯데헬스케어의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:06:26.372+0000] {jobinfo_jobplanet.py:118} INFO - 롯데헬스케어 파일이 없음
+[2024-01-14T13:06:27.099+0000] {jobinfo_jobplanet.py:122} INFO - 롯데헬스케어 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:06:33.510+0000] {jobinfo_jobplanet.py:125} INFO - 롯데헬스케어 검색하기
+[2024-01-14T13:06:35.662+0000] {jobinfo_jobplanet.py:136} INFO - 롯데헬스케어의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:06:35.680+0000] {jobinfo_jobplanet.py:118} INFO - 올라운드닥터스 파일이 없음
+[2024-01-14T13:06:36.341+0000] {jobinfo_jobplanet.py:122} INFO - 올라운드닥터스 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:06:42.765+0000] {jobinfo_jobplanet.py:125} INFO - 올라운드닥터스 검색하기
+[2024-01-14T13:06:44.842+0000] {jobinfo_jobplanet.py:136} INFO - 올라운드닥터스의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:06:44.847+0000] {jobinfo_jobplanet.py:118} INFO - 와디즈 파일이 없음
+[2024-01-14T13:06:45.221+0000] {jobinfo_jobplanet.py:122} INFO - 와디즈 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:06:50.768+0000] {jobinfo_jobplanet.py:125} INFO - 와디즈 검색하기
+[2024-01-14T13:06:52.811+0000] {jobinfo_jobplanet.py:136} INFO - 와디즈의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:06:52.831+0000] {jobinfo_jobplanet.py:118} INFO - 크리에이트립 파일이 없음
+[2024-01-14T13:06:53.185+0000] {jobinfo_jobplanet.py:122} INFO - 크리에이트립 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:06:58.244+0000] {jobinfo_jobplanet.py:125} INFO - 크리에이트립 검색하기
+[2024-01-14T13:07:00.319+0000] {jobinfo_jobplanet.py:136} INFO - 크리에이트립의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:07:00.335+0000] {jobinfo_jobplanet.py:118} INFO - 데브툴즈 파일이 없음
+[2024-01-14T13:07:00.764+0000] {jobinfo_jobplanet.py:122} INFO - 데브툴즈 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:07:06.655+0000] {jobinfo_jobplanet.py:125} INFO - 데브툴즈 검색하기
+[2024-01-14T13:07:08.738+0000] {jobinfo_jobplanet.py:136} INFO - 데브툴즈의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:07:08.742+0000] {jobinfo_jobplanet.py:118} INFO - 티니어 파일이 없음
+[2024-01-14T13:07:09.103+0000] {jobinfo_jobplanet.py:122} INFO - 티니어 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:07:13.539+0000] {jobinfo_jobplanet.py:125} INFO - 티니어 검색하기
+[2024-01-14T13:07:15.580+0000] {jobinfo_jobplanet.py:136} INFO - 티니어의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:07:15.584+0000] {jobinfo_jobplanet.py:118} INFO - 키다리스튜디오 파일이 없음
+[2024-01-14T13:07:15.968+0000] {jobinfo_jobplanet.py:122} INFO - 키다리스튜디오 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:07:20.133+0000] {jobinfo_jobplanet.py:125} INFO - 키다리스튜디오 검색하기
+[2024-01-14T13:07:22.173+0000] {jobinfo_jobplanet.py:136} INFO - 키다리스튜디오의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:07:22.182+0000] {jobinfo_jobplanet.py:118} INFO - 마크클라우드 파일이 없음
+[2024-01-14T13:07:22.573+0000] {jobinfo_jobplanet.py:122} INFO - 마크클라우드 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T13:07:29.451+0000] {jobinfo_jobplanet.py:125} INFO - 마크클라우드 검색하기
+[2024-01-14T13:07:31.583+0000] {jobinfo_jobplanet.py:136} INFO - 마크클라우드의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T13:07:32.053+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 139, in jobplanet_login
+    driver.quit()
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 220, in __exit__
+    self.quit()
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 467, in quit
+    self.execute(Command.QUIT)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 345, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Unable to find session with ID: e1ade1deeb00c1c65da6ef8324f2adbf
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '11.0.21'
+Driver info: driver.version: unknown
+Stacktrace:
+org.openqa.selenium.NoSuchSessionException: Unable to find session with ID: e1ade1deeb00c1c65da6ef8324f2adbf
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '11.0.21'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.grid.sessionmap.local.LocalSessionMap.get(LocalSessionMap.java:132)
+	at org.openqa.selenium.grid.sessionmap.SessionMap.getUri(SessionMap.java:84)
+	at org.openqa.selenium.grid.router.HandleSession.lambda$loadSessionId$4(HandleSession.java:223)
+	at io.opentelemetry.context.Context.lambda$wrap$2(Context.java:224)
+	at org.openqa.selenium.grid.router.HandleSession.execute(HandleSession.java:180)
+	at org.openqa.selenium.remote.http.Route$PredicatedRoute.handle(Route.java:382)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:345)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.grid.router.Router.execute(Router.java:87)
+	at org.openqa.selenium.grid.web.EnsureSpecCompliantResponseHeaders.lambda$apply$0(EnsureSpecCompliantResponseHeaders.java:34)
+	at org.openqa.selenium.remote.http.Filter$1.execute(Filter.java:63)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:345)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.remote.http.Route$NestedRoute.handle(Route.java:271)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:345)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:345)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:345)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:345)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.remote.AddWebDriverSpecHeaders.lambda$apply$0(AddWebDriverSpecHeaders.java:35)
+	at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0(ErrorFilter.java:44)
+	at org.openqa.selenium.remote.http.Filter$1.execute(Filter.java:63)
+	at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0(ErrorFilter.java:44)
+	at org.openqa.selenium.remote.http.Filter$1.execute(Filter.java:63)
+	at org.openqa.selenium.netty.server.SeleniumHandler.lambda$channelRead0$0(SeleniumHandler.java:44)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[2024-01-14T13:07:32.062+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=jobinfo_jobplanet, task_id=jobplanet_login, execution_date=20240114T125026, start_date=20240114T125041, end_date=20240114T130732
+[2024-01-14T13:07:32.105+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 488 for task jobplanet_login (Message: Unable to find session with ID: e1ade1deeb00c1c65da6ef8324f2adbf
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '11.0.21'
+Driver info: driver.version: unknown
+Stacktrace:
+org.openqa.selenium.NoSuchSessionException: Unable to find session with ID: e1ade1deeb00c1c65da6ef8324f2adbf
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '11.0.21'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.grid.sessionmap.local.LocalSessionMap.get(LocalSessionMap.java:132)
+	at org.openqa.selenium.grid.sessionmap.SessionMap.getUri(SessionMap.java:84)
+	at org.openqa.selenium.grid.router.HandleSession.lambda$loadSessionId$4(HandleSession.java:223)
+	at io.opentelemetry.context.Context.lambda$wrap$2(Context.java:224)
+	at org.openqa.selenium.grid.router.HandleSession.execute(HandleSession.java:180)
+	at org.openqa.selenium.remote.http.Route$PredicatedRoute.handle(Route.java:382)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:345)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.grid.router.Router.execute(Router.java:87)
+	at org.openqa.selenium.grid.web.EnsureSpecCompliantResponseHeaders.lambda$apply$0(EnsureSpecCompliantResponseHeaders.java:34)
+	at org.openqa.selenium.remote.http.Filter$1.execute(Filter.java:63)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:345)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.remote.http.Route$NestedRoute.handle(Route.java:271)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:345)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:345)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:345)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:345)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:69)
+	at org.openqa.selenium.remote.AddWebDriverSpecHeaders.lambda$apply$0(AddWebDriverSpecHeaders.java:35)
+	at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0(ErrorFilter.java:44)
+	at org.openqa.selenium.remote.http.Filter$1.execute(Filter.java:63)
+	at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0(ErrorFilter.java:44)
+	at org.openqa.selenium.remote.http.Filter$1.execute(Filter.java:63)
+	at org.openqa.selenium.netty.server.SeleniumHandler.lambda$channelRead0$0(SeleniumHandler.java:44)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+; 25451)
+[2024-01-14T13:07:32.131+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-14T13:07:32.198+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

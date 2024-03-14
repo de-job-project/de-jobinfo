@@ -1,0 +1,50 @@
+[2024-01-16T06:42:31.962+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_slack.rds_connection manual__2024-01-16T06:42:30.653220+00:00 [queued]>
+[2024-01-16T06:42:31.979+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_slack.rds_connection manual__2024-01-16T06:42:30.653220+00:00 [queued]>
+[2024-01-16T06:42:31.980+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-16T06:42:31.980+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2024-01-16T06:42:31.980+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-16T06:42:32.006+0000] {taskinstance.py:1300} INFO - Executing <Task(MySqlOperator): rds_connection> on 2024-01-16 06:42:30.653220+00:00
+[2024-01-16T06:42:32.010+0000] {standard_task_runner.py:55} INFO - Started process 64471 to run task
+[2024-01-16T06:42:32.012+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_slack', 'rds_connection', 'manual__2024-01-16T06:42:30.653220+00:00', '--job-id', '745', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_slack.py', '--cfg-path', '/tmp/tmp7sg0zor9']
+[2024-01-16T06:42:32.013+0000] {standard_task_runner.py:83} INFO - Job 745: Subtask rds_connection
+[2024-01-16T06:42:32.123+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_slack.rds_connection manual__2024-01-16T06:42:30.653220+00:00 [running]> on host 565f6bcc10b6
+[2024-01-16T06:42:32.227+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_slack
+AIRFLOW_CTX_TASK_ID=rds_connection
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-16T06:42:30.653220+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-16T06:42:30.653220+00:00
+[2024-01-16T06:42:32.228+0000] {sql.py:254} INFO - Executing: 
+    SELECT DESTINCT mydb.jobinfo_jumpit.company, position, skills, location, career, due_date, review_summary, merit_summary, demerit_summary, average_salary
+    FROM mydb.jobinfo_jumpit
+    LEFT JOIN mydb.jobinfo_jobplanet
+    ON mydb.jobinfo_jumpit.company = mydb.jobinfo_jobplanet.company;
+[2024-01-16T06:42:32.239+0000] {base.py:73} INFO - Using connection ID 'rds_conn' for task execution.
+[2024-01-16T06:42:32.457+0000] {base.py:73} INFO - Using connection ID 'rds_conn' for task execution.
+[2024-01-16T06:42:32.539+0000] {sql.py:375} INFO - Running statement: 
+    SELECT DESTINCT mydb.jobinfo_jumpit.company, position, skills, location, career, due_date, review_summary, merit_summary, demerit_summary, average_salary
+    FROM mydb.jobinfo_jumpit
+    LEFT JOIN mydb.jobinfo_jobplanet
+    ON mydb.jobinfo_jumpit.company = mydb.jobinfo_jobplanet.company;, parameters: None
+[2024-01-16T06:42:32.543+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 266, in execute
+    **extra_kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 349, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 380, in _run_command
+    cur.execute(sql_statement)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.jobinfo_jumpit.company, position, skills, location, career, due_date, review_su' at line 1")
+[2024-01-16T06:42:32.555+0000] {taskinstance.py:1323} INFO - Marking task as UP_FOR_RETRY. dag_id=jobinfo_slack, task_id=rds_connection, execution_date=20240116T064230, start_date=20240116T064231, end_date=20240116T064232
+[2024-01-16T06:42:32.570+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 745 for task rds_connection ((1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.jobinfo_jumpit.company, position, skills, location, career, due_date, review_su' at line 1"); 64471)
+[2024-01-16T06:42:32.597+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-16T06:42:32.626+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

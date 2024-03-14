@@ -1,0 +1,25 @@
+[2024-01-17T04:21:19.649+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jumpit_jobinfo.s3_to_rds scheduled__2024-01-15T11:56:00+00:00 [queued]>
+[2024-01-17T04:21:19.670+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jumpit_jobinfo.s3_to_rds scheduled__2024-01-15T11:56:00+00:00 [queued]>
+[2024-01-17T04:21:19.671+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-17T04:21:19.672+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2024-01-17T04:21:19.672+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-17T04:21:19.706+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): s3_to_rds> on 2024-01-15 11:56:00+00:00
+[2024-01-17T04:21:19.717+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jumpit_jobinfo', 's3_to_rds', 'scheduled__2024-01-15T11:56:00+00:00', '--job-id', '4357', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jumpit.py', '--cfg-path', '/tmp/tmpqk7yn1hy']
+[2024-01-17T04:21:19.718+0000] {standard_task_runner.py:83} INFO - Job 4357: Subtask s3_to_rds
+[2024-01-17T04:21:19.719+0000] {standard_task_runner.py:55} INFO - Started process 23788 to run task
+[2024-01-17T04:21:19.830+0000] {task_command.py:388} INFO - Running <TaskInstance: jumpit_jobinfo.s3_to_rds scheduled__2024-01-15T11:56:00+00:00 [running]> on host 565f6bcc10b6
+[2024-01-17T04:21:20.005+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jumpit_jobinfo
+AIRFLOW_CTX_TASK_ID=s3_to_rds
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-15T11:56:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-01-15T11:56:00+00:00
+[2024-01-17T04:21:20.025+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-17T04:21:20.240+0000] {base.py:73} INFO - Using connection ID 'rds_conn' for task execution.
+[2024-01-17T04:21:20.525+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-01-17T04:21:20.541+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jumpit_jobinfo, task_id=s3_to_rds, execution_date=20240115T115600, start_date=20240117T042119, end_date=20240117T042120
+[2024-01-17T04:21:20.597+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-17T04:21:20.621+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

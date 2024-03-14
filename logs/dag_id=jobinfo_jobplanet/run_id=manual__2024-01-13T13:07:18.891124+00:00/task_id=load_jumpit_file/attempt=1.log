@@ -1,0 +1,24 @@
+[2024-01-13T13:07:21.012+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.load_jumpit_file manual__2024-01-13T13:07:18.891124+00:00 [queued]>
+[2024-01-13T13:07:21.022+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.load_jumpit_file manual__2024-01-13T13:07:18.891124+00:00 [queued]>
+[2024-01-13T13:07:21.022+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-13T13:07:21.023+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-13T13:07:21.023+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-13T13:07:21.041+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): load_jumpit_file> on 2024-01-13 13:07:18.891124+00:00
+[2024-01-13T13:07:21.059+0000] {standard_task_runner.py:55} INFO - Started process 903 to run task
+[2024-01-13T13:07:21.063+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'load_jumpit_file', 'manual__2024-01-13T13:07:18.891124+00:00', '--job-id', '372', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmp55_h0qls']
+[2024-01-13T13:07:21.064+0000] {standard_task_runner.py:83} INFO - Job 372: Subtask load_jumpit_file
+[2024-01-13T13:07:21.352+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.load_jumpit_file manual__2024-01-13T13:07:18.891124+00:00 [running]> on host 7b77d04f99d6
+[2024-01-13T13:07:21.440+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=load_jumpit_file
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-13T13:07:18.891124+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-13T13:07:18.891124+00:00
+[2024-01-13T13:07:21.628+0000] {logging_mixin.py:137} INFO - 오류 발생: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-13T13:07:21.630+0000] {python.py:177} INFO - Done. Returned value was: []
+[2024-01-13T13:07:21.669+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_jobplanet, task_id=load_jumpit_file, execution_date=20240113T130718, start_date=20240113T130721, end_date=20240113T130721
+[2024-01-13T13:07:21.722+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-13T13:07:21.991+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

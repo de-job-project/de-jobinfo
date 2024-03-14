@@ -1,0 +1,24 @@
+[2024-01-14T22:50:34.933+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.s3_to_rds manual__2024-01-14T22:43:17.092571+00:00 [queued]>
+[2024-01-14T22:50:34.943+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.s3_to_rds manual__2024-01-14T22:43:17.092571+00:00 [queued]>
+[2024-01-14T22:50:34.944+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T22:50:34.944+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-14T22:50:34.944+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T22:50:34.975+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): s3_to_rds> on 2024-01-14 22:43:17.092571+00:00
+[2024-01-14T22:50:34.984+0000] {standard_task_runner.py:55} INFO - Started process 10112 to run task
+[2024-01-14T22:50:34.988+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 's3_to_rds', 'manual__2024-01-14T22:43:17.092571+00:00', '--job-id', '549', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmpvywxf10j']
+[2024-01-14T22:50:34.989+0000] {standard_task_runner.py:83} INFO - Job 549: Subtask s3_to_rds
+[2024-01-14T22:50:35.075+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.s3_to_rds manual__2024-01-14T22:43:17.092571+00:00 [running]> on host 565f6bcc10b6
+[2024-01-14T22:50:35.213+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=s3_to_rds
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-14T22:43:17.092571+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-14T22:43:17.092571+00:00
+[2024-01-14T22:50:35.439+0000] {base.py:73} INFO - Using connection ID 'rds_conn' for task execution.
+[2024-01-14T22:50:35.635+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-01-14T22:50:35.662+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_jobplanet, task_id=s3_to_rds, execution_date=20240114T224317, start_date=20240114T225034, end_date=20240114T225035
+[2024-01-14T22:50:35.725+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-14T22:50:35.757+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

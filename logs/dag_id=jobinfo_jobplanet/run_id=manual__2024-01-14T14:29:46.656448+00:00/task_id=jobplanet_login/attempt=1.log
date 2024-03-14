@@ -1,0 +1,88 @@
+[2024-01-14T14:29:53.473+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-14T14:29:46.656448+00:00 [queued]>
+[2024-01-14T14:29:53.487+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-14T14:29:46.656448+00:00 [queued]>
+[2024-01-14T14:29:53.488+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T14:29:53.488+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-14T14:29:53.488+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T14:29:53.509+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): jobplanet_login> on 2024-01-14 14:29:46.656448+00:00
+[2024-01-14T14:29:53.521+0000] {standard_task_runner.py:55} INFO - Started process 3238 to run task
+[2024-01-14T14:29:53.525+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'jobplanet_login', 'manual__2024-01-14T14:29:46.656448+00:00', '--job-id', '513', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmpnaj65lc_']
+[2024-01-14T14:29:53.526+0000] {standard_task_runner.py:83} INFO - Job 513: Subtask jobplanet_login
+[2024-01-14T14:29:53.619+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-14T14:29:46.656448+00:00 [running]> on host 565f6bcc10b6
+[2024-01-14T14:29:53.717+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=jobplanet_login
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-14T14:29:46.656448+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-14T14:29:46.656448+00:00
+[2024-01-14T14:29:56.800+0000] {jobinfo_jobplanet.py:76} INFO - *********************************
+[2024-01-14T14:29:56.865+0000] {jobinfo_jobplanet.py:82} INFO - 12212121313442342354534634534534534534523423443423
+[2024-01-14T14:29:56.865+0000] {jobinfo_jobplanet.py:83} INFO - <selenium.webdriver.remote.webdriver.WebDriver (session="caef3bf211aa536c2a3e7831b1668a30")>
+[2024-01-14T14:29:57.082+0000] {jobinfo_jobplanet.py:86} INFO - 890u8987978078978978079078097807897809789789789789789797
+[2024-01-14T14:29:57.692+0000] {jobinfo_jobplanet.py:89} INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-01-14T14:29:58.423+0000] {jobinfo_jobplanet.py:100} INFO - 3333333333333333333333333
+[2024-01-14T14:29:58.459+0000] {jobinfo_jobplanet.py:106} INFO - 4444444444444444444444444444
+[2024-01-14T14:29:58.468+0000] {jobinfo_jobplanet.py:108} INFO - ['오케스트로', '오케스트로', '제니스앤컴퍼니', '제니스앤컴퍼니', '제니스앤컴퍼니', '메이븐클라우드서비스', '엠아이티', '엠아이티', '스윗코리아', '스윗코리아', '파킹클라우드', '오케스트로', '오케스트로', '오케스트로', '오케스트로', '오케스트로', '월급쟁이부자들', '월급쟁이부자들', '로민', '블랙탠저린', '파인더스', '론픽', '비포플레이', '롯데헬스케어', '롯데헬스케어', '올라운드닥터스', '와디즈', '크리에이트립', '데브툴즈', '티니어', '키다리스튜디오', '마크클라우드']
+[2024-01-14T14:29:58.469+0000] {jobinfo_jobplanet.py:109} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-14T14:29:58.469+0000] {jobinfo_jobplanet.py:110} INFO - 시작
+[2024-01-14T14:29:58.469+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T14:29:58.470+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T14:29:58.470+0000] {jobinfo_jobplanet.py:114} INFO - 제니스앤컴퍼니 있음
+[2024-01-14T14:29:58.470+0000] {jobinfo_jobplanet.py:114} INFO - 제니스앤컴퍼니 있음
+[2024-01-14T14:29:58.470+0000] {jobinfo_jobplanet.py:114} INFO - 제니스앤컴퍼니 있음
+[2024-01-14T14:29:58.471+0000] {jobinfo_jobplanet.py:114} INFO - 메이븐클라우드서비스 있음
+[2024-01-14T14:29:58.471+0000] {jobinfo_jobplanet.py:114} INFO - 엠아이티 있음
+[2024-01-14T14:29:58.471+0000] {jobinfo_jobplanet.py:114} INFO - 엠아이티 있음
+[2024-01-14T14:29:58.471+0000] {jobinfo_jobplanet.py:114} INFO - 스윗코리아 있음
+[2024-01-14T14:29:58.472+0000] {jobinfo_jobplanet.py:114} INFO - 스윗코리아 있음
+[2024-01-14T14:29:58.472+0000] {jobinfo_jobplanet.py:114} INFO - 파킹클라우드 있음
+[2024-01-14T14:29:58.472+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T14:29:58.473+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T14:29:58.473+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T14:29:58.473+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T14:29:58.473+0000] {jobinfo_jobplanet.py:114} INFO - 오케스트로 있음
+[2024-01-14T14:29:58.473+0000] {jobinfo_jobplanet.py:114} INFO - 월급쟁이부자들 있음
+[2024-01-14T14:29:58.474+0000] {jobinfo_jobplanet.py:114} INFO - 월급쟁이부자들 있음
+[2024-01-14T14:29:58.474+0000] {jobinfo_jobplanet.py:114} INFO - 로민 있음
+[2024-01-14T14:29:58.474+0000] {jobinfo_jobplanet.py:114} INFO - 블랙탠저린 있음
+[2024-01-14T14:29:58.474+0000] {jobinfo_jobplanet.py:114} INFO - 파인더스 있음
+[2024-01-14T14:29:58.487+0000] {jobinfo_jobplanet.py:121} INFO - 론픽 파일이 없음
+[2024-01-14T14:29:58.522+0000] {jobinfo_jobplanet.py:139} INFO - 론픽의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T14:29:58.523+0000] {jobinfo_jobplanet.py:140} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-14T14:29:58.523+0000] {jobinfo_jobplanet.py:114} INFO - 비포플레이 있음
+[2024-01-14T14:29:58.523+0000] {jobinfo_jobplanet.py:114} INFO - 롯데헬스케어 있음
+[2024-01-14T14:29:58.523+0000] {jobinfo_jobplanet.py:114} INFO - 롯데헬스케어 있음
+[2024-01-14T14:29:58.528+0000] {jobinfo_jobplanet.py:121} INFO - 올라운드닥터스 파일이 없음
+[2024-01-14T14:29:58.583+0000] {jobinfo_jobplanet.py:139} INFO - 올라운드닥터스의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T14:29:58.584+0000] {jobinfo_jobplanet.py:140} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-14T14:29:58.588+0000] {jobinfo_jobplanet.py:121} INFO - 와디즈 파일이 없음
+[2024-01-14T14:30:01.937+0000] {jobinfo_jobplanet.py:139} INFO - 와디즈의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T14:30:01.938+0000] {jobinfo_jobplanet.py:140} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-14T14:30:01.988+0000] {jobinfo_jobplanet.py:121} INFO - 크리에이트립 파일이 없음
+[2024-01-14T14:30:02.944+0000] {jobinfo_jobplanet.py:125} INFO - 크리에이트립 검색을 위해 검색창에 입력했습니다.
+[2024-01-14T14:30:08.556+0000] {jobinfo_jobplanet.py:128} INFO - 크리에이트립 검색하기
+[2024-01-14T14:30:09.750+0000] {jobinfo_jobplanet.py:133} INFO - 크리에이트립 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-14T14:30:27.331+0000] {base.py:73} INFO - Using connection ID 's3_conn' for task execution.
+[2024-01-14T14:30:27.517+0000] {jobinfo_jobplanet.py:681} INFO - File path/in/s3/bucket/review_information_크리에이트립.csv uploaded to S3 successfully.
+[2024-01-14T14:30:27.519+0000] {jobinfo_jobplanet.py:140} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv']
+[2024-01-14T14:30:27.520+0000] {jobinfo_jobplanet.py:114} INFO - 데브툴즈 있음
+[2024-01-14T14:30:27.520+0000] {jobinfo_jobplanet.py:114} INFO - 티니어 있음
+[2024-01-14T14:30:27.520+0000] {jobinfo_jobplanet.py:114} INFO - 키다리스튜디오 있음
+[2024-01-14T14:30:27.522+0000] {jobinfo_jobplanet.py:114} INFO - 마크클라우드 있음
+[2024-01-14T14:30:27.624+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 141, in jobplanet_login
+    s3_key = Variable.get('AWS_S3_KEY')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable AWS_S3_KEY does not exist'
+[2024-01-14T14:30:27.633+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=jobinfo_jobplanet, task_id=jobplanet_login, execution_date=20240114T142946, start_date=20240114T142953, end_date=20240114T143027
+[2024-01-14T14:30:27.655+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 513 for task jobplanet_login ('Variable AWS_S3_KEY does not exist'; 3238)
+[2024-01-14T14:30:27.677+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-14T14:30:27.705+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

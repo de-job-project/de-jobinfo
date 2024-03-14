@@ -1,0 +1,56 @@
+[2024-01-16T12:08:19.943+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login scheduled__2024-01-15T11:46:00+00:00 [queued]>
+[2024-01-16T12:08:19.979+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login scheduled__2024-01-15T11:46:00+00:00 [queued]>
+[2024-01-16T12:08:19.980+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-16T12:08:19.980+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-16T12:08:19.980+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-16T12:08:20.946+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): jobplanet_login> on 2024-01-15 11:46:00+00:00
+[2024-01-16T12:08:20.976+0000] {standard_task_runner.py:55} INFO - Started process 77184 to run task
+[2024-01-16T12:08:20.993+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'jobplanet_login', 'scheduled__2024-01-15T11:46:00+00:00', '--job-id', '774', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmp23p6g7wg']
+[2024-01-16T12:08:20.994+0000] {standard_task_runner.py:83} INFO - Job 774: Subtask jobplanet_login
+[2024-01-16T12:08:21.276+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.jobplanet_login scheduled__2024-01-15T11:46:00+00:00 [running]> on host 565f6bcc10b6
+[2024-01-16T12:08:21.545+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=jobplanet_login
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-15T11:46:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-01-15T11:46:00+00:00
+[2024-01-16T12:08:32.791+0000] {jobinfo_jobplanet.py:102} INFO - ['데브툴즈', '제니스앤컴퍼니', '다큐브', '론픽', '월급쟁이부자들', '롯데헬스케어', '오케스트로', '키다리스튜디오', '티니어', '로민', '크리에이트립', '엠아이티', '마크클라우드', '메이븐클라우드서비스', '스윗코리아', '파킹클라우드', '비포플레이', '파인더스', '올라운드닥터스', '블랙탠저린']
+[2024-01-16T12:08:32.791+0000] {jobinfo_jobplanet.py:103} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_와디즈.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-16T12:08:32.792+0000] {jobinfo_jobplanet.py:104} INFO - 시작
+[2024-01-16T12:08:32.792+0000] {jobinfo_jobplanet.py:109} INFO - 데브툴즈 있음
+[2024-01-16T12:08:32.792+0000] {jobinfo_jobplanet.py:109} INFO - 제니스앤컴퍼니 있음
+[2024-01-16T12:08:32.839+0000] {jobinfo_jobplanet.py:116} INFO - 다큐브 파일이 없음
+[2024-01-16T12:08:36.579+0000] {jobinfo_jobplanet.py:137} INFO - 다큐브의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T12:08:36.579+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_와디즈.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-16T12:08:36.680+0000] {jobinfo_jobplanet.py:116} INFO - 론픽 파일이 없음
+[2024-01-16T12:08:37.651+0000] {jobinfo_jobplanet.py:121} INFO - 론픽 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T12:08:45.602+0000] {jobinfo_jobplanet.py:124} INFO - 론픽 검색하기
+[2024-01-16T12:08:47.623+0000] {jobinfo_jobplanet.py:137} INFO - 론픽의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T12:08:47.624+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_와디즈.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-16T12:08:47.624+0000] {jobinfo_jobplanet.py:109} INFO - 월급쟁이부자들 있음
+[2024-01-16T12:08:47.624+0000] {jobinfo_jobplanet.py:109} INFO - 롯데헬스케어 있음
+[2024-01-16T12:08:47.624+0000] {jobinfo_jobplanet.py:109} INFO - 오케스트로 있음
+[2024-01-16T12:08:47.625+0000] {jobinfo_jobplanet.py:109} INFO - 키다리스튜디오 있음
+[2024-01-16T12:08:47.625+0000] {jobinfo_jobplanet.py:109} INFO - 티니어 있음
+[2024-01-16T12:08:47.625+0000] {jobinfo_jobplanet.py:109} INFO - 로민 있음
+[2024-01-16T12:08:47.625+0000] {jobinfo_jobplanet.py:109} INFO - 크리에이트립 있음
+[2024-01-16T12:08:47.626+0000] {jobinfo_jobplanet.py:109} INFO - 엠아이티 있음
+[2024-01-16T12:08:47.626+0000] {jobinfo_jobplanet.py:109} INFO - 마크클라우드 있음
+[2024-01-16T12:08:47.626+0000] {jobinfo_jobplanet.py:109} INFO - 메이븐클라우드서비스 있음
+[2024-01-16T12:08:47.626+0000] {jobinfo_jobplanet.py:109} INFO - 스윗코리아 있음
+[2024-01-16T12:08:47.627+0000] {jobinfo_jobplanet.py:109} INFO - 파킹클라우드 있음
+[2024-01-16T12:08:47.627+0000] {jobinfo_jobplanet.py:109} INFO - 비포플레이 있음
+[2024-01-16T12:08:47.627+0000] {jobinfo_jobplanet.py:109} INFO - 파인더스 있음
+[2024-01-16T12:08:47.631+0000] {jobinfo_jobplanet.py:116} INFO - 올라운드닥터스 파일이 없음
+[2024-01-16T12:08:48.081+0000] {jobinfo_jobplanet.py:121} INFO - 올라운드닥터스 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T12:08:54.772+0000] {jobinfo_jobplanet.py:124} INFO - 올라운드닥터스 검색하기
+[2024-01-16T12:08:56.842+0000] {jobinfo_jobplanet.py:137} INFO - 올라운드닥터스의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T12:08:56.842+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_와디즈.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-16T12:08:56.842+0000] {jobinfo_jobplanet.py:109} INFO - 블랙탠저린 있음
+[2024-01-16T12:08:57.419+0000] {jobinfo_jobplanet.py:644} INFO - 다큐브 정보 없ㅇ,ㅡ
+[2024-01-16T12:08:57.420+0000] {jobinfo_jobplanet.py:645} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T12:09:15.967+0000] {jobinfo_jobplanet.py:644} INFO - 론픽 정보 없ㅇ,ㅡ
+[2024-01-16T12:09:15.967+0000] {jobinfo_jobplanet.py:645} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.

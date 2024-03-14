@@ -1,0 +1,252 @@
+[2024-01-16T16:10:12.579+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-16T16:10:04.589252+00:00 [queued]>
+[2024-01-16T16:10:12.593+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-16T16:10:04.589252+00:00 [queued]>
+[2024-01-16T16:10:12.593+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-16T16:10:12.593+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-16T16:10:12.593+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-16T16:10:12.778+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): jobplanet_login> on 2024-01-16 16:10:04.589252+00:00
+[2024-01-16T16:10:12.788+0000] {standard_task_runner.py:55} INFO - Started process 8019 to run task
+[2024-01-16T16:10:12.792+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'jobplanet_login', 'manual__2024-01-16T16:10:04.589252+00:00', '--job-id', '4286', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmp749qe_vv']
+[2024-01-16T16:10:12.793+0000] {standard_task_runner.py:83} INFO - Job 4286: Subtask jobplanet_login
+[2024-01-16T16:10:12.879+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-16T16:10:04.589252+00:00 [running]> on host 565f6bcc10b6
+[2024-01-16T16:10:12.973+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=jobplanet_login
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-16T16:10:04.589252+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-16T16:10:04.589252+00:00
+[2024-01-16T16:10:18.330+0000] {jobinfo_jobplanet.py:102} INFO - ['다큐브', '월급쟁이부자들', '파킹클라우드', '크리에이트립', '제니스앤컴퍼니', '파인더스', '올라운드닥터스', '데브툴즈', '마크클라우드', '스윗코리아', '론픽', '로민', '비포플레이', '오케스트로', '메이븐클라우드서비스', '키다리스튜디오', '블랙탠저린', '티니어', '엠아이티', '롯데헬스케어']
+[2024-01-16T16:10:18.331+0000] {jobinfo_jobplanet.py:103} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv']
+[2024-01-16T16:10:18.332+0000] {jobinfo_jobplanet.py:104} INFO - 시작
+[2024-01-16T16:10:18.339+0000] {jobinfo_jobplanet.py:116} INFO - 다큐브 파일이 없음
+[2024-01-16T16:10:20.392+0000] {jobinfo_jobplanet.py:137} INFO - 다큐브의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T16:10:20.393+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv']
+[2024-01-16T16:10:20.410+0000] {jobinfo_jobplanet.py:116} INFO - 월급쟁이부자들 파일이 없음
+[2024-01-16T16:10:21.464+0000] {jobinfo_jobplanet.py:121} INFO - 월급쟁이부자들 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:10:26.448+0000] {jobinfo_jobplanet.py:124} INFO - 월급쟁이부자들 검색하기
+[2024-01-16T16:10:28.488+0000] {jobinfo_jobplanet.py:137} INFO - 월급쟁이부자들의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T16:10:28.488+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv']
+[2024-01-16T16:10:28.494+0000] {jobinfo_jobplanet.py:116} INFO - 파킹클라우드 파일이 없음
+[2024-01-16T16:10:28.991+0000] {jobinfo_jobplanet.py:121} INFO - 파킹클라우드 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:10:30.875+0000] {jobinfo_jobplanet.py:124} INFO - 파킹클라우드 검색하기
+[2024-01-16T16:10:31.546+0000] {jobinfo_jobplanet.py:129} INFO - 파킹클라우드 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-16T16:10:50.328+0000] {jobinfo_jobplanet.py:737} INFO - File path/in/s3/bucket/review_information_파킹클라우드.csv uploaded to S3 successfully.
+[2024-01-16T16:10:50.460+0000] {jobinfo_jobplanet.py:688} INFO - 다큐브 정보 없ㅇ,ㅡ
+[2024-01-16T16:10:50.462+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:10:50.464+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv']
+[2024-01-16T16:10:51.318+0000] {jobinfo_jobplanet.py:116} INFO - 크리에이트립 파일이 없음
+[2024-01-16T16:10:53.916+0000] {jobinfo_jobplanet.py:121} INFO - 크리에이트립 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:10:58.345+0000] {jobinfo_jobplanet.py:124} INFO - 크리에이트립 검색하기
+[2024-01-16T16:10:58.760+0000] {jobinfo_jobplanet.py:129} INFO - 크리에이트립 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-16T16:11:23.908+0000] {jobinfo_jobplanet.py:737} INFO - File path/in/s3/bucket/review_information_크리에이트립.csv uploaded to S3 successfully.
+[2024-01-16T16:11:23.987+0000] {jobinfo_jobplanet.py:688} INFO - 다큐브 정보 없ㅇ,ㅡ
+[2024-01-16T16:11:23.987+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:11:23.988+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv']
+[2024-01-16T16:11:23.994+0000] {jobinfo_jobplanet.py:116} INFO - 제니스앤컴퍼니 파일이 없음
+[2024-01-16T16:11:24.426+0000] {jobinfo_jobplanet.py:121} INFO - 제니스앤컴퍼니 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:11:27.227+0000] {jobinfo_jobplanet.py:124} INFO - 제니스앤컴퍼니 검색하기
+[2024-01-16T16:11:27.777+0000] {jobinfo_jobplanet.py:129} INFO - 제니스앤컴퍼니 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-16T16:11:47.193+0000] {jobinfo_jobplanet.py:737} INFO - File path/in/s3/bucket/review_information_제니스앤컴퍼니.csv uploaded to S3 successfully.
+[2024-01-16T16:11:47.342+0000] {jobinfo_jobplanet.py:688} INFO - 다큐브 정보 없ㅇ,ㅡ
+[2024-01-16T16:11:47.342+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:11:47.344+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv']
+[2024-01-16T16:11:47.366+0000] {jobinfo_jobplanet.py:116} INFO - 파인더스 파일이 없음
+[2024-01-16T16:11:48.294+0000] {jobinfo_jobplanet.py:121} INFO - 파인더스 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:11:49.063+0000] {jobinfo_jobplanet.py:137} INFO - 파인더스의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T16:11:49.064+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv']
+[2024-01-16T16:11:49.202+0000] {jobinfo_jobplanet.py:116} INFO - 올라운드닥터스 파일이 없음
+[2024-01-16T16:11:50.887+0000] {jobinfo_jobplanet.py:121} INFO - 올라운드닥터스 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:11:52.524+0000] {jobinfo_jobplanet.py:124} INFO - 올라운드닥터스 검색하기
+[2024-01-16T16:11:54.602+0000] {jobinfo_jobplanet.py:137} INFO - 올라운드닥터스의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T16:11:54.602+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv']
+[2024-01-16T16:11:54.609+0000] {jobinfo_jobplanet.py:116} INFO - 데브툴즈 파일이 없음
+[2024-01-16T16:11:55.020+0000] {jobinfo_jobplanet.py:121} INFO - 데브툴즈 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:11:59.623+0000] {jobinfo_jobplanet.py:124} INFO - 데브툴즈 검색하기
+[2024-01-16T16:12:00.500+0000] {jobinfo_jobplanet.py:129} INFO - 데브툴즈 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-16T16:12:19.967+0000] {jobinfo_jobplanet.py:737} INFO - File path/in/s3/bucket/review_information_데브툴즈.csv uploaded to S3 successfully.
+[2024-01-16T16:12:20.061+0000] {jobinfo_jobplanet.py:688} INFO - 다큐브 정보 없ㅇ,ㅡ
+[2024-01-16T16:12:20.061+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:12:20.063+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv']
+[2024-01-16T16:12:20.069+0000] {jobinfo_jobplanet.py:116} INFO - 마크클라우드 파일이 없음
+[2024-01-16T16:12:21.007+0000] {jobinfo_jobplanet.py:121} INFO - 마크클라우드 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:12:21.627+0000] {jobinfo_jobplanet.py:137} INFO - 마크클라우드의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T16:12:21.627+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv']
+[2024-01-16T16:12:21.709+0000] {jobinfo_jobplanet.py:116} INFO - 스윗코리아 파일이 없음
+[2024-01-16T16:12:22.518+0000] {jobinfo_jobplanet.py:121} INFO - 스윗코리아 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:12:26.623+0000] {jobinfo_jobplanet.py:124} INFO - 스윗코리아 검색하기
+[2024-01-16T16:12:28.188+0000] {jobinfo_jobplanet.py:129} INFO - 스윗코리아 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-16T16:12:48.658+0000] {jobinfo_jobplanet.py:737} INFO - File path/in/s3/bucket/review_information_스윗코리아.csv uploaded to S3 successfully.
+[2024-01-16T16:12:48.749+0000] {jobinfo_jobplanet.py:688} INFO - 다큐브 정보 없ㅇ,ㅡ
+[2024-01-16T16:12:48.749+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:12:48.752+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv']
+[2024-01-16T16:12:48.777+0000] {jobinfo_jobplanet.py:116} INFO - 론픽 파일이 없음
+[2024-01-16T16:12:49.486+0000] {jobinfo_jobplanet.py:121} INFO - 론픽 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:12:50.248+0000] {jobinfo_jobplanet.py:137} INFO - 론픽의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T16:12:50.248+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv']
+[2024-01-16T16:12:50.467+0000] {jobinfo_jobplanet.py:116} INFO - 로민 파일이 없음
+[2024-01-16T16:12:51.840+0000] {jobinfo_jobplanet.py:121} INFO - 로민 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:12:55.855+0000] {jobinfo_jobplanet.py:124} INFO - 로민 검색하기
+[2024-01-16T16:12:56.913+0000] {jobinfo_jobplanet.py:129} INFO - 로민 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-16T16:13:17.615+0000] {jobinfo_jobplanet.py:737} INFO - File path/in/s3/bucket/review_information_로민.csv uploaded to S3 successfully.
+[2024-01-16T16:13:17.724+0000] {jobinfo_jobplanet.py:688} INFO - 다큐브 정보 없ㅇ,ㅡ
+[2024-01-16T16:13:17.724+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:13:17.735+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_로민.csv']
+[2024-01-16T16:13:17.754+0000] {jobinfo_jobplanet.py:116} INFO - 비포플레이 파일이 없음
+[2024-01-16T16:13:18.598+0000] {jobinfo_jobplanet.py:121} INFO - 비포플레이 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:13:19.288+0000] {jobinfo_jobplanet.py:137} INFO - 비포플레이의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T16:13:19.288+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_로민.csv']
+[2024-01-16T16:13:19.424+0000] {jobinfo_jobplanet.py:116} INFO - 오케스트로 파일이 없음
+[2024-01-16T16:13:20.308+0000] {jobinfo_jobplanet.py:121} INFO - 오케스트로 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:13:23.947+0000] {jobinfo_jobplanet.py:124} INFO - 오케스트로 검색하기
+[2024-01-16T16:13:24.990+0000] {jobinfo_jobplanet.py:129} INFO - 오케스트로 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-16T16:13:43.883+0000] {jobinfo_jobplanet.py:737} INFO - File path/in/s3/bucket/review_information_오케스트로.csv uploaded to S3 successfully.
+[2024-01-16T16:13:43.960+0000] {jobinfo_jobplanet.py:688} INFO - 다큐브 정보 없ㅇ,ㅡ
+[2024-01-16T16:13:43.961+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:13:43.962+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_오케스트로.csv']
+[2024-01-16T16:13:43.975+0000] {jobinfo_jobplanet.py:116} INFO - 메이븐클라우드서비스 파일이 없음
+[2024-01-16T16:13:45.467+0000] {jobinfo_jobplanet.py:121} INFO - 메이븐클라우드서비스 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:13:46.971+0000] {jobinfo_jobplanet.py:137} INFO - 메이븐클라우드서비스의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T16:13:46.971+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_오케스트로.csv']
+[2024-01-16T16:13:47.130+0000] {jobinfo_jobplanet.py:116} INFO - 키다리스튜디오 파일이 없음
+[2024-01-16T16:13:48.331+0000] {jobinfo_jobplanet.py:121} INFO - 키다리스튜디오 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:13:51.249+0000] {jobinfo_jobplanet.py:124} INFO - 키다리스튜디오 검색하기
+[2024-01-16T16:13:51.948+0000] {jobinfo_jobplanet.py:129} INFO - 키다리스튜디오 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-16T16:14:12.057+0000] {jobinfo_jobplanet.py:737} INFO - File path/in/s3/bucket/review_information_키다리스튜디오.csv uploaded to S3 successfully.
+[2024-01-16T16:14:12.146+0000] {jobinfo_jobplanet.py:688} INFO - 다큐브 정보 없ㅇ,ㅡ
+[2024-01-16T16:14:12.146+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:14:12.147+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv']
+[2024-01-16T16:14:12.152+0000] {jobinfo_jobplanet.py:116} INFO - 블랙탠저린 파일이 없음
+[2024-01-16T16:14:13.356+0000] {jobinfo_jobplanet.py:121} INFO - 블랙탠저린 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:14:14.633+0000] {jobinfo_jobplanet.py:137} INFO - 블랙탠저린의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T16:14:14.633+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv']
+[2024-01-16T16:14:14.780+0000] {jobinfo_jobplanet.py:116} INFO - 티니어 파일이 없음
+[2024-01-16T16:14:15.784+0000] {jobinfo_jobplanet.py:121} INFO - 티니어 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:14:22.077+0000] {jobinfo_jobplanet.py:124} INFO - 티니어 검색하기
+[2024-01-16T16:14:22.545+0000] {jobinfo_jobplanet.py:129} INFO - 티니어 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-16T16:14:37.131+0000] {jobinfo_jobplanet.py:737} INFO - File path/in/s3/bucket/review_information_티니어.csv uploaded to S3 successfully.
+[2024-01-16T16:14:37.222+0000] {jobinfo_jobplanet.py:688} INFO - 다큐브 정보 없ㅇ,ㅡ
+[2024-01-16T16:14:37.222+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:14:37.223+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv']
+[2024-01-16T16:14:37.231+0000] {jobinfo_jobplanet.py:116} INFO - 엠아이티 파일이 없음
+[2024-01-16T16:14:37.648+0000] {jobinfo_jobplanet.py:121} INFO - 엠아이티 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:14:42.255+0000] {jobinfo_jobplanet.py:124} INFO - 엠아이티 검색하기
+[2024-01-16T16:14:42.859+0000] {jobinfo_jobplanet.py:129} INFO - 엠아이티 회사 정보를 알기 위해 상세정보 클릭합니다.
+[2024-01-16T16:15:03.341+0000] {jobinfo_jobplanet.py:737} INFO - File path/in/s3/bucket/review_information_엠아이티.csv uploaded to S3 successfully.
+[2024-01-16T16:15:03.441+0000] {jobinfo_jobplanet.py:688} INFO - 다큐브 정보 없ㅇ,ㅡ
+[2024-01-16T16:15:03.441+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:15:03.442+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_엠아이티.csv']
+[2024-01-16T16:15:03.448+0000] {jobinfo_jobplanet.py:116} INFO - 롯데헬스케어 파일이 없음
+[2024-01-16T16:15:05.066+0000] {jobinfo_jobplanet.py:121} INFO - 롯데헬스케어 검색을 위해 검색창에 입력했습니다.
+[2024-01-16T16:15:06.245+0000] {jobinfo_jobplanet.py:137} INFO - 롯데헬스케어의 정보는 없어서 파일 생성을 못한다.
+[2024-01-16T16:15:06.246+0000] {jobinfo_jobplanet.py:141} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_엠아이티.csv']
+[2024-01-16T16:15:06.358+0000] {jobinfo_jobplanet.py:688} INFO - 다큐브 정보 없ㅇ,ㅡ
+[2024-01-16T16:15:06.358+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:15:22.871+0000] {jobinfo_jobplanet.py:737} INFO - File path/in/s3/bucket/summary.csv uploaded to S3 successfully.
+[2024-01-16T16:15:23.091+0000] {jobinfo_jobplanet.py:688} INFO - 월급쟁이부자들 정보 없ㅇ,ㅡ
+[2024-01-16T16:15:23.091+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:15:40.449+0000] {jobinfo_jobplanet.py:522} INFO -                             review_summary  ... result_date
+0  젊고 자유로운 분위기, 시키지 않아도 척척 해내는 알잘딱깔센 인재 필요  ...       14일 후
+1                       엄청 최악은 아니지만 좋지도 않은  ...     no data
+2                     우당탕탕 성장하는 기업 사람들은 좋다  ...     no data
+3                     그저 일 안해도 월급이 나오는 회사요  ...     no data
+4                사내 복지좀 줄이지 말고 직원들좀 신경써주세요  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:15:58.816+0000] {jobinfo_jobplanet.py:522} INFO -                                       review_summary  ... result_date
+0                            자유롭고 수평적이지만 이상하게 별로인 회사  ...        2일 후
+1  의사결정이 합리적이고 상식적인 회사 답답한 부분이 거의 없다 직원들이 말하는 부분들...  ...     no data
+2          자기 할 일만 제대로 한다면 최상의 자유가 보장되는 곳 성장하기 좋은 회사  ...     no data
+3  경영진의 마이크로매니징이 극악입니니다HR에서도 이미 많이 피드백을 받아서 C레벨들의...  ...     no data
+4                                            no data  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:16:17.238+0000] {jobinfo_jobplanet.py:522} INFO -   review_summary    merit  ...    hire_way result_date
+0        no data  no data  ...  그룹면접, 개인면접     no data
+1        no data  no data  ...        개인면접     no data
+2        no data  no data  ...     no data     no data
+3        no data  no data  ...     no data     no data
+4        no data  no data  ...     no data     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:16:32.939+0000] {jobinfo_jobplanet.py:688} INFO - 파인더스 정보 없ㅇ,ㅡ
+[2024-01-16T16:16:32.940+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:16:49.006+0000] {jobinfo_jobplanet.py:688} INFO - 올라운드닥터스 정보 없ㅇ,ㅡ
+[2024-01-16T16:16:49.006+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:17:06.612+0000] {jobinfo_jobplanet.py:511} INFO - 올라운드닥터스 salary information not find
+[2024-01-16T16:17:06.708+0000] {jobinfo_jobplanet.py:522} INFO -                                       review_summary  ... result_date
+0                     약간 공장같은 분위기에 여길 다녀도 될까 의아한 환경?  ...        2일 후
+1  대표가 직원들을 전혀 존중해 주지 않는 회사, 그것으로 인해 직원들이 못 버티고 계...  ...        0일 후
+2                               다양한 개발환경을 경험할 수 있는 곳  ...     no data
+3                               대우받으며 보람차게 일할 수 있는 곳  ...     no data
+4  개발자 중심의 회사이기에 개인별 업무에 독립성이 강한반면, 모두 관계가 좋고 서로를...  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:17:24.182+0000] {jobinfo_jobplanet.py:688} INFO - 마크클라우드 정보 없ㅇ,ㅡ
+[2024-01-16T16:17:24.183+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:17:43.249+0000] {jobinfo_jobplanet.py:522} INFO -                                     review_summary  ... result_date
+0                       스타트업의강점은점점사라지고 임원진의 입김만 남아  ...        7일 후
+1        다양한 기술스택을 접할 수 있고 새로운 프로젝트가 많이 생겨 경험쌓기 좋다  ...     no data
+2               정치판에 업무 프로세스도 엉망 팀바팀 심함 몰상식한 동료 많음  ...     no data
+3                  함께 일하는 사람들이 상식적이며, 분위기가 밝고 좋습니다  ...     no data
+4  무난무난한 회사입니다 크게 모나지 않게 다닐 수 있습니다 너무 많이 바라지 않으면 됨  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:18:02.727+0000] {jobinfo_jobplanet.py:688} INFO - 론픽 정보 없ㅇ,ㅡ
+[2024-01-16T16:18:02.728+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:18:19.618+0000] {jobinfo_jobplanet.py:511} INFO - 론픽 salary information not find
+[2024-01-16T16:18:19.716+0000] {jobinfo_jobplanet.py:522} INFO -                                       review_summary  ... result_date
+0                              자유롭지만 체계적이고 즐거운 회사입니다  ...     no data
+1  직원들을 존중해주려고 노력하시는 회사입니다 22년 초까지의 기준이지만 지금도 비슷하...  ...     no data
+2                업무강도는 강하지만 사람좋고 복지좋은 회사 지하철역에서도 가까움  ...     no data
+3                            야근 많음, 동기부여가 전혀되지 않는 회사  ...     no data
+4                              성장통을 겪고 있는 전형적인 스타트업?  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:18:37.115+0000] {jobinfo_jobplanet.py:688} INFO - 비포플레이 정보 없ㅇ,ㅡ
+[2024-01-16T16:18:37.115+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:18:54.134+0000] {jobinfo_jobplanet.py:522} INFO -                                       review_summary  ... result_date
+0                           시설이랑 식대는 좋지만 업무처리는 꽝인 회사  ...     no data
+1                       허위광고, 과대포장으로 투자 땡기니까 달달하신가요?  ...     no data
+2  일단 업무도 모르는 것들이 팀장을 하고 있음 피드백 느림, 권위주의적, 사람 조지기...  ...     no data
+3                          더이상 소프트웨어 기업이 아닌 서버와 사람장사  ...     no data
+4                                 적당히 다닐만한 회사라고 생각한다  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:19:11.063+0000] {jobinfo_jobplanet.py:688} INFO - 메이븐클라우드서비스 정보 없ㅇ,ㅡ
+[2024-01-16T16:19:11.063+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:19:29.293+0000] {jobinfo_jobplanet.py:522} INFO -   review_summary    merit  ...            hire_way result_date
+0        no data  no data  ...  인/적성검사, PT면접, 개인면접       14일 후
+1        no data  no data  ...        인/적성검사, 개인면접       14일 후
+2        no data  no data  ...        인/적성검사, 개인면접       30일 후
+3        no data  no data  ...             no data     no data
+4        no data  no data  ...             no data     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:19:45.429+0000] {jobinfo_jobplanet.py:688} INFO - 블랙탠저린 정보 없ㅇ,ㅡ
+[2024-01-16T16:19:45.429+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:20:00.770+0000] {jobinfo_jobplanet.py:522} INFO -                            review_summary  ... result_date
+0  누구에게나 평등하게 발언권이 주어지고, 합리적인 의견을 수용하는 기업  ...        1일 후
+1             워라벨이 좋고 업무 강도가 높지 않고 문화가 좋다  ...        0일 후
+2  인턴으로 있었지만 스타트업의 좋은 점을 깨달을 수 있었던 회사였습니다  ...     no data
+3                    합리적고 긍정적인 사람들이 모인 조직  ...     no data
+4       다양한 경험을 쌓으며 수평적인 문화 속에서 클 수 있는 환경  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:20:19.900+0000] {jobinfo_jobplanet.py:511} INFO - 티니어 salary information not find
+[2024-01-16T16:20:20.009+0000] {jobinfo_jobplanet.py:522} INFO -                          review_summary  ... result_date
+0  직원에 대한 복지가 하나도 없다 그리고 각자 알아서 생활하면 된다  ...        3일 후
+1              쿠팡 사이트는 절대로 가지 마십시오 헬입니다  ...     no data
+2                  상당히 자유로운분위기이며 워라벨 좋음  ...        2일 후
+3                  파견직 대우의 한계는 못벗어나는 기업  ...     no data
+4  급여가 적으나 워라벨은 좋음(파견 나가는 회사마다 다를 수 있음)  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-16T16:20:38.872+0000] {jobinfo_jobplanet.py:688} INFO - 롯데헬스케어 정보 없ㅇ,ㅡ
+[2024-01-16T16:20:38.872+0000] {jobinfo_jobplanet.py:689} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-16T16:20:57.511+0000] {jobinfo_jobplanet.py:511} INFO - 롯데헬스케어 salary information not find
+[2024-01-16T16:20:57.983+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-01-16T16:20:58.017+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_jobplanet, task_id=jobplanet_login, execution_date=20240116T161004, start_date=20240116T161012, end_date=20240116T162058
+[2024-01-16T16:20:58.119+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-16T16:20:58.146+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

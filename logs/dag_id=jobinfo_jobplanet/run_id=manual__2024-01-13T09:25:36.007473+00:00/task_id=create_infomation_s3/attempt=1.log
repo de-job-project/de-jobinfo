@@ -1,0 +1,66 @@
+[2024-01-13T09:25:43.591+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-13T09:25:36.007473+00:00 [queued]>
+[2024-01-13T09:25:43.608+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-13T09:25:36.007473+00:00 [queued]>
+[2024-01-13T09:25:43.608+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-13T09:25:43.609+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-13T09:25:43.609+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-13T09:25:43.974+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): create_infomation_s3> on 2024-01-13 09:25:36.007473+00:00
+[2024-01-13T09:25:43.986+0000] {standard_task_runner.py:55} INFO - Started process 167 to run task
+[2024-01-13T09:25:43.990+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'create_infomation_s3', 'manual__2024-01-13T09:25:36.007473+00:00', '--job-id', '274', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmp6iz3tqbj']
+[2024-01-13T09:25:43.990+0000] {standard_task_runner.py:83} INFO - Job 274: Subtask create_infomation_s3
+[2024-01-13T09:25:44.096+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-13T09:25:36.007473+00:00 [running]> on host 9d92fdf7265b
+[2024-01-13T09:25:44.224+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=create_infomation_s3
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-13T09:25:36.007473+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-13T09:25:36.007473+00:00
+[2024-01-13T09:25:44.229+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-01-13T09:25:44.783+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-01-13T09:25:44.913+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-01-13T09:25:45.032+0000] {logger.py:11} INFO - There is no [linux64] chromedriver "120.0.6099.109" for browser google-chrome "120.0.6099" in cache
+[2024-01-13T09:25:45.033+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-01-13T09:25:45.268+0000] {logger.py:11} INFO - WebDriver version 120.0.6099.109 selected
+[2024-01-13T09:25:45.271+0000] {logger.py:11} INFO - Modern chrome version https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.109/linux64/chromedriver-linux64.zip
+[2024-01-13T09:25:45.272+0000] {logger.py:11} INFO - About to download new driver from https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.109/linux64/chromedriver-linux64.zip
+[2024-01-13T09:25:45.452+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2024-01-13T09:25:45.830+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-01-13T09:25:46.091+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/120.0.6099.109]
+[2024-01-13T09:25:46.665+0000] {logging_mixin.py:137} INFO - An error occurred: Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /opt/google/chrome/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x559988928f83 <unknown>
+#1 0x5599885e1cf7 <unknown>
+#2 0x55998861960e <unknown>
+#3 0x55998861626e <unknown>
+#4 0x55998866680c <unknown>
+#5 0x55998865ae53 <unknown>
+#6 0x559988622dd4 <unknown>
+#7 0x5599886241de <unknown>
+#8 0x5599888ed531 <unknown>
+#9 0x5599888f1455 <unknown>
+#10 0x5599888d9f55 <unknown>
+#11 0x5599888f20ef <unknown>
+#12 0x5599888bd99f <unknown>
+#13 0x559988916008 <unknown>
+#14 0x5599889161d7 <unknown>
+#15 0x559988928124 <unknown>
+#16 0x7fbd5c89cea7 start_thread
+[2024-01-13T09:25:46.667+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 78, in create_infomation_s3
+    driver = jobplanet_login()
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 55, in jobplanet_login
+    driver.implicitly_wait(1)
+UnboundLocalError: local variable 'driver' referenced before assignment
+[2024-01-13T09:25:46.674+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=jobinfo_jobplanet, task_id=create_infomation_s3, execution_date=20240113T092536, start_date=20240113T092543, end_date=20240113T092546
+[2024-01-13T09:25:46.690+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 274 for task create_infomation_s3 (local variable 'driver' referenced before assignment; 167)
+[2024-01-13T09:25:46.716+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-13T09:25:46.739+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

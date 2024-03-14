@@ -1,0 +1,39 @@
+[2024-01-15T12:03:44.601+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.s3_to_rds manual__2024-01-15T12:01:23.514278+00:00 [queued]>
+[2024-01-15T12:03:44.618+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.s3_to_rds manual__2024-01-15T12:01:23.514278+00:00 [queued]>
+[2024-01-15T12:03:44.619+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-15T12:03:44.619+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-15T12:03:44.619+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-15T12:03:44.796+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): s3_to_rds> on 2024-01-15 12:01:23.514278+00:00
+[2024-01-15T12:03:44.803+0000] {standard_task_runner.py:55} INFO - Started process 35423 to run task
+[2024-01-15T12:03:44.806+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 's3_to_rds', 'manual__2024-01-15T12:01:23.514278+00:00', '--job-id', '626', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmpbjo1c3jw']
+[2024-01-15T12:03:44.807+0000] {standard_task_runner.py:83} INFO - Job 626: Subtask s3_to_rds
+[2024-01-15T12:03:44.884+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.s3_to_rds manual__2024-01-15T12:01:23.514278+00:00 [running]> on host 565f6bcc10b6
+[2024-01-15T12:03:44.963+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=s3_to_rds
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-15T12:01:23.514278+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-15T12:01:23.514278+00:00
+[2024-01-15T12:03:45.169+0000] {base.py:73} INFO - Using connection ID 'rds_conn' for task execution.
+[2024-01-15T12:03:45.314+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 720, in s3_to_rds
+    cur.execute(insert_query, tuple(row))
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 199, in execute
+    args = tuple(map(db.literal, args))
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 283, in literal
+    s = self.escape(o, self.encoders)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/converters.py", line 76, in Float2Str
+    raise ProgrammingError("%s can not be used with MySQL" % s)
+MySQLdb.ProgrammingError: nan can not be used with MySQL
+[2024-01-15T12:03:45.324+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=jobinfo_jobplanet, task_id=s3_to_rds, execution_date=20240115T120123, start_date=20240115T120344, end_date=20240115T120345
+[2024-01-15T12:03:45.342+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 626 for task s3_to_rds (nan can not be used with MySQL; 35423)
+[2024-01-15T12:03:45.380+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-15T12:03:45.399+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

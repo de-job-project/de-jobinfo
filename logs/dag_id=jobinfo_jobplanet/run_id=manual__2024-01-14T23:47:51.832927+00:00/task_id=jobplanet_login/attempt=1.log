@@ -1,0 +1,358 @@
+[2024-01-14T23:48:00.493+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-14T23:47:51.832927+00:00 [queued]>
+[2024-01-14T23:48:00.510+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-14T23:47:51.832927+00:00 [queued]>
+[2024-01-14T23:48:00.510+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T23:48:00.510+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-14T23:48:00.514+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-14T23:48:00.540+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): jobplanet_login> on 2024-01-14 23:47:51.832927+00:00
+[2024-01-14T23:48:00.558+0000] {standard_task_runner.py:55} INFO - Started process 12956 to run task
+[2024-01-14T23:48:00.563+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'jobplanet_login', 'manual__2024-01-14T23:47:51.832927+00:00', '--job-id', '564', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmp07_zww1d']
+[2024-01-14T23:48:00.563+0000] {standard_task_runner.py:83} INFO - Job 564: Subtask jobplanet_login
+[2024-01-14T23:48:00.665+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.jobplanet_login manual__2024-01-14T23:47:51.832927+00:00 [running]> on host 565f6bcc10b6
+[2024-01-14T23:48:00.831+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=jobplanet_login
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-14T23:47:51.832927+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-14T23:47:51.832927+00:00
+[2024-01-14T23:48:03.699+0000] {jobinfo_jobplanet.py:78} INFO - *********************************
+[2024-01-14T23:48:03.734+0000] {jobinfo_jobplanet.py:84} INFO - 12212121313442342354534634534534534534523423443423
+[2024-01-14T23:48:03.734+0000] {jobinfo_jobplanet.py:85} INFO - <selenium.webdriver.remote.webdriver.WebDriver (session="bd13433e20390d4220aa2f81acf5a8e9")>
+[2024-01-14T23:48:03.854+0000] {jobinfo_jobplanet.py:88} INFO - 890u8987978078978978079078097807897809789789789789789797
+[2024-01-14T23:48:04.225+0000] {jobinfo_jobplanet.py:91} INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-01-14T23:48:04.968+0000] {jobinfo_jobplanet.py:102} INFO - 3333333333333333333333333
+[2024-01-14T23:48:05.000+0000] {jobinfo_jobplanet.py:108} INFO - 4444444444444444444444444444
+[2024-01-14T23:48:05.007+0000] {jobinfo_jobplanet.py:110} INFO - ['오케스트로', '오케스트로', '제니스앤컴퍼니', '제니스앤컴퍼니', '제니스앤컴퍼니', '메이븐클라우드서비스', '엠아이티', '엠아이티', '스윗코리아', '스윗코리아', '파킹클라우드', '오케스트로', '오케스트로', '오케스트로', '오케스트로', '오케스트로', '월급쟁이부자들', '월급쟁이부자들', '로민', '블랙탠저린', '파인더스', '론픽', '비포플레이', '롯데헬스케어', '롯데헬스케어', '올라운드닥터스', '와디즈', '크리에이트립', '데브툴즈', '티니어', '키다리스튜디오', '마크클라우드']
+[2024-01-14T23:48:05.008+0000] {jobinfo_jobplanet.py:111} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_와디즈.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-14T23:48:05.008+0000] {jobinfo_jobplanet.py:112} INFO - 시작
+[2024-01-14T23:48:05.008+0000] {jobinfo_jobplanet.py:116} INFO - 오케스트로 있음
+[2024-01-14T23:48:05.009+0000] {jobinfo_jobplanet.py:116} INFO - 오케스트로 있음
+[2024-01-14T23:48:05.009+0000] {jobinfo_jobplanet.py:116} INFO - 제니스앤컴퍼니 있음
+[2024-01-14T23:48:05.009+0000] {jobinfo_jobplanet.py:116} INFO - 제니스앤컴퍼니 있음
+[2024-01-14T23:48:05.009+0000] {jobinfo_jobplanet.py:116} INFO - 제니스앤컴퍼니 있음
+[2024-01-14T23:48:05.010+0000] {jobinfo_jobplanet.py:116} INFO - 메이븐클라우드서비스 있음
+[2024-01-14T23:48:05.010+0000] {jobinfo_jobplanet.py:116} INFO - 엠아이티 있음
+[2024-01-14T23:48:05.010+0000] {jobinfo_jobplanet.py:116} INFO - 엠아이티 있음
+[2024-01-14T23:48:05.010+0000] {jobinfo_jobplanet.py:116} INFO - 스윗코리아 있음
+[2024-01-14T23:48:05.011+0000] {jobinfo_jobplanet.py:116} INFO - 스윗코리아 있음
+[2024-01-14T23:48:05.011+0000] {jobinfo_jobplanet.py:116} INFO - 파킹클라우드 있음
+[2024-01-14T23:48:05.011+0000] {jobinfo_jobplanet.py:116} INFO - 오케스트로 있음
+[2024-01-14T23:48:05.011+0000] {jobinfo_jobplanet.py:116} INFO - 오케스트로 있음
+[2024-01-14T23:48:05.012+0000] {jobinfo_jobplanet.py:116} INFO - 오케스트로 있음
+[2024-01-14T23:48:05.012+0000] {jobinfo_jobplanet.py:116} INFO - 오케스트로 있음
+[2024-01-14T23:48:05.012+0000] {jobinfo_jobplanet.py:116} INFO - 오케스트로 있음
+[2024-01-14T23:48:05.013+0000] {jobinfo_jobplanet.py:116} INFO - 월급쟁이부자들 있음
+[2024-01-14T23:48:05.013+0000] {jobinfo_jobplanet.py:116} INFO - 월급쟁이부자들 있음
+[2024-01-14T23:48:05.013+0000] {jobinfo_jobplanet.py:116} INFO - 로민 있음
+[2024-01-14T23:48:05.013+0000] {jobinfo_jobplanet.py:116} INFO - 블랙탠저린 있음
+[2024-01-14T23:48:05.013+0000] {jobinfo_jobplanet.py:116} INFO - 파인더스 있음
+[2024-01-14T23:48:05.018+0000] {jobinfo_jobplanet.py:123} INFO - 론픽 파일이 없음
+[2024-01-14T23:48:05.050+0000] {jobinfo_jobplanet.py:142} INFO - 론픽의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T23:48:05.050+0000] {jobinfo_jobplanet.py:144} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_와디즈.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-14T23:48:05.050+0000] {jobinfo_jobplanet.py:116} INFO - 비포플레이 있음
+[2024-01-14T23:48:05.051+0000] {jobinfo_jobplanet.py:116} INFO - 롯데헬스케어 있음
+[2024-01-14T23:48:05.051+0000] {jobinfo_jobplanet.py:116} INFO - 롯데헬스케어 있음
+[2024-01-14T23:48:05.054+0000] {jobinfo_jobplanet.py:123} INFO - 올라운드닥터스 파일이 없음
+[2024-01-14T23:48:05.074+0000] {jobinfo_jobplanet.py:142} INFO - 올라운드닥터스의 정보는 없어서 파일 생성을 못한다.
+[2024-01-14T23:48:05.074+0000] {jobinfo_jobplanet.py:144} INFO - ['path/in/s3/bucket/jobinfo_jumpit.csv', 'path/in/s3/bucket/jobinfo_jumpit_v2.csv', 'path/in/s3/bucket/review_information_데브툴즈.csv', 'path/in/s3/bucket/review_information_로민.csv', 'path/in/s3/bucket/review_information_롯데헬스케어.csv', 'path/in/s3/bucket/review_information_마크클라우드.csv', 'path/in/s3/bucket/review_information_메이븐클라우드서비스.csv', 'path/in/s3/bucket/review_information_블랙탠저린.csv', 'path/in/s3/bucket/review_information_비포플레이.csv', 'path/in/s3/bucket/review_information_스윗코리아.csv', 'path/in/s3/bucket/review_information_엠아이티.csv', 'path/in/s3/bucket/review_information_오케스트로.csv', 'path/in/s3/bucket/review_information_와디즈.csv', 'path/in/s3/bucket/review_information_월급쟁이부자들.csv', 'path/in/s3/bucket/review_information_제니스앤컴퍼니.csv', 'path/in/s3/bucket/review_information_크리에이트립.csv', 'path/in/s3/bucket/review_information_키다리스튜디오.csv', 'path/in/s3/bucket/review_information_티니어.csv', 'path/in/s3/bucket/review_information_파인더스.csv', 'path/in/s3/bucket/review_information_파킹클라우드.csv', 'path/in/s3/bucket/summary.csv']
+[2024-01-14T23:48:05.074+0000] {jobinfo_jobplanet.py:116} INFO - 와디즈 있음
+[2024-01-14T23:48:05.074+0000] {jobinfo_jobplanet.py:116} INFO - 크리에이트립 있음
+[2024-01-14T23:48:05.075+0000] {jobinfo_jobplanet.py:116} INFO - 데브툴즈 있음
+[2024-01-14T23:48:05.075+0000] {jobinfo_jobplanet.py:116} INFO - 티니어 있음
+[2024-01-14T23:48:05.075+0000] {jobinfo_jobplanet.py:116} INFO - 키다리스튜디오 있음
+[2024-01-14T23:48:05.075+0000] {jobinfo_jobplanet.py:116} INFO - 마크클라우드 있음
+[2024-01-14T23:48:05.371+0000] {jobinfo_jobplanet.py:523} INFO - 제니스앤컴퍼니dml wordcloud start
+[2024-01-14T23:48:05.372+0000] {jobinfo_jobplanet.py:524} INFO -   review_summary    merit  ...    hire_way result_date
+0        no data  no data  ...  그룹면접, 개인면접     no data
+1        no data  no data  ...        개인면접       30일 후
+2        no data  no data  ...        개인면접        5일 후
+3        no data  no data  ...     no data     no data
+4        no data  no data  ...     no data     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:48:05.382+0000] {jobinfo_jobplanet.py:541} INFO - 제니스앤컴퍼니 review wordcloud is Counter({'no': 10, 'data': 10})
+[2024-01-14T23:48:05.382+0000] {jobinfo_jobplanet.py:637} INFO - 제니스앤컴퍼니 정보 없ㅇ,ㅡ
+[2024-01-14T23:48:05.382+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:48:21.855+0000] {jobinfo_jobplanet.py:523} INFO - 제니스앤컴퍼니dml wordcloud start
+[2024-01-14T23:48:21.857+0000] {jobinfo_jobplanet.py:524} INFO -   review_summary    merit  ...    hire_way result_date
+0        no data  no data  ...  그룹면접, 개인면접     no data
+1        no data  no data  ...        개인면접       30일 후
+2        no data  no data  ...        개인면접        5일 후
+3        no data  no data  ...     no data     no data
+4        no data  no data  ...     no data     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:48:21.874+0000] {jobinfo_jobplanet.py:541} INFO - 제니스앤컴퍼니 review wordcloud is Counter({'no': 10, 'data': 10})
+[2024-01-14T23:48:21.874+0000] {jobinfo_jobplanet.py:637} INFO - 제니스앤컴퍼니 정보 없ㅇ,ㅡ
+[2024-01-14T23:48:21.874+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:48:35.570+0000] {jobinfo_jobplanet.py:523} INFO - 제니스앤컴퍼니dml wordcloud start
+[2024-01-14T23:48:35.571+0000] {jobinfo_jobplanet.py:524} INFO -   review_summary    merit  ...    hire_way result_date
+0        no data  no data  ...  그룹면접, 개인면접     no data
+1        no data  no data  ...        개인면접       30일 후
+2        no data  no data  ...        개인면접        5일 후
+3        no data  no data  ...     no data     no data
+4        no data  no data  ...     no data     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:48:35.579+0000] {jobinfo_jobplanet.py:541} INFO - 제니스앤컴퍼니 review wordcloud is Counter({'no': 10, 'data': 10})
+[2024-01-14T23:48:35.579+0000] {jobinfo_jobplanet.py:637} INFO - 제니스앤컴퍼니 정보 없ㅇ,ㅡ
+[2024-01-14T23:48:35.579+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:48:49.365+0000] {jobinfo_jobplanet.py:523} INFO - 메이븐클라우드서비스dml wordcloud start
+[2024-01-14T23:48:49.365+0000] {jobinfo_jobplanet.py:524} INFO -                             review_summary  ... result_date
+0           대안이 없으면 다닐 수도 있겠지만 추천하지는 않는 회사  ...     no data
+1       주체적인 개인의 의견과 편의를 최대한 들어주려고 노력하는 회사  ...       14일 후
+2           SI 기업 그 잡채 10년 운용했으나 회사 체계가 없음  ...        7일 후
+3                    보통 나름 인지도가 있는 회사지만 쏘쏘  ...        1일 후
+4  팀별로 매우 분위기가 달랐던 것으로 기억함 팀장에 따라 좌우되는 분위기  ...        7일 후
+
+[5 rows x 8 columns]
+[2024-01-14T23:48:49.380+0000] {jobinfo_jobplanet.py:541} INFO - 메이븐클라우드서비스 review wordcloud is Counter({'no': 5, 'data': 5, '회사': 3, '대안이': 1, '없으면': 1, '다닐': 1, '수도': 1, '있겠지만': 1, '추천하지는': 1, '않는': 1, '주체적인': 1, '개인의': 1, '의견과': 1, '편의를': 1, '최대한': 1, '들어주려고': 1, '노력하는': 1, 'SI': 1, '기업': 1, '그': 1, '잡채': 1, '10년': 1, '운용했으나': 1, '체계가': 1, '없음': 1, '보통': 1, '나름': 1, '인지도가': 1, '있는': 1, '회사지만': 1, '쏘쏘': 1, '팀별로': 1, '매우': 1, '분위기가': 1, '달랐던': 1, '것으로': 1, '기억함': 1, '팀장에': 1, '따라': 1, '좌우되는': 1, '분위기': 1})
+[2024-01-14T23:48:49.391+0000] {jobinfo_jobplanet.py:637} INFO - 메이븐클라우드서비스 정보 없ㅇ,ㅡ
+[2024-01-14T23:48:49.392+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:49:02.240+0000] {jobinfo_jobplanet.py:523} INFO - 엠아이티dml wordcloud start
+[2024-01-14T23:49:02.240+0000] {jobinfo_jobplanet.py:524} INFO -                          review_summary  ... result_date
+0  직원에 대한 복지가 하나도 없다 그리고 각자 알아서 생활하면 된다  ...        3일 후
+1              쿠팡 사이트는 절대로 가지 마십시오 헬입니다  ...     no data
+2                  상당히 자유로운분위기이며 워라벨 좋음  ...        2일 후
+3                  파견직 대우의 한계는 못벗어나는 기업  ...        0일 후
+4  급여가 적으나 워라벨은 좋음(파견 나가는 회사마다 다를 수 있음)  ...        5일 후
+
+[5 rows x 8 columns]
+[2024-01-14T23:49:02.307+0000] {jobinfo_jobplanet.py:541} INFO - 엠아이티 review wordcloud is Counter({'no': 5, 'data': 5, '직원에': 1, '대한': 1, '복지가': 1, '하나도': 1, '없다': 1, '그리고': 1, '각자': 1, '알아서': 1, '생활하면': 1, '된다': 1, '쿠팡': 1, '사이트는': 1, '절대로': 1, '가지': 1, '마십시오': 1, '헬입니다': 1, '상당히': 1, '자유로운분위기이며': 1, '워라벨': 1, '좋음': 1, '파견직': 1, '대우의': 1, '한계는': 1, '못벗어나는': 1, '기업': 1, '급여가': 1, '적으나': 1, '워라벨은': 1, '좋음(파견': 1, '나가는': 1, '회사마다': 1, '다를': 1, '수': 1, '있음)': 1})
+[2024-01-14T23:49:02.308+0000] {jobinfo_jobplanet.py:637} INFO - 엠아이티 정보 없ㅇ,ㅡ
+[2024-01-14T23:49:02.308+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:49:15.576+0000] {jobinfo_jobplanet.py:523} INFO - 엠아이티dml wordcloud start
+[2024-01-14T23:49:15.576+0000] {jobinfo_jobplanet.py:524} INFO -                          review_summary  ... result_date
+0  직원에 대한 복지가 하나도 없다 그리고 각자 알아서 생활하면 된다  ...        3일 후
+1              쿠팡 사이트는 절대로 가지 마십시오 헬입니다  ...     no data
+2                  상당히 자유로운분위기이며 워라벨 좋음  ...        2일 후
+3                  파견직 대우의 한계는 못벗어나는 기업  ...        0일 후
+4  급여가 적으나 워라벨은 좋음(파견 나가는 회사마다 다를 수 있음)  ...        5일 후
+
+[5 rows x 8 columns]
+[2024-01-14T23:49:15.604+0000] {jobinfo_jobplanet.py:541} INFO - 엠아이티 review wordcloud is Counter({'no': 5, 'data': 5, '직원에': 1, '대한': 1, '복지가': 1, '하나도': 1, '없다': 1, '그리고': 1, '각자': 1, '알아서': 1, '생활하면': 1, '된다': 1, '쿠팡': 1, '사이트는': 1, '절대로': 1, '가지': 1, '마십시오': 1, '헬입니다': 1, '상당히': 1, '자유로운분위기이며': 1, '워라벨': 1, '좋음': 1, '파견직': 1, '대우의': 1, '한계는': 1, '못벗어나는': 1, '기업': 1, '급여가': 1, '적으나': 1, '워라벨은': 1, '좋음(파견': 1, '나가는': 1, '회사마다': 1, '다를': 1, '수': 1, '있음)': 1})
+[2024-01-14T23:49:15.605+0000] {jobinfo_jobplanet.py:637} INFO - 엠아이티 정보 없ㅇ,ㅡ
+[2024-01-14T23:49:15.607+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:49:28.785+0000] {jobinfo_jobplanet.py:523} INFO - 스윗코리아dml wordcloud start
+[2024-01-14T23:49:28.785+0000] {jobinfo_jobplanet.py:524} INFO -                                     review_summary  ... result_date
+0                       스타트업의강점은점점사라지고 임원진의 입김만 남아  ...        7일 후
+1        다양한 기술스택을 접할 수 있고 새로운 프로젝트가 많이 생겨 경험쌓기 좋다  ...     no data
+2               정치판에 업무 프로세스도 엉망 팀바팀 심함 몰상식한 동료 많음  ...     no data
+3                  함께 일하는 사람들이 상식적이며, 분위기가 밝고 좋습니다  ...     no data
+4  무난무난한 회사입니다 크게 모나지 않게 다닐 수 있습니다 너무 많이 바라지 않으면 됨  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:49:28.813+0000] {jobinfo_jobplanet.py:541} INFO - 스윗코리아 review wordcloud is Counter({'no': 5, 'data': 5, '수': 2, '많이': 2, '스타트업의강점은점점사라지고': 1, '임원진의': 1, '입김만': 1, '남아': 1, '다양한': 1, '기술스택을': 1, '접할': 1, '있고': 1, '새로운': 1, '프로젝트가': 1, '생겨': 1, '경험쌓기': 1, '좋다': 1, '정치판에': 1, '업무': 1, '프로세스도': 1, '엉망': 1, '팀바팀': 1, '심함': 1, '몰상식한': 1, '동료': 1, '많음': 1, '함께': 1, '일하는': 1, '사람들이': 1, '상식적이며,': 1, '분위기가': 1, '밝고': 1, '좋습니다': 1, '무난무난한': 1, '회사입니다': 1, '크게': 1, '모나지': 1, '않게': 1, '다닐': 1, '있습니다': 1, '너무': 1, '바라지': 1, '않으면': 1, '됨': 1})
+[2024-01-14T23:49:28.813+0000] {jobinfo_jobplanet.py:637} INFO - 스윗코리아 정보 없ㅇ,ㅡ
+[2024-01-14T23:49:28.814+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:49:42.390+0000] {jobinfo_jobplanet.py:523} INFO - 스윗코리아dml wordcloud start
+[2024-01-14T23:49:42.391+0000] {jobinfo_jobplanet.py:524} INFO -                                     review_summary  ... result_date
+0                       스타트업의강점은점점사라지고 임원진의 입김만 남아  ...        7일 후
+1        다양한 기술스택을 접할 수 있고 새로운 프로젝트가 많이 생겨 경험쌓기 좋다  ...     no data
+2               정치판에 업무 프로세스도 엉망 팀바팀 심함 몰상식한 동료 많음  ...     no data
+3                  함께 일하는 사람들이 상식적이며, 분위기가 밝고 좋습니다  ...     no data
+4  무난무난한 회사입니다 크게 모나지 않게 다닐 수 있습니다 너무 많이 바라지 않으면 됨  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:49:42.418+0000] {jobinfo_jobplanet.py:541} INFO - 스윗코리아 review wordcloud is Counter({'no': 5, 'data': 5, '수': 2, '많이': 2, '스타트업의강점은점점사라지고': 1, '임원진의': 1, '입김만': 1, '남아': 1, '다양한': 1, '기술스택을': 1, '접할': 1, '있고': 1, '새로운': 1, '프로젝트가': 1, '생겨': 1, '경험쌓기': 1, '좋다': 1, '정치판에': 1, '업무': 1, '프로세스도': 1, '엉망': 1, '팀바팀': 1, '심함': 1, '몰상식한': 1, '동료': 1, '많음': 1, '함께': 1, '일하는': 1, '사람들이': 1, '상식적이며,': 1, '분위기가': 1, '밝고': 1, '좋습니다': 1, '무난무난한': 1, '회사입니다': 1, '크게': 1, '모나지': 1, '않게': 1, '다닐': 1, '있습니다': 1, '너무': 1, '바라지': 1, '않으면': 1, '됨': 1})
+[2024-01-14T23:49:42.418+0000] {jobinfo_jobplanet.py:637} INFO - 스윗코리아 정보 없ㅇ,ㅡ
+[2024-01-14T23:49:42.419+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:49:56.348+0000] {jobinfo_jobplanet.py:523} INFO - 파킹클라우드dml wordcloud start
+[2024-01-14T23:49:56.349+0000] {jobinfo_jobplanet.py:524} INFO -                             review_summary  ... result_date
+0  젊고 자유로운 분위기, 시키지 않아도 척척 해내는 알잘딱깔센 인재 필요  ...     no data
+1                       엄청 최악은 아니지만 좋지도 않은  ...     no data
+2                     우당탕탕 성장하는 기업 사람들은 좋다  ...     no data
+3                     그저 일 안해도 월급이 나오는 회사요  ...     no data
+4                사내 복지좀 줄이지 말고 직원들좀 신경써주세요  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:49:56.357+0000] {jobinfo_jobplanet.py:541} INFO - 파킹클라우드 review wordcloud is Counter({'no': 5, 'data': 5, '젊고': 1, '자유로운': 1, '분위기,': 1, '시키지': 1, '않아도': 1, '척척': 1, '해내는': 1, '알잘딱깔센': 1, '인재': 1, '필요': 1, '엄청': 1, '최악은': 1, '아니지만': 1, '좋지도': 1, '않은': 1, '우당탕탕': 1, '성장하는': 1, '기업': 1, '사람들은': 1, '좋다': 1, '그저': 1, '일': 1, '안해도': 1, '월급이': 1, '나오는': 1, '회사요': 1, '사내': 1, '복지좀': 1, '줄이지': 1, '말고': 1, '직원들좀': 1, '신경써주세요': 1})
+[2024-01-14T23:49:56.357+0000] {jobinfo_jobplanet.py:637} INFO - 파킹클라우드 정보 없ㅇ,ㅡ
+[2024-01-14T23:49:56.358+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:50:10.449+0000] {jobinfo_jobplanet.py:523} INFO - 월급쟁이부자들dml wordcloud start
+[2024-01-14T23:50:10.449+0000] {jobinfo_jobplanet.py:524} INFO -                                       review_summary  ... result_date
+0              상식선 이상으로 일을 많이 할 자세가 되어있다면 너무너무 좋은 회사  ...        7일 후
+1                      워라밸이 개선되고 있다 월부에서는 부자가 될 수 있다  ...       28일 후
+2                       성장에 진심, 넘사인 분들이 넘치는 팬덤 강한 회사  ...        3일 후
+3  성장하는 이유를 입사하자마자 느낄 수 있다 여기 오려고 커리어를 쌓았다고 생각이 들...  ...     no data
+4    내가 원하는 모든 것들을 이룰 수 있는 기업, 내부 직원들의 만족도가 매우 높은 기업  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:50:10.465+0000] {jobinfo_jobplanet.py:541} INFO - 월급쟁이부자들 review wordcloud is Counter({'no': 5, 'data': 5, '있다': 3, '수': 3, '회사': 2, '상식선': 1, '이상으로': 1, '일을': 1, '많이': 1, '할': 1, '자세가': 1, '되어있다면': 1, '너무너무': 1, '좋은': 1, '워라밸이': 1, '개선되고': 1, '월부에서는': 1, '부자가': 1, '될': 1, '성장에': 1, '진심,': 1, '넘사인': 1, '분들이': 1, '넘치는': 1, '팬덤': 1, '강한': 1, '성장하는': 1, '이유를': 1, '입사하자마자': 1, '느낄': 1, '여기': 1, '오려고': 1, '커리어를': 1, '쌓았다고': 1, '생각이': 1, '들': 1, '정도로': 1, '좋다': 1, '내가': 1, '원하는': 1, '모든': 1, '것들을': 1, '이룰': 1, '있는': 1, '기업,': 1, '내부': 1, '직원들의': 1, '만족도가': 1, '매우': 1, '높은': 1, '기업': 1})
+[2024-01-14T23:50:10.465+0000] {jobinfo_jobplanet.py:637} INFO - 월급쟁이부자들 정보 없ㅇ,ㅡ
+[2024-01-14T23:50:10.472+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:50:25.254+0000] {jobinfo_jobplanet.py:523} INFO - 월급쟁이부자들dml wordcloud start
+[2024-01-14T23:50:25.255+0000] {jobinfo_jobplanet.py:524} INFO -                                       review_summary  ... result_date
+0              상식선 이상으로 일을 많이 할 자세가 되어있다면 너무너무 좋은 회사  ...        7일 후
+1                      워라밸이 개선되고 있다 월부에서는 부자가 될 수 있다  ...       28일 후
+2                       성장에 진심, 넘사인 분들이 넘치는 팬덤 강한 회사  ...        3일 후
+3  성장하는 이유를 입사하자마자 느낄 수 있다 여기 오려고 커리어를 쌓았다고 생각이 들...  ...     no data
+4    내가 원하는 모든 것들을 이룰 수 있는 기업, 내부 직원들의 만족도가 매우 높은 기업  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:50:25.264+0000] {jobinfo_jobplanet.py:541} INFO - 월급쟁이부자들 review wordcloud is Counter({'no': 5, 'data': 5, '있다': 3, '수': 3, '회사': 2, '상식선': 1, '이상으로': 1, '일을': 1, '많이': 1, '할': 1, '자세가': 1, '되어있다면': 1, '너무너무': 1, '좋은': 1, '워라밸이': 1, '개선되고': 1, '월부에서는': 1, '부자가': 1, '될': 1, '성장에': 1, '진심,': 1, '넘사인': 1, '분들이': 1, '넘치는': 1, '팬덤': 1, '강한': 1, '성장하는': 1, '이유를': 1, '입사하자마자': 1, '느낄': 1, '여기': 1, '오려고': 1, '커리어를': 1, '쌓았다고': 1, '생각이': 1, '들': 1, '정도로': 1, '좋다': 1, '내가': 1, '원하는': 1, '모든': 1, '것들을': 1, '이룰': 1, '있는': 1, '기업,': 1, '내부': 1, '직원들의': 1, '만족도가': 1, '매우': 1, '높은': 1, '기업': 1})
+[2024-01-14T23:50:25.269+0000] {jobinfo_jobplanet.py:637} INFO - 월급쟁이부자들 정보 없ㅇ,ㅡ
+[2024-01-14T23:50:25.271+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:50:43.066+0000] {jobinfo_jobplanet.py:523} INFO - 로민dml wordcloud start
+[2024-01-14T23:50:43.066+0000] {jobinfo_jobplanet.py:524} INFO -                                       review_summary  ... result_date
+0  직원들을 존중해주려고 노력하시는 회사입니다 22년 초까지의 기준이지만 지금도 비슷하...  ...     no data
+1                업무강도는 강하지만 사람좋고 복지좋은 회사 지하철역에서도 가까움  ...        2일 후
+2                              성장통을 겪고 있는 전형적인 스타트업?  ...        1일 후
+3                             전반적으로 업무 환경이 나쁘지 않았습니다  ...     no data
+4  ML팀 기준, 몸과 마음이 많이 힘든 회사 정말 많은 야근 팀 인원 수가 6명에서 ...  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:50:43.078+0000] {jobinfo_jobplanet.py:541} INFO - 로민 review wordcloud is Counter({'no': 5, 'data': 5, '회사': 3, '직원들을': 1, '존중해주려고': 1, '노력하시는': 1, '회사입니다': 1, '22년': 1, '초까지의': 1, '기준이지만': 1, '지금도': 1, '비슷하지': 1, '않을까싶어요': 1, '업무강도는': 1, '강하지만': 1, '사람좋고': 1, '복지좋은': 1, '지하철역에서도': 1, '가까움': 1, '성장통을': 1, '겪고': 1, '있는': 1, '전형적인': 1, '스타트업?': 1, '전반적으로': 1, '업무': 1, '환경이': 1, '나쁘지': 1, '않았습니다': 1, 'ML팀': 1, '기준,': 1, '몸과': 1, '마음이': 1, '많이': 1, '힘든': 1, '정말': 1, '많은': 1, '야근': 1, '팀': 1, '인원': 1, '수가': 1, '6명에서': 1, '3명으로': 1, '줄어들지만': 1, '일은': 1, '더': 1, '늘어나는': 1})
+[2024-01-14T23:50:43.078+0000] {jobinfo_jobplanet.py:637} INFO - 로민 정보 없ㅇ,ㅡ
+[2024-01-14T23:50:43.078+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:50:57.363+0000] {jobinfo_jobplanet.py:523} INFO - 블랙탠저린dml wordcloud start
+[2024-01-14T23:50:57.371+0000] {jobinfo_jobplanet.py:524} INFO -                                   review_summary  ... result_date
+0                    업무 능력을 확장시키기에 성장하기 좋은 환경입니다  ...        3일 후
+1                   스타트업이 뭔지, 빠른 성장이 뭔지 알 수 있는 곳  ...     no data
+2  여러가지 업무를 경험할 수 있습니다 그게 장점일지 단점일지는 본인의 판단에 따라…  ...     no data
+3             빠르게 성장하는 스타트업, 패션 이커머스 앱을 혁신할 수 있음  ...     no data
+
+[4 rows x 8 columns]
+[2024-01-14T23:50:57.390+0000] {jobinfo_jobplanet.py:541} INFO - 블랙탠저린 review wordcloud is Counter({'수': 3, '업무': 1, '능력을': 1, '확장시키기에': 1, '성장하기': 1, '좋은': 1, '환경입니다': 1, '스타트업이': 1, '뭔지,': 1, '빠른': 1, '성장이': 1, '뭔지': 1, '알': 1, '있는': 1, '곳': 1, '여러가지': 1, '업무를': 1, '경험할': 1, '있습니다': 1, '그게': 1, '장점일지': 1, '단점일지는': 1, '본인의': 1, '판단에': 1, '따라…': 1, '빠르게': 1, '성장하는': 1, '스타트업,': 1, '패션': 1, '이커머스': 1, '앱을': 1, '혁신할': 1, '있음': 1})
+[2024-01-14T23:50:57.391+0000] {jobinfo_jobplanet.py:637} INFO - 블랙탠저린 정보 없ㅇ,ㅡ
+[2024-01-14T23:50:57.391+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:51:12.259+0000] {jobinfo_jobplanet.py:523} INFO - 파인더스dml wordcloud start
+[2024-01-14T23:51:12.259+0000] {jobinfo_jobplanet.py:524} INFO -   review_summary    merit  ...      hire_way result_date
+0        no data  no data  ...          개인면접       20일 후
+1        no data  no data  ...    토론면접, 개인면접        5일 후
+2        no data  no data  ...  케이스 면접, 개인면접        3일 후
+3        no data  no data  ...       no data     no data
+4        no data  no data  ...       no data     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:51:12.268+0000] {jobinfo_jobplanet.py:541} INFO - 파인더스 review wordcloud is Counter({'no': 10, 'data': 10})
+[2024-01-14T23:51:12.268+0000] {jobinfo_jobplanet.py:637} INFO - 파인더스 정보 없ㅇ,ㅡ
+[2024-01-14T23:51:12.269+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:51:24.704+0000] {jobinfo_jobplanet.py:637} INFO - 론픽 정보 없ㅇ,ㅡ
+[2024-01-14T23:51:24.705+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T23:51:39.708+0000] {jobinfo_jobplanet.py:513} INFO - 론픽 salary information not find
+[2024-01-14T23:51:39.821+0000] {jobinfo_jobplanet.py:523} INFO - 비포플레이dml wordcloud start
+[2024-01-14T23:51:39.822+0000] {jobinfo_jobplanet.py:524} INFO -                                       review_summary  ... result_date
+0      SI업체에 가깝습니다 의심병 걸려서 마이크로 매니징 대표가 팀원들을 힘들게 합니다  ...     no data
+1                     하루하루 내일이 걱정되는 회사입니다 1점도 아까운 기업  ...     no data
+2                              여러가지 일을 할 수 있는 곳입니다!!  ...     no data
+3               자유로운 환경에서 자기가 원하는 기술 스택으로 개발해 볼 수 있음  ...     no data
+4  직원을 정말 소모품만도 못하게 다루는 기업 정말 갈곳이 없는게 아니라면 다시 생각해...  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:51:39.829+0000] {jobinfo_jobplanet.py:541} INFO - 비포플레이 review wordcloud is Counter({'기업': 2, '수': 2, '정말': 2, 'SI업체에': 1, '가깝습니다': 1, '의심병': 1, '걸려서': 1, '마이크로': 1, '매니징': 1, '대표가': 1, '팀원들을': 1, '힘들게': 1, '합니다': 1, '하루하루': 1, '내일이': 1, '걱정되는': 1, '회사입니다': 1, '1점도': 1, '아까운': 1, '여러가지': 1, '일을': 1, '할': 1, '있는': 1, '곳입니다!!': 1, '자유로운': 1, '환경에서': 1, '자기가': 1, '원하는': 1, '기술': 1, '스택으로': 1, '개발해': 1, '볼': 1, '있음': 1, '직원을': 1, '소모품만도': 1, '못하게': 1, '다루는': 1, '갈곳이': 1, '없는게': 1, '아니라면': 1, '다시': 1, '생각해보시라': 1, '권해드립니다': 1})
+[2024-01-14T23:51:39.830+0000] {jobinfo_jobplanet.py:637} INFO - 비포플레이 정보 없ㅇ,ㅡ
+[2024-01-14T23:51:39.830+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:51:56.120+0000] {jobinfo_jobplanet.py:523} INFO - 롯데헬스케어dml wordcloud start
+[2024-01-14T23:51:56.121+0000] {jobinfo_jobplanet.py:524} INFO -                          review_summary  ... result_date
+0  대기업과 스타트업 장단점이 혼재되어있다 장점도 2배, 단점도 2배  ...        3일 후
+1                               no data  ...     no data
+2                               no data  ...     no data
+3                               no data  ...     no data
+4                               no data  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:51:56.139+0000] {jobinfo_jobplanet.py:541} INFO - 롯데헬스케어 review wordcloud is Counter({'no': 8, 'data': 8, '대기업과': 1, '스타트업': 1, '장단점이': 1, '혼재되어있다': 1, '장점도': 1, '2배,': 1, '단점도': 1, '2배': 1})
+[2024-01-14T23:51:56.140+0000] {jobinfo_jobplanet.py:637} INFO - 롯데헬스케어 정보 없ㅇ,ㅡ
+[2024-01-14T23:51:56.140+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:52:12.214+0000] {jobinfo_jobplanet.py:513} INFO - 롯데헬스케어 salary information not find
+[2024-01-14T23:52:12.301+0000] {jobinfo_jobplanet.py:523} INFO - 롯데헬스케어dml wordcloud start
+[2024-01-14T23:52:12.302+0000] {jobinfo_jobplanet.py:524} INFO -                          review_summary  ... result_date
+0  대기업과 스타트업 장단점이 혼재되어있다 장점도 2배, 단점도 2배  ...        3일 후
+1                               no data  ...     no data
+2                               no data  ...     no data
+3                               no data  ...     no data
+4                               no data  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:52:12.310+0000] {jobinfo_jobplanet.py:541} INFO - 롯데헬스케어 review wordcloud is Counter({'no': 8, 'data': 8, '대기업과': 1, '스타트업': 1, '장단점이': 1, '혼재되어있다': 1, '장점도': 1, '2배,': 1, '단점도': 1, '2배': 1})
+[2024-01-14T23:52:12.310+0000] {jobinfo_jobplanet.py:637} INFO - 롯데헬스케어 정보 없ㅇ,ㅡ
+[2024-01-14T23:52:12.310+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:52:28.459+0000] {jobinfo_jobplanet.py:513} INFO - 롯데헬스케어 salary information not find
+[2024-01-14T23:52:28.580+0000] {jobinfo_jobplanet.py:637} INFO - 올라운드닥터스 정보 없ㅇ,ㅡ
+[2024-01-14T23:52:28.580+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2024-01-14T23:52:42.910+0000] {jobinfo_jobplanet.py:513} INFO - 올라운드닥터스 salary information not find
+[2024-01-14T23:52:43.022+0000] {jobinfo_jobplanet.py:523} INFO - 와디즈dml wordcloud start
+[2024-01-14T23:52:43.023+0000] {jobinfo_jobplanet.py:524} INFO -   review_summary    merit  ...      hire_way result_date
+0        no data  no data  ...          개인면접       14일 후
+1        no data  no data  ...  인/적성검사, 개인면접       10일 후
+2        no data  no data  ...  인/적성검사, 개인면접        3일 후
+3        no data  no data  ...          개인면접     no data
+4        no data  no data  ...       no data     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:52:43.032+0000] {jobinfo_jobplanet.py:541} INFO - 와디즈 review wordcloud is Counter({'no': 10, 'data': 10})
+[2024-01-14T23:52:43.033+0000] {jobinfo_jobplanet.py:637} INFO - 와디즈 정보 없ㅇ,ㅡ
+[2024-01-14T23:52:43.033+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:52:59.094+0000] {jobinfo_jobplanet.py:513} INFO - 와디즈 salary information not find
+[2024-01-14T23:52:59.215+0000] {jobinfo_jobplanet.py:523} INFO - 크리에이트립dml wordcloud start
+[2024-01-14T23:52:59.215+0000] {jobinfo_jobplanet.py:524} INFO -                review_summary  ... result_date
+0        일한만큼 돈 주는 회사 밥먹기 불편함  ...     no data
+1  대기업에서 운영하는 브랜드로 시스템이 체계적이다  ...     no data
+2         근무환경이나 직원들 분위기는 좋아여  ...     no data
+3    흔한 프렌차이즈 매장 그 자체라고 생각합니다  ...     no data
+4       서비스직으로 일할 만한 기업으로 괜찮다  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:52:59.225+0000] {jobinfo_jobplanet.py:541} INFO - 크리에이트립 review wordcloud is Counter({'no': 5, 'data': 5, '일한만큼': 1, '돈': 1, '주는': 1, '회사': 1, '밥먹기': 1, '불편함': 1, '대기업에서': 1, '운영하는': 1, '브랜드로': 1, '시스템이': 1, '체계적이다': 1, '근무환경이나': 1, '직원들': 1, '분위기는': 1, '좋아여': 1, '흔한': 1, '프렌차이즈': 1, '매장': 1, '그': 1, '자체라고': 1, '생각합니다': 1, '서비스직으로': 1, '일할': 1, '만한': 1, '기업으로': 1, '괜찮다': 1})
+[2024-01-14T23:52:59.226+0000] {jobinfo_jobplanet.py:637} INFO - 크리에이트립 정보 없ㅇ,ㅡ
+[2024-01-14T23:52:59.226+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:53:13.663+0000] {jobinfo_jobplanet.py:513} INFO - 크리에이트립 salary information not find
+[2024-01-14T23:53:13.769+0000] {jobinfo_jobplanet.py:523} INFO - 데브툴즈dml wordcloud start
+[2024-01-14T23:53:13.770+0000] {jobinfo_jobplanet.py:524} INFO -                                       review_summary  ... result_date
+0                     약간 공장같은 분위기에 여길 다녀도 될까 의아한 환경?  ...        2일 후
+1  대표가 직원들을 전혀 존중해 주지 않는 회사, 그것으로 인해 직원들이 못 버티고 계...  ...        0일 후
+2                               다양한 개발환경을 경험할 수 있는 곳  ...     no data
+3                               대우받으며 보람차게 일할 수 있는 곳  ...     no data
+4  개발자 중심의 회사이기에 개인별 업무에 독립성이 강한반면, 모두 관계가 좋고 서로를...  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:53:13.780+0000] {jobinfo_jobplanet.py:541} INFO - 데브툴즈 review wordcloud is Counter({'no': 5, 'data': 5, '수': 2, '있는': 2, '곳': 2, '약간': 1, '공장같은': 1, '분위기에': 1, '여길': 1, '다녀도': 1, '될까': 1, '의아한': 1, '환경?': 1, '대표가': 1, '직원들을': 1, '전혀': 1, '존중해': 1, '주지': 1, '않는': 1, '회사,': 1, '그것으로': 1, '인해': 1, '직원들이': 1, '못': 1, '버티고': 1, '계속': 1, '나가는': 1, '회사': 1, '다양한': 1, '개발환경을': 1, '경험할': 1, '대우받으며': 1, '보람차게': 1, '일할': 1, '개발자': 1, '중심의': 1, '회사이기에': 1, '개인별': 1, '업무에': 1, '독립성이': 1, '강한반면,': 1, '모두': 1, '관계가': 1, '좋고': 1, '서로를': 1, '존중하는': 1, '분위기': 1})
+[2024-01-14T23:53:13.780+0000] {jobinfo_jobplanet.py:637} INFO - 데브툴즈 정보 없ㅇ,ㅡ
+[2024-01-14T23:53:13.780+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:53:31.291+0000] {jobinfo_jobplanet.py:513} INFO - 데브툴즈 salary information not find
+[2024-01-14T23:53:31.416+0000] {jobinfo_jobplanet.py:523} INFO - 티니어dml wordcloud start
+[2024-01-14T23:53:31.416+0000] {jobinfo_jobplanet.py:524} INFO -                            review_summary  ... result_date
+0  누구에게나 평등하게 발언권이 주어지고, 합리적인 의견을 수용하는 기업  ...        1일 후
+1             워라벨이 좋고 업무 강도가 높지 않고 문화가 좋다  ...        0일 후
+2  인턴으로 있었지만 스타트업의 좋은 점을 깨달을 수 있었던 회사였습니다  ...     no data
+3                    합리적고 긍정적인 사람들이 모인 조직  ...     no data
+4       다양한 경험을 쌓으며 수평적인 문화 속에서 클 수 있는 환경  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:53:31.437+0000] {jobinfo_jobplanet.py:541} INFO - 티니어 review wordcloud is Counter({'수': 2, '누구에게나': 1, '평등하게': 1, '발언권이': 1, '주어지고,': 1, '합리적인': 1, '의견을': 1, '수용하는': 1, '기업': 1, '워라벨이': 1, '좋고': 1, '업무': 1, '강도가': 1, '높지': 1, '않고': 1, '문화가': 1, '좋다': 1, '인턴으로': 1, '있었지만': 1, '스타트업의': 1, '좋은': 1, '점을': 1, '깨달을': 1, '있었던': 1, '회사였습니다': 1, '합리적고': 1, '긍정적인': 1, '사람들이': 1, '모인': 1, '조직': 1, '다양한': 1, '경험을': 1, '쌓으며': 1, '수평적인': 1, '문화': 1, '속에서': 1, '클': 1, '있는': 1, '환경': 1})
+[2024-01-14T23:53:31.439+0000] {jobinfo_jobplanet.py:637} INFO - 티니어 정보 없ㅇ,ㅡ
+[2024-01-14T23:53:31.444+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:53:47.485+0000] {jobinfo_jobplanet.py:513} INFO - 티니어 salary information not find
+[2024-01-14T23:53:47.587+0000] {jobinfo_jobplanet.py:523} INFO - 키다리스튜디오dml wordcloud start
+[2024-01-14T23:53:47.587+0000] {jobinfo_jobplanet.py:524} INFO -   review_summary    merit  ...            hire_way result_date
+0        no data  no data  ...  인/적성검사, PT면접, 개인면접       14일 후
+1        no data  no data  ...        인/적성검사, 개인면접       14일 후
+2        no data  no data  ...        인/적성검사, 개인면접       30일 후
+3        no data  no data  ...    인/적성검사, 개인면접, 기타        1일 후
+4        no data  no data  ...                5일 후     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:53:47.596+0000] {jobinfo_jobplanet.py:541} INFO - 키다리스튜디오 review wordcloud is Counter({'no': 10, 'data': 10})
+[2024-01-14T23:53:47.596+0000] {jobinfo_jobplanet.py:637} INFO - 키다리스튜디오 정보 없ㅇ,ㅡ
+[2024-01-14T23:53:47.596+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:54:04.399+0000] {jobinfo_jobplanet.py:513} INFO - 키다리스튜디오 salary information not find
+[2024-01-14T23:54:04.502+0000] {jobinfo_jobplanet.py:523} INFO - 마크클라우드dml wordcloud start
+[2024-01-14T23:54:04.503+0000] {jobinfo_jobplanet.py:524} INFO -                                       review_summary  ... result_date
+0                              많은 것을 경험해볼 수 있는 회사입니다  ...     no data
+1                              많은 것을 경험해볼 수 있는 회사입니다  ...        2일 후
+2  사람과 사람으로 만나면 좋은 사람들 / 직장에서 동료로 만나면 힘든 사람들 / 체계...  ...     no data
+3                신입이 경력을 쌓기에는 좋다 근데 더 좋은 곳으로 갔으면 좋겠다  ...     no data
+4                              체계는 없지만 처음 시작하기 좋은 회사  ...     no data
+
+[5 rows x 8 columns]
+[2024-01-14T23:54:04.510+0000] {jobinfo_jobplanet.py:541} INFO - 마크클라우드 review wordcloud is Counter({'no': 5, 'data': 5, '좋은': 3, '/': 3, '많은': 2, '것을': 2, '경험해볼': 2, '수': 2, '있는': 2, '회사입니다': 2, '만나면': 2, '사람들': 2, '사람과': 1, '사람으로': 1, '직장에서': 1, '동료로': 1, '힘든': 1, '체계라는': 1, '것이': 1, '존재하지': 1, '않는다!': 1, '나는': 1, '아무': 1, '것도': 1, '모르지만': 1, '아는': 1, '척을': 1, '해야': 1, '한다!': 1, '신입이': 1, '경력을': 1, '쌓기에는': 1, '좋다': 1, '근데': 1, '더': 1, '곳으로': 1, '갔으면': 1, '좋겠다': 1, '체계는': 1, '없지만': 1, '처음': 1, '시작하기': 1, '회사': 1})
+[2024-01-14T23:54:04.511+0000] {jobinfo_jobplanet.py:637} INFO - 마크클라우드 정보 없ㅇ,ㅡ
+[2024-01-14T23:54:04.511+0000] {jobinfo_jobplanet.py:638} INFO - Failed to read CSV file from S3: name 'hannanum' is not defined
+[2024-01-14T23:54:19.776+0000] {jobinfo_jobplanet.py:513} INFO - 마크클라우드 salary information not find
+[2024-01-14T23:54:19.965+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-01-14T23:54:19.973+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=jobinfo_jobplanet, task_id=jobplanet_login, execution_date=20240114T234751, start_date=20240114T234800, end_date=20240114T235419
+[2024-01-14T23:54:20.001+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-14T23:54:20.018+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

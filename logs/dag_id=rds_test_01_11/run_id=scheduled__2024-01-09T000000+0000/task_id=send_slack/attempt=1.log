@@ -1,0 +1,29 @@
+[2024-01-11T16:27:07.933+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: rds_test_01_11.send_slack scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2024-01-11T16:27:07.961+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: rds_test_01_11.send_slack scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2024-01-11T16:27:07.962+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-11T16:27:07.963+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2024-01-11T16:27:07.964+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-11T16:27:07.998+0000] {taskinstance.py:1300} INFO - Executing <Task(SlackWebhookOperator): send_slack> on 2024-01-09 00:00:00+00:00
+[2024-01-11T16:27:08.005+0000] {standard_task_runner.py:55} INFO - Started process 162 to run task
+[2024-01-11T16:27:08.011+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'rds_test_01_11', 'send_slack', 'scheduled__2024-01-09T00:00:00+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/rds_test.py', '--cfg-path', '/tmp/tmpurq88xvw']
+[2024-01-11T16:27:08.012+0000] {standard_task_runner.py:83} INFO - Job 61: Subtask send_slack
+[2024-01-11T16:27:08.157+0000] {task_command.py:388} INFO - Running <TaskInstance: rds_test_01_11.send_slack scheduled__2024-01-09T00:00:00+00:00 [running]> on host 1064147bcaa7
+[2024-01-11T16:27:08.343+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=rds_test_01_11
+AIRFLOW_CTX_TASK_ID=send_slack
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-09T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-01-09T00:00:00+00:00
+[2024-01-11T16:27:08.345+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/slack/operators/slack_webhook.py:173: UserWarning: Found unexpected keyword-argument(s) 'link_names' in `send` method. This argument(s) have no effect.
+  link_names=self.link_names,
+
+[2024-01-11T16:27:08.361+0000] {base.py:73} INFO - Using connection ID 'slack_conn' for task execution.
+[2024-01-11T16:27:08.365+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/slack/hooks/slack_webhook.py:226: DeprecationWarning: Found Slack Webhook Token URL in Connection 'slack_conn' `host` and `password` field is empty. This behaviour deprecated and could expose you token in the UI and will be removed in a future releases.
+  return WebhookClient(**self._get_conn_params())
+
+[2024-01-11T16:27:08.747+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=rds_test_01_11, task_id=send_slack, execution_date=20240109T000000, start_date=20240111T162707, end_date=20240111T162708
+[2024-01-11T16:27:08.789+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-01-11T16:27:08.817+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

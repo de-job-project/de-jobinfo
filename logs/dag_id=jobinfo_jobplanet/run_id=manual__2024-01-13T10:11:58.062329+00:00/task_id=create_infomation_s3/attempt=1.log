@@ -1,0 +1,34 @@
+[2024-01-13T10:12:06.096+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-13T10:11:58.062329+00:00 [queued]>
+[2024-01-13T10:12:06.139+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-13T10:11:58.062329+00:00 [queued]>
+[2024-01-13T10:12:06.139+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-13T10:12:06.139+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-13T10:12:06.139+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-13T10:12:06.165+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): create_infomation_s3> on 2024-01-13 10:11:58.062329+00:00
+[2024-01-13T10:12:06.174+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'jobinfo_jobplanet', 'create_infomation_s3', 'manual__2024-01-13T10:11:58.062329+00:00', '--job-id', '321', '--raw', '--subdir', 'DAGS_FOLDER/jobinfo_jobplanet.py', '--cfg-path', '/tmp/tmpi1wsvg29']
+[2024-01-13T10:12:06.175+0000] {standard_task_runner.py:83} INFO - Job 321: Subtask create_infomation_s3
+[2024-01-13T10:12:06.178+0000] {standard_task_runner.py:55} INFO - Started process 769 to run task
+[2024-01-13T10:12:06.528+0000] {task_command.py:388} INFO - Running <TaskInstance: jobinfo_jobplanet.create_infomation_s3 manual__2024-01-13T10:11:58.062329+00:00 [running]> on host 9d92fdf7265b
+[2024-01-13T10:12:06.636+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=jobinfo_jobplanet
+AIRFLOW_CTX_TASK_ID=create_infomation_s3
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-13T10:11:58.062329+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-13T10:11:58.062329+00:00
+[2024-01-13T10:12:06.638+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 80, in create_infomation_s3
+    driver = jobplanet_login()
+  File "/opt/airflow/dags/jobinfo_jobplanet.py", line 48, in jobplanet_login
+    print(driver)
+UnboundLocalError: local variable 'driver' referenced before assignment
+[2024-01-13T10:12:06.649+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=jobinfo_jobplanet, task_id=create_infomation_s3, execution_date=20240113T101158, start_date=20240113T101206, end_date=20240113T101206
+[2024-01-13T10:12:06.669+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 321 for task create_infomation_s3 (local variable 'driver' referenced before assignment; 769)
+[2024-01-13T10:12:06.720+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-13T10:12:06.921+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
